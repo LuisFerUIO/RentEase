@@ -1,0 +1,35 @@
+/*
+//////////////////////////////////////////////
+
+RentEase 2024
+
+Luis F. Suarez
+Diana Siguenza
+
+//////////////////////////////////////////////
+*/
+
+#main{
+	
+}
+#image_index{	
+	display: flex;
+	justify-content: center;
+}
+#image_index .imagen{
+	width: 250px;
+	height: 300px;
+	margin-bottom: 30px;
+	background-color: aquamarine;
+}
+#formIndex{
+	text-align: center;	
+	background-color:cornflowerblue;
+}
+#btnIniciarSesion, #btnCrearCuenta{		
+	width: 70%;
+	height: 50px;	
+	padding: 15px 0 15px 0;
+	margin-bottom: 15px;
+
+}

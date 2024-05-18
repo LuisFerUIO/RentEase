@@ -1,10 +1,77 @@
 <!DOCTYPE html>
+<!-- 
+Nombre
+Email
+Password
+First Name
+Last Name
+Birth Date 
+-->
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
 </head>
+<script src="js/register.js"></script>
+
 <body>
 
+<form id="formr_register" name="formr_register" method="post">
+
+    Colocar aquí el contenido para form
+
+    <label for="Nombre">Nombre</label>
+    <input type="text" name="Nombre" id="Nombre">
+
+    <label for="Email">Email</label>
+    <input type="text" name="Email" id="Email">
+
+    <label for="First_Name">First Name</label>
+    <input type="text" name="First_Name" id="First_Name">
+
+    <label for="Last_Name">Last Name</label>
+    <input type="text" name="Last_Name" id="Last_Name">
+
+    <label for="Birth_Date">Birth Date:</label>
+    <input type="text" name="Birth_Date" id="Birth_Date ">
+
+    <label for="password">Password:</label>
+    <input type="password" name="Password" id="Password">
+
+    <button>Enviar</button>
+
+</form>
+
+<script>
+    //<input type="button" name="submit" id="submit" value="Enviar">
+
+    const elementoForm = document.querySelector('form');
+    elementoForm.addEventListener('submit', getDataForm);
+    console.log('////clic');
+
+    function getDataForm(event) {
+
+        console.log('////getDataForm');
+
+        event.preventDefault()
+
+        console.log('formulario completo', elementoForm);
+
+        const fromData = new FormData(elementoForm) // event.target
+        console.log('Está pensado principalmente para enviar datos de formularios', fromData);
+
+        const data = Object.fromEntries(fromData);
+        console.log('transforma una lista de pares con [clave-valor]', data);
+
+        console.log(JSON.stringify(data));
+
+        const userRegister = JSON.stringify(data);
+
+        localStorage.setItem('user', data);
+        console.log(window.localStorage);
+    }
+
+</script>
 </body>
 </html>
