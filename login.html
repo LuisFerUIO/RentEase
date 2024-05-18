@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <script src="js/login.js"></script>
+    <script src="js/Login.js"></script>
+	<link href="css/basic.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<form id="formLogin">
+    <div class="logotipo" >
+        <div class="imglogotipo">
+        <img src="./css/img/logo.png" height="200px">
+    </div>  
+    
+    <div> <p>Ingresa los datos solicitados</p>
+    <form id="formLogin">
     <label>Email</label>
     <input type="text" id="email">
+    </br>
     <label>Contraseña</label>
-    <input type="text" id="email">
-    <button>Ingresar</button>
+    <input type="text" id="contraseña">
+    </div>
+    <div>    
+    <button onclick="ValidarEmail();">Iniciar sesión</button>
+    </div>
 </form>
 </body>
 </html>
