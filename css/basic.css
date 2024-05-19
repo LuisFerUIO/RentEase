@@ -30,30 +30,34 @@ form {
 	padding: 20px;
 }
 /*botones*/
-a.btn {
-	display: inline-block;
-	width: 70%;
-	padding: 1em;
-	margin-bottom: 10px;
-	background-color: ghostwhite;
-	border: solid 1px black;
-	text-decoration: none;
-	font-size: 1em;
-	font-weight: bold;
-}
+/*a.btn {*/
+/*	display: inline-block;*/
+/*	width: 70%;*/
+/*	padding: 1em;*/
+/*	margin-bottom: 10px;*/
+/*	background-color: ghostwhite;*/
+/*	border: solid 1px black;*/
+/*	text-decoration: none;*/
+/*	font-size: 1em;*/
+/*	font-weight: bold;*/
+/*}*/
 
-a.btn:hover {
-	cursor: pointer;
-	background-color: darkgray;
-}
-label, input, select, button {
+/*a.btn:hover {*/
+/*	cursor: pointer;*/
+/*	background-color: darkgray;*/
+/*}*/
+label, input, select {
 	display: inline-block;
 	width: 70%;
 	margin: 10px 10px 0 10px;
 }
 
+#contenedor_button_form {
+	position: relative;
+	padding-top: 20px;
+}
 
-a.btn {
+a.btn, button {
 	align-items: center;
 	appearance: none;
 	background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
@@ -84,16 +88,16 @@ a.btn {
 	font-size: 18px;
 }
 
-a.btn:focus {
+a.btn:focus, button:focus {
 	box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 }
 
-a.btn:hover {
+a.btn:hover, button:hover {
 	box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 	transform: translateY(-2px);
 }
 
-a.btn:active {
+a.btn:active, button:hover {
 	box-shadow: #3c4fe0 0 3px 7px inset;
 	transform: translateY(2px);
 }
