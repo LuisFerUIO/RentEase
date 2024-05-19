@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!-- 
-Nombre
+<!--
 Email
 Password
 First Name
@@ -17,62 +16,29 @@ Birth Date
 </head>
 <body>
 
+<h1>Registrate</h1>
 <form id="formr_register" name="formr_register" method="post">
 
-    Colocar aquí el contenido para form
+    <label for="email">Email</label>
+    <input id="email" name="Email" type="text">
 
-    <label for="Nombre">Nombre</label>
-    <input type="text" name="Nombre" id="Nombre">
+    <label for="firstName">First Name</label>
+    <input id="firstName" name="firstName" type="text">
 
-    <label for="Email">Email</label>
-    <input type="text" name="Email" id="Email">
+    <label for="lastName">Last Name</label>
+    <input id="lastName" name="lastName" type="text">
 
-    <label for="First_Name">First Name</label>
-    <input type="text" name="First_Name" id="First_Name">
-
-    <label for="Last_Name">Last Name</label>
-    <input type="text" name="Last_Name" id="Last_Name">
-
-    <label for="Birth_Date">Birth Date:</label>
-    <input type="text" name="Birth_Date" id="Birth_Date ">
+    <label for="birthDate">Birth Date</label>
+    <input id="birthDate" max="2010-01-01" min="1900-01-01" name="birthDate" type="date" value=""/>
 
     <label for="password">Password:</label>
-    <input type="password" name="Password" id="Password">
+    <input id="password" name="password" type="password">
     <div id="contenedor_button_form">
     <button>Enviar</button>
     </div>
 </form>
 <a class="btn" href="new_flat.html">Registrar Propiedad/Flat</a>
+<script src="js/classValidaciones.js"></script>
 <script src="js/register.js"></script>
-<script>
-    //<input type="button" name="submit" id="submit" value="Enviar">
-
-    const elementoForm = document.querySelector('form');
-    elementoForm.addEventListener('submit', getDataForm);
-    console.log('////clic');
-
-    function getDataForm(event) {
-
-        console.log('////getDataForm');
-
-        event.preventDefault()
-
-        console.log('formulario completo', elementoForm);
-
-        const fromData = new FormData(elementoForm) // event.target
-        console.log('Está pensado principalmente para enviar datos de formularios', fromData);
-
-        const data = Object.fromEntries(fromData);
-        console.log('transforma una lista de pares con [clave-valor]', data);
-
-        console.log(JSON.stringify(data));
-
-        const userRegister = JSON.stringify(data);
-
-        localStorage.setItem('user', data);
-        console.log(window.localStorage);
-    }
-
-</script>
 </body>
 </html>
