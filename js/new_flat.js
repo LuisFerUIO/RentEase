@@ -1,4 +1,4 @@
-/*
+/*****************************************************************************************
 City String
 Street name String
 Street number Number
@@ -7,24 +7,26 @@ Has AC Boolean
 Year built Number
 Rent price Number
 Date available Date
- */
-/////////////////////////////////////
+ *****************************************************************************************/
 
-//funcion para pruebas, borra_todo lo que hay en que localStorage
+/*****************************************************************************************
+ 'Descripcion:
+ '		Borra el contenido de localStorage
+ '		Necesario porque en el servidor de pruebas tenia datos de formularios anteriores
+ '.........................................................................................
+ 'Parametros:
+ '		nunguno
+ *****************************************************************************************/
 document.getElementById('limpiarFormLocalStorage').addEventListener('click', function () {
         localStorage.clear();
         console.log('localStorage borrado.');
     }
 );
 
-class validadiones {
+
+class validaciones {
     constructor() {
     }
-
-    camposTexto() {
-
-    }
-
     /*****************************************************************************************
      '.........................................................................................
      'Descripcion:
@@ -38,7 +40,7 @@ class validadiones {
      '		- Ninguno de los caracteres que componen la cadena debe ser diferente de los
      '		  caracteres de la lista "0123456789"
      *****************************************************************************************/
-    camposNumeros() {
+    camposNumeros(elEvento, permitidos, mitexto) {
         //function permite(elEvento, permitidos, mitexto) {
         // Variables que definen los caracteres permitidos
         var numeros = "0123456789";
@@ -61,11 +63,11 @@ class validadiones {
         }
 
         // Obtener la tecla pulsada
-        var evento = elEvento || window.event;
-        var codigoCaracter = evento.charCode || evento.keyCode;
-        var caracter = String.fromCharCode(codigoCaracter);
+        //var evento = elEvento || window.event;
 
-        //alert(codigoCaracter);
+        var codigoCaracter = elEvento.charCode || elEvento.keyCode;
+        var caracter = String.fromCharCode(codigoCaracter);
+        console.log(caracter);
 
         // Comprobar si la tecla pulsada es alguna de las teclas especiales
         // (teclas de borrado y flechas horizontales)
@@ -93,18 +95,39 @@ class validadiones {
         mitexto.value = textF;
         // Comprobar si la tecla pulsada se encuentra en los caracteres permitidos
         // o si es una tecla especial
-        return permitidos.indexOf(caracter) != -1 || tecla_especial;
+        //return permitidos.indexOf(caracter) != -1 || tecla_especial;
+        var resultado = permitidos.indexOf(caracter) != -1 || tecla_especial
+        alert(resultado);
     }
 }
 
-camposFechas()
-{
-}
-}
-
-
 
 const elementFormNewFlat = document.querySelector('form');
+
+//intancio la class permitidos
+const validar = new validaciones();
+
+var mitexto = document.getElementById('StreetNumber').value;
+console.log(mitexto);
+
+// Obtener el elemento input
+const inputElement = document.getElementById('StreetNumber');
+
+// Asociar el manejador de eventos con el evento keypress del input
+inputElement.addEventListener('keypress', function (event) {
+    var permitidos = 'num';
+    var mitexto = inputElement;
+
+    // Llama al método de validación y previene el comportamiento por defecto si la tecla no es permitida
+    if (!validar.camposNumeros(event, permitidos, mitexto)) {
+        event.preventDefault();
+    }
+});
+
+
+
+
+
 
 //Compruebo que exista un formulario
 if (elementFormNewFlat) {
