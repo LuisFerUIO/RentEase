@@ -95,19 +95,19 @@ class validaciones {
         mitexto.value = textF;
         // Comprobar si la tecla pulsada se encuentra en los caracteres permitidos
         // o si es una tecla especial
-        //return permitidos.indexOf(caracter) != -1 || tecla_especial;
-        var resultado = permitidos.indexOf(caracter) != -1 || tecla_especial
-        alert(resultado);
+        return permitidos.indexOf(caracter) != -1 || tecla_especial;
+        //var resultado = permitidos.indexOf(caracter) != -1 || tecla_especial
+        // console.log('************************ '+resultado);
     }
 }
 
 
-const elementFormNewFlat = document.querySelector('form');
+
 
 //intancio la class permitidos
 const validar = new validaciones();
 
-var mitexto = document.getElementById('StreetNumber').value;
+var mitexto = document.getElementById('StreetNumber');
 console.log(mitexto);
 
 // Obtener el elemento input
@@ -125,10 +125,7 @@ inputElement.addEventListener('keypress', function (event) {
 });
 
 
-
-
-
-
+const elementFormNewFlat = document.querySelector('form');
 //Compruebo que exista un formulario
 if (elementFormNewFlat) {
     elementFormNewFlat.addEventListener('submit', getDataForm);

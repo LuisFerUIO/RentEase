@@ -48,3 +48,9 @@ a.btn:hover {
 	cursor: pointer;
 	background-color: darkgray;
 }
+
+label, input {
+	display: inline-block;
+	width: 70%;
+	margin: 10px 10px 0 10px;
+}
