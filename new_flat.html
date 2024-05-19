@@ -24,26 +24,58 @@ Date available Date
 <body>
 <form id="newFlat">
     <label>Provincia</label>
-    <input id="province" type="text"/>
-    <label>Ciudad</label>
-    <input type="text" id="city" />
+    <select id="province" name="province">
+        <option value="">Selecciona una Provincia</option>
+        <option value="AZUAY">AZUAY</option>
+        <option value="BOLIVAR">BOLIVAR</option>
+        <option value="CANAR">CA&Ntilde;AR</option>
+        <option value="CARCHI">CARCHI</option>
+        <option value="CHIMBORAZO">CHIMBORAZO</option>
+        <option value="COTOPAXI">COTOPAXI</option>
+        <option value="EL_ORO">EL ORO</option>
+        <option value="ESMERALDAS">ESMERALDAS</option>
+        <option value="GALAPAGOS">GALAPAGOS</option>
+        <option value="GUAYAS">GUAYAS</option>
+        <option value="IMBABURA">IMBABURA</option>
+        <option value="LOJA">LOJA</option>
+        <option value="LOS_RIOS">LOS RIOS</option>
+        <option value="MANABI">MANABI</option>
+        <option value="MORONA_SANTIAGO">MORONA SANTIAGO</option>
+        <option value="NAPO">NAPO</option>
+        <option value="ORELLANA">ORELLANA</option>
+        <option value="PASTAZA">PASTAZA</option>
+        <option value="PICHINCHA">PICHINCHA</option>
+        <option value="SANTA_ELENA">SANTA ELENA</option>
+        <option value="SANTO_DOMINGO_DE_LOS_TSACHILAS">SANTO
+            DOMINGO DE LOS TSACHILAS
+        </option>
+        <option value="SUCUMBIOS">SUCUMBIOS</option>
+        <option value="TUNGURAHUA">TUNGURAHUA</option>
+        <option value="ZAMORA_CHINCHIPE">ZAMORA CHINCHIPE</option>
+    </select>
+    <label>Ciudad/Canton</label>
+    <select id="city"></select>
     <label>Calle</label>
-    <input type="text" id="streetName" />
+    <input id="streetName" type="text"/>
     <label>Número</label>
     <input id="streetNumber" type="text"/>
     <label>Area m2</label>
-    <input type="text" id="areaSize" />
+    <input id="areaSize" type="text"/>
     <label>Con Aire Acondicionado</label>
-    <input type="text" id="hasAC" />
+    <select>
+        <option value="">Selecione una Opción</option>
+        <option value="SI">SI</option>
+        <option value="NO">NO</option>
+    </select>
     <label>Año de Construcción</label>
-    <input type="text" id="yearBuilt" />
+    <input id="yearBuilt" type="text"/>
     <label>Precio Alquiler </label>
-    <input type="text" id="rentPrice" />
+    <input id="rentPrice" type="text"/>
     <label>Fecha disponible</label>
-    <input type="text" id="dateAvailable" /> </br>
+    <input id="start" max="2025-12-31" min="2024-05-01" name="start" type="date" value="2024-05-01"/>
     <button class="btnForm" id="btnForm">Guardar</button>
 </form>
-<a class="btn" id="limpiarFormLocalStorage">Para pruebas Limpiar LocalStore </a>
+<a class="btn" id="limpiarFormLocalStorage">Boton borra todo el LocalStorage para pruebas </a>
 <script class="btn" src="js/new_flat.js"></script>
 </body>
 </html>
