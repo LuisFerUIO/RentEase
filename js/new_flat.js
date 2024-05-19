@@ -23,23 +23,22 @@ document.getElementById('limpiarFormLocalStorage').addEventListener('click', fun
     }
 );
 
-
+/*****************************************************************************************
+ '.........................................................................................
+ 'Descripcion:
+ '		Verifica que una cadena contenga \xFAnicamente caracteres num�ricos.
+ '		Retorna "true" \xF3 "false" seg\xFAn sea el caso
+ '.........................................................................................
+ 'Parametros:
+ '		- str : Cadena que se quiere evaluar
+ '.........................................................................................
+ 'Validaciones:
+ '		- Ninguno de los caracteres que componen la cadena debe ser diferente de los
+ '		  caracteres de la lista "0123456789"
+ *****************************************************************************************/
 class validaciones {
     constructor() {
     }
-    /*****************************************************************************************
-     '.........................................................................................
-     'Descripcion:
-     '		Verifica que una cadena contenga \xFAnicamente caracteres num�ricos.
-     '		Retorna "true" \xF3 "false" seg\xFAn sea el caso
-     '.........................................................................................
-     'Parametros:
-     '		- str : Cadena que se quiere evaluar
-     '.........................................................................................
-     'Validaciones:
-     '		- Ninguno de los caracteres que componen la cadena debe ser diferente de los
-     '		  caracteres de la lista "0123456789"
-     *****************************************************************************************/
     camposNumeros(elEvento, permitidos, mitexto) {
         //function permite(elEvento, permitidos, mitexto) {
         // Variables que definen los caracteres permitidos
@@ -101,60 +100,134 @@ class validaciones {
     }
 }
 
-
-
-
+/*****************************************************************************************
+ '                  INPUT streetName
+ *****************************************************************************************/
 //intancio la class permitidos
-const validar = new validaciones();
-
-var mitexto = document.getElementById('StreetNumber');
-console.log(mitexto);
+const validarStreetName = new validaciones();
 
 // Obtener el elemento input
-const inputElement = document.getElementById('StreetNumber');
+const inputStreetName = document.getElementById('streetName');
 
 // Asociar el manejador de eventos con el evento keypress del input
-inputElement.addEventListener('keypress', function (event) {
-    var permitidos = 'num';
-    var mitexto = inputElement;
+inputStreetName.addEventListener('keypress', function (event) {
+    let permitidos = 'num_car';
+    let mitexto = inputStreetName;
 
     // Llama al método de validación y previene el comportamiento por defecto si la tecla no es permitida
-    if (!validar.camposNumeros(event, permitidos, mitexto)) {
+    if (!validarStreetName.camposNumeros(event, permitidos, mitexto)) {
+        event.preventDefault();
+    }
+
+});
+/*****************************************************************************************
+ '                  INPUT AreaSize
+ *****************************************************************************************/
+//intancio la class permitidos
+const validarAreaSize = new validaciones();
+
+// Obtener el elemento input
+const inputAreaSize = document.getElementById('areaSize');
+
+// Asociar el manejador de eventos con el evento keypress del input
+inputAreaSize.addEventListener('keypress', function (event) {
+    let permitidos = 'num';
+    let mitexto = inputAreaSize;
+
+    // Llama al método de validación y previene el comportamiento por defecto si la tecla no es permitida
+    if (!validarAreaSize.camposNumeros(event, permitidos, mitexto)) {
+        event.preventDefault();
+    }
+
+});
+/*****************************************************************************************
+ '                  INPUT StreetNumber
+ *****************************************************************************************/
+//intancio la class permitidos
+const validarStreetNumber = new validaciones();
+
+// Obtener el elemento input
+const inputStreetNumber = document.getElementById('streetNumber');
+
+// Asociar el manejador de eventos con el evento keypress del input
+inputStreetNumber.addEventListener('keypress', function (event) {
+    let permitidos = 'num';
+    let mitexto = inputStreetNumber;
+
+    // Llama al método de validación y previene el comportamiento por defecto si la tecla no es permitida
+    if (!validarStreetNumber.camposNumeros(event, permitidos, mitexto)) {
         event.preventDefault();
     }
 });
+/*****************************************************************************************
+ '                  INPUT YearBuilt
+ *****************************************************************************************/
+//intancio la class permitidos
+const validarYearBuilt = new validaciones();
 
+// Obtener el elemento input
+const inputYearBuilt = document.getElementById('yearBuilt');
 
-const elementFormNewFlat = document.querySelector('form');
-//Compruebo que exista un formulario
-if (elementFormNewFlat) {
-    elementFormNewFlat.addEventListener('submit', getDataForm);
-} else {
-    console.log('Formulario no encontrado');
+// Asociar el manejador de eventos con el evento keypress del input
+inputYearBuilt.addEventListener('keypress', function (event) {
+    let permitidos = 'num';
+    let mitexto = inputYearBuilt;
+
+    // Llama al método de validación y previene el comportamiento por defecto si la tecla no es permitida
+    if (!validarYearBuilt.camposNumeros(event, permitidos, mitexto)) {
+        event.preventDefault();
     }
+});
+/*****************************************************************************************
+ '                  INPUT rentPrice
+ *****************************************************************************************/
+//intancio la class permitidos
+const validarRentPrice = new validaciones();
 
-function getDataForm(event) {
+// Obtener el elemento input
+const inputRentPrice = document.getElementById('rentPrice');
 
-    //evita que la pagina se recargue
-    event.preventDefault();
+// Asociar el manejador de eventos con el evento keypress del input
+inputRentPrice.addEventListener('keypress', function (event) {
+    let permitidos = 'num';
+    let mitexto = inputRentPrice;
 
-    console.log('formulario completo', elementFormNewFlat);
-
-    const formData = new FormData(elementFormNewFlat);
-    console.log('Está pensado principalmente para enviar datos de formularios', formData);
-
-    const data = Object.fromEntries(formData);
-    console.log('transforma una lista de pares con [clave-valor]********', data);
-
-    console.log('grabar estos datos' + JSON.stringify(data));
-    const userRegister = JSON.stringify(data);
-
-    localStorage.setItem('user', userRegister);
-    console.log(window.localStorage);
+    // Llama al método de validación y previene el comportamiento por defecto si la tecla no es permitida
+    if (!validarRentPrice.camposNumeros(event, permitidos, mitexto)) {
+        event.preventDefault();
     }
-
-
-//});
+});
+/*****************************************************************************************
+ '
+ *****************************************************************************************/
+// const elementFormNewFlat = document.querySelector('form');
+// //Compruebo que exista un formulario
+// if (elementFormNewFlat) {
+//     elementFormNewFlat.addEventListener('submit', getDataForm);
+// } else {
+//     console.log('Formulario no encontrado');
+//     }
+//
+// function getDataForm(event) {
+//
+//     //evita que la pagina se recargue
+//     event.preventDefault();
+//
+//     console.log('formulario completo', elementFormNewFlat);
+//
+//     const formData = new FormData(elementFormNewFlat);
+//     console.log('Está pensado principalmente para enviar datos de formularios', formData);
+//
+//     const data = Object.fromEntries(formData);
+//     console.log('transforma una lista de pares con [clave-valor]********', data);
+//
+//     console.log('grabar estos datos' + JSON.stringify(data));
+//     const userRegister = JSON.stringify(data);
+//
+//     localStorage.setItem('user', userRegister);
+//     console.log(window.localStorage);
+//     }
+// });
 
 
 // class flat {
