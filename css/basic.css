@@ -40,6 +40,11 @@ a.btn {
 	width: 70%;
 	padding: 1em;
 	margin-bottom: 20px;
-	background-color: darkgray;
+	background-color: ghostwhite;
 	border: solid 1px black;
+}
+
+a.btn:hover {
+	cursor: pointer;
+	background-color: darkgray;
 }
