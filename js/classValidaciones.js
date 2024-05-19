@@ -99,12 +99,8 @@ class classValidaciones {
          '		- La cadena NO puede contener espacios vac�os (" ")
          '		- Despu�s del \xFAltimo punto, debe haber AL MENOS 2 caracteres
          *****************************************************************************************/
-
-            //console.log('imprimir campo ='+ campo);
-
+            // se inicia presumiendo que el email es correcto
         let perfect = true;
-
-        //with (Campo){ en desuso
 
         // Validar que los caracteres que contiene la cuenta de correo
         // esten dentro de los caracteres de la siguiente lista
@@ -120,7 +116,7 @@ class classValidaciones {
             }
         }
 
-        let pos = campo.value.indexOf("@");
+        let apos = campo.value.indexOf("@");
         let lastpos = campo.value.length - 1;
 
         // Validar primer y ultimo caracter
@@ -131,9 +127,10 @@ class classValidaciones {
         }
 
         // Validar anterior y siguiente caracter despues de "@"
-        let apos;
         car1 = campo.value.substring(apos - 1, apos);
+        console.log('car1 = campo.value.substring(apos - 1, apos);' + car1);
         car2 = campo.value.substring(apos + 1, apos + 2);
+        console.log('car2 = campo.value.substring(apos + 1, apos + 2);' + car2);
         if ((car_otros.indexOf(car1) != -1) || (car_otros.indexOf(car2) != -1)) {
             perfect = false;
         }
@@ -149,15 +146,15 @@ class classValidaciones {
             perfect = false;
         }
 
-        // } with en desuso
-
         if (!perfect) {
             //alert('\nEl e-mail ' + mensaje + '\'' + campo.value + '\' no es inv\xE0lido.\n\nPor favor corrija la informaci\xF3n.');
             alert('\nEl e-mail ' + mensaje + ' \'' + campo.value + '\' no es válido.\n\nPor favor corrija la información.');
             // document.form_sorteo.email.focus();
 
             return false;
+
         }
+
 
         //return true;
 
