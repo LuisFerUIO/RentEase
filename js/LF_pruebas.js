@@ -36,23 +36,3 @@ const user = new User();
 User.
 
 
-/////////////////////////////////////
-	const elementoForm = document.querySelector('form')
-elementoForm.addEventListener('submit',getDataForm )
-function getDataForm (event) {
-	event.preventDefault()
-	console.log('formulario completo', elementoForm);
-
-	const fromData = new FormData(elementoForm) // event.target
-	console.log('Está pensado principalmente para enviar datos de formularios', fromData);
-
-	const data = Object.fromEntries(fromData)
-	console.log('transforma una lista de pares con [clave-valor]', data)
-
-	console.log(JSON.stringify(data))
-
-	const userRegister = JSON.stringify(data)
-
-	localStorage.setItem('user', data);
-	console.log(window.localStorage);
-}

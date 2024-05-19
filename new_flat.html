@@ -18,6 +18,7 @@ Date available Date
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="css/basic.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <form id="newFlat">
@@ -29,7 +30,7 @@ Date available Date
     <input type="text" id="StreetNumber" />
     <label>Area m2</label>
     <input type="text" id="areaSize" />
-    <label>Con aire Acondicionado</label>
+    <label>Con Aire Acondicionado</label>
     <input type="text" id="hasAC" />
     <label>Año de Construcción</label>
     <input type="text" id="yearBuilt" />
@@ -37,7 +38,9 @@ Date available Date
     <input type="text" id="rentPrice" />
     <label>Fecha disponible</label>
     <input type="text" id="dateAvailable" /> </br>
-    <button id="btnForm" class="btnForm"></button>
+    <button class="btnForm" id="btnForm">Guardar</button>
 </form>
+<a class="btn" id="limpiarFormLocalStorage">Limpiar LocalStore</a>
+<script class="btn" src="js/new_flat.js"></script>
 </body>
 </html>

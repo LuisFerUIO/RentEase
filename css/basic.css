@@ -26,10 +26,20 @@ Diana Siguenza
 	text-align: center;	
 	background-color:cornflowerblue;
 }
-#btnIniciarSesion, #btnCrearCuenta{		
+
+#btnIniciarSesion, #btnCrearCuenta {
 	width: 70%;
 	height: 50px;	
 	padding: 15px 0 15px 0;
 	margin-bottom: 15px;
+}
 
+/*botones*/
+a.btn {
+	display: inline-block;
+	width: 70%;
+	padding: 1em;
+	margin-bottom: 20px;
+	background-color: darkgray;
+	border: solid 1px black;
 }
