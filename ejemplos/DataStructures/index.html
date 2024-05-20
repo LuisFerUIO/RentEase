@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>localStorage</title>
+</head>
+<body onload="DefinirUsuario();">
+<div id="mensaje"></div>
+<script>
+    var DefinirUsuario = function () {
+        document.getElementById('mensaje').innerHTML = "Bienvenido " + localStorage.getItem('username');
+    }
+</script>
+</body>
+</html>

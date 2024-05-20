@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Bienes</title>
+</head>
+<body>
+<form action="">
+    <input id="Ciudad" placeholder="Ingrese una ciudad" type="text"/>
+    <input id="Direccion" placeholder="Ingrese dirección" type="text"/>
+    <input id="BienNumero" placeholder="Ingrese el número del bien" type="text"/>
+    <input id="Area" placeholder="Ingrese el área" type="text"/>
+    <label for="aire">Tiene AC?</label>
+    <input id="aire1" name="aire" type="radio" value="SI"/> SI
+    <input checked="" id="aire2" name="aire" type="radio" value="NO"/> NO
+    <input id="Anio" placeholder="Ingrese el año de construcción" type="text"/>
+    <input id="Renta" placeholder="Ingrese el precio" type="text"/>
+    <input id="Disponible" placeholder="Ingrese la disponibilidad" type="text"/>
+    <button onclick="ValidadFlat()" type="button">Crear</button>
+</form>
+<script>
+    var ValidadFlat = function () {
+        let ciudad = document.getElementById('Ciudad').value;
+        let aireacondicionado = document.querySelector('input[name=aire]:checked').value;
+        if (ciudad == "" || ciudad == undefined) {
+            alert('Ingrese la ciudad');
+            return false;
+        }
+        // Objeto 1
+        var flat1 = {
+            City: ciudad, // 'Quito',
+            StreetName: ' America',
+            StreetNumber: '1234',
+            AreaSize: '120m',
+            HasAC: aireacondicionado,
+            YearBuilt: '2020',
+            RentPrice: '$300',
+            DateAvailable: '2024-05-20',
+            Creator: 'edulego',
+        }
+
+        let tmp = localStorage.getItem('bienes');
+        if (tmp) {
+            let arrai = JSON.parse(tmp);
+            let bienes = new Set(arrai);
+            bienes.add(flat1);
+
+            localStorage.setItem('bienes', JSON.stringify(arrai));
+        } else {
+            let bienes = new Set(); // Conjunto de bienes (flats)
+            bienes.add(flat1);
+            // const arrai = Array.from(bienes);
+            const arrai = [...bienes];
+            localStorage.setItem('bienes', JSON.stringify(arrai));
+        }
+        alert('Bien almacenado!!');
+    }
+
+</script>
+
+</body>
+</html>

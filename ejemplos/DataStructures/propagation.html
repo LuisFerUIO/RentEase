@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Propagation</title>
+</head>
+<body>
+<script>
+    // Ejemplo 1
+    /*let array1 = [1, 2, 3, 4, 5];
+    console.info('Array 1');
+    console.log(array1);
+    let arraycopia = [...array1];
+    console.info('Array copia');
+    console.log(arraycopia);
+    */
+    // Ejemplo 2
+    /*
+    let array1 = [10, 20, 30, 40, 50];
+    let array2 = [60, 70, 80, 90, 100];
+    console.log(array1);
+    console.log(array2);
+    let arrayfusion = [...array1, ...array2];
+    console.log(arrayfusion);
+    */
+    // Ejemplo 3
+
+    /*
+    let strContinental = 'Europe' ;
+    let letters = [...strContinental , ' ', 'and Asia' ];
+    console.log(letters);
+    console.log(...strContinental );
+
+     let password = 'miclave.';
+     function ValidarClave(password){
+         let miarray = [...password]; // Array
+         let total_validacions = 0;
+         for(var i = 0; i< miarray.length; i++){
+             if(miarray[i] == '.'){
+                 total_validacions++;
+             }
+         }
+         if(total_validacions == 1){
+             return true;
+         }
+         else {
+             return false;
+         }
+     }
+     let resultado = ValidarClave(password);
+     // Forma 1
+     console.log('El resultado de la clave "' + password + '" es: ' + resultado);
+     // Forma 2
+     console.log(`El resultado de la clave "${password}" es: ${resultado}`);
+     */
+
+    // Ejemplo 4
+    /*
+    const rankPlayers = [
+        prompt("1-5 what do you think about Mikel" ),
+        prompt("1-5 what do you think about Lisa" ),
+        prompt("1-5 what do you think about Luis" ),
+    ];
+    console.log(rankPlayers);
+    function average(n1, n2, n3) {
+        return (parseInt (n1) + parseInt (n2) + parseInt (n3)) / 3;
+    }
+    console.log(rankPlayers );
+    // Llamada 1 tienes que pasar el valor con los indices
+    console.log(average(rankPlayers [0], rankPlayers [1], rankPlayers [2]));
+    // Llamada con progración
+    console.log(average(...rankPlayers));
+    */
+    // Asignamiento básico
+    /*
+    const user = { id: 42, isVerified: true };
+     // Propagando valores a variables y asignando
+     const { id, isVerified } = user;
+     console.log(id); // 42
+     console.log(isVerified ); // true
+     */
+
+    // Ejemplo 5
+    // Propaga en el los literales del objeto
+    /*
+    let obj1 = { foo: 'bar', x: 42 };
+    let obj2 = { foo: 'baz', y: 13 };
+    let clonedObj = { ... obj1 };
+    console.log(clonedObj);
+    // Objeto { foo: "bar", x: 42 }
+    let mergedObj = { ... obj1, ...obj2, ...clonedObj };
+
+    console.log(mergedObj);
+    // Objeto { foo: "baz", x: 42, y: 13 }
+    */
+
+    // Ejemplo 6
+    /*
+    const shift = {
+        shiftId: '1',
+        workPlace: 'L.A',
+        workers: [],
+        start:"",
+        end:"",
+        // Literales de objeto mejorados de ES6
+        startShift(startTime = '8:00') {
+            console.log(`Shift started! ${startTime}`);
+        },
+        endShift(endTime = '0:00') {
+            console.log(`Shift finished! ${endTime}`);
+        },
+        workerForShift(w1, w2, w3) {
+            console.log(`Worker at first shift ${w1}, ${w2} and ${w3}`);
+        }
+    };
+
+    // Objetos
+    const newShift = {
+        Country: "England",
+        ...shift,
+        shiftManager: 'Beker'
+    };
+    console.log(newShift);
+    const shiftCopy = { ...newShift };
+    shiftCopy.workers = [
+        'Mad',
+        'Sharon'
+    ];
+    console.log(shiftCopy.workers);
+    console.log(shiftCopy.shiftId);
+    shiftCopy.startShift("10:00");
+    let arrWorkers = [
+        prompt("print first worker"),
+        prompt("print first worker"),
+        prompt("print first worker")
+    ];
+    shiftCopy.workerForShift(...arrWorkers);
+    */
+
+    // Ejemplo 7
+    /*
+    function fun1(...theArgs) {
+        console.log(theArgs.length);
+    }
+    fun1(); // 0
+    fun1(5); // 1
+    fun1(5, 6, 7); // 3
+    */
+    /*
+    let a = 9; // NaN undefined NULL
+    let b = 5;
+    let c = 4;
+    let d;
+    // COALESCE... evalua valores nulos
+    d = a || (b * c);
+    console.log(`a: ${a}, b: ${b}, c: ${c} = d: ${d}`);
+    */
+    /*
+     let a; // NaN undefined NULL
+     let b = 5;
+     let c = 4;
+     let d;
+     // COALESCE... evalua valores nulos
+     d = a && (b * c);
+     console.log(`a: ${a}, b: ${b}, c: ${c} = d: ${d}`);
+     */
+    let a = NaN; // NaN undefined NULL
+    let b = 3;
+    let c = 4;
+    let d;
+    // Valores ENTEROS INTEGER
+    // || NaN undefined NULL
+    // ?? undefined NULL
+    // Desde izquierda a derecha
+    d = a ?? (b || c);
+    console.log(`a: ${a}, b: ${b}, c: ${c} = d: ${d}`);
+
+    // Cadenas de caracteres
+    let j = "";
+    j = j || "Nada";
+    console.log(`j: ${j}`);
+
+</script>
+</body>
+</html>
