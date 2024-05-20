@@ -361,6 +361,30 @@ function getDataForm(event) {
     //elimino lo qu eno necisito
     delete objetData.userkey;
 
+//asignar la fecha y hora de registro
+
+// creo una kay por medio de la fecha,hora,min,seg del sistema
+    function obtenerFechaHoraActual() {
+        const ahora = new Date();
+
+        const año = ahora.getFullYear();
+        const mes = String(ahora.getMonth() + 1).padStart(2, '0'); // Los meses son 0-indexados
+        const dia = String(ahora.getDate()).padStart(2, '0');
+
+        const horas = String(ahora.getHours()).padStart(2, '0');
+        const minutos = String(ahora.getMinutes()).padStart(2, '0');
+        const segundos = String(ahora.getSeconds()).padStart(2, '0');
+
+        const fechaHora = `${año}${mes}${dia}${horas}${minutos}${segundos}`;
+        return fechaHora;
+    }
+
+    let dateNow = obtenerFechaHoraActual()
+    //guardo el valor generado
+    //objetData[dateRegisterKey] = dateNow;
+    objetData.dateRegisterKey = dateNow;
+
+    //asigno el valor del campo oculto userkey
     let userkey = document.getElementById('userkey').value;
     console.log('userkey campo oculto = ' + userkey);
 
@@ -374,16 +398,16 @@ function getDataForm(event) {
         // Convertir los datos a un objeto JavaScript
         let datos = JSON.parse(readUser);
 
-        // Agregar la propiedad "hijos" al objeto "datos" si no existe
+        // Agregar la propiedad "flats" al objeto "datos" si no existe
         if (!datos.flats) {
             datos.flats = [];
         }
 
         //const flatRegister = JSON.stringify(objetData);
         //console.log('grabar estos datos' , userRegister);
-        let flat1 = {
-            calle: 'alonso',
-        }
+        // let flat1 = {
+        //     calle: 'alonso',
+        // }
         // flat = JSON.parse(flat1);
         //datos.flats.push(flat1);
 
@@ -391,13 +415,11 @@ function getDataForm(event) {
         datos.flats.push(objetData);
 
         // Guardar los datos actualizados en localStorage
-        //localStorage.setItem("datosUsuario", JSON.stringify(datos));
         localStorage.setItem(userkey, JSON.stringify(datos));
         console.log('graba', window.localStorage);
 
-        //alert('Bien almacenado!!');
-        //document.location.href ='new_flat.html?userkey='+userkey+'&firstName='+firstName;
+        document.location.href = 'home.html?userkey=' + userkey + '&firstName=' + firstName;
     } else {
-        alert('Nueva Propiedad Guardada!');
+        alert('ERROR!');
     }
 }
