@@ -1,4 +1,21 @@
 /*****************************************************************************************
+ '              boton borrado de local store
+ '.........................................................................................
+ 'Descripcion:
+ '		Borra el contenido de localStorage
+ '		Necesario porque en el servidor de pruebas tenia datos de formularios anteriores
+ '.........................................................................................
+ 'Parametros:
+ '		nunguno
+ *****************************************************************************************/
+document.getElementById('limpiarFormLocalStorage').addEventListener('click', function () {
+        localStorage.clear();
+        console.log('localStorage borrado.');
+    }
+);
+
+
+/*****************************************************************************************
  '                  VALIDAR INPUT firstName
  *****************************************************************************************/
 //intancio la class permitidos
@@ -60,3 +77,88 @@ inputEmail.addEventListener('focusout', function (event) {
     }
 
 });
+/*****************************************************************************************
+ '                  CON CLASS GUARDAR USUARIO --- NO VALIO
+ *****************************************************************************************/
+// //intancio la class permitidos
+// const guardarUsario = new classGuardar();
+//
+// // Obtener el elemento input
+// const elementFormRegister = document.querySelector('form[name=formrRegister]');
+//
+// // Asociar el manejador de eventos con el evento keypress del input
+// elementFormRegister.addEventListener('submit', function (event) {
+//
+//     // Llama al método de validación y previene el comportamiento por defecto si la tecla no es permitida
+//     if (!guardarUsario.usuario(event, elementFormRegister)) {
+//         event.preventDefault();
+//     }
+//
+// });
+
+/*****************************************************************************************
+ '                 FUNCTION GUARDAR USUARIO
+ *****************************************************************************************/
+
+// Obtener el formulario
+const elementFormRegister = document.querySelector('form[name=formrRegister]');
+//detecto la accion en el boton y ejecuto la funcion
+elementFormRegister.addEventListener('submit', getDataForm);
+
+//funcion
+function getDataForm(event) {
+    event.preventDefault()
+
+    //console.log('formulario completo', elementFormRegister);
+
+    const formData = new FormData(elementFormRegister);
+    //console.log('Está pensado principalmente para enviar datos de formularios', formData);
+
+    const objetData = Object.fromEntries(formData);
+    //console.log('transforma una lista de pares con [clave-valor]', objetData);
+
+    // Acceder al email y firstName
+    const userkey = objetData.email;
+    const firstName = objetData.firstName;
+    //console.log('userkey y firstName = ', email + firstName);
+
+    // elimino del objeto porque lo usare de key asi no puede haber dos iguales
+    delete objetData.email;
+    // este campo es solo para la validacion se debe borrar
+    delete objetData.passwordConfirmation;
+
+    if (localStorage.getItem(userkey) !== null) {
+        alert('Usuario con email ya registrado!!');
+    } else {
+        const userRegister = JSON.stringify(objetData);
+        //console.log('grabar estos datos' , userRegister);
+
+        localStorage.setItem(userkey, userRegister);
+        console.log('graba', window.localStorage);
+        //alert('Bien almacenado!!');
+        document.location.href = 'new_flat.html?userkey=' + userkey + '&firstName=' + firstName;
+    }
+}
+
+
+// const elementoForm = document.querySelector('form')
+// elementoForm.addEventListener('submit',getDataForm )
+// function getDataForm (event) {
+//     event.preventDefault()
+//     console.log('formulario completo', elementoForm);
+//
+//     const fromData = new FormData(elementoForm) // event.target
+//     console.log('Está pensado principalmente para enviar datos de formularios', fromData);
+//
+//     const data = Object.fromEntries(fromData)
+//     console.log('transforma una lista de pares con [clave-valor]', data)
+//
+//     console.log(JSON.stringify(data))
+//
+//     const userRegister = JSON.stringify(data)
+//
+//     localStorage.setItem('user', data);
+//     console.log(window.localStorage);
+// }
+
+

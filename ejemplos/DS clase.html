@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Bienes</title>
+</head>
+<body>
+
+<form action=""> Ingresa la información solicitada
+    </br>
+    <input id="Ciudad" placeholder="Ciudad" type="text"/>
+    </br>
+    <input id="Direccion" placeholder="Direccion" type="text"/>
+    </br>
+    <input id="Numeracion" placeholder="Numeracion" type="text"/>
+    </br>
+    <input id="Area" placeholder="Area del bien" type="text"/>
+    </br>
+    Aire acondicionado
+    </br>
+    <input id="airesi" name="aire" type="radio" value="true"/> Si
+    </br>
+    <input checked="" id="aireno" name="aire" type="radio" value="false"/> No
+    </br>
+    <input id="Anio" placeholder="Año de construcción" type="text"/>
+    </br>
+    <input id="Renta" placeholder="Precio renta" type="text"/>
+    </br>
+    <input id="Disponible" placeholder="Disponible desde" type="date"/>
+    </br>
+    <button onclick="ValidarFlat()">
+        Crear
+    </button>
+</form>
+
+<script>
+    var ValidarFlat = function () {
+        let Ciudad = document.getElementById('Ciudad').value;
+        let Dirección = document.getElementById('Direccion').value;
+        let Numeracion = document.getElementById('Numeracion').value;
+        let Area = document.getElementById('Area').value;
+        let Anio = document.getElementById('Anio').value;
+        let Renta = document.getElementById('Renta').value;
+        let Disponible = document.getElementById('Disponible').value;
+
+        let aireacondicionado = document.querySelector('input[name=aire]:checked').value;
+
+        if (Ciudad == "" || Ciudad == undefined) {
+            alert("Ingresa la cuidad");
+            return false;
+        }
+
+        if (Direccion == "" || Direccion == undefined) {
+            alert("Ingresa la dirección");
+            return false;
+        }
+
+        if (Numeracion == "" || Numeracion == undefined) {
+            alert("Ingresa la numeración");
+            return false;
+        }
+
+        if (Area == "" || Area == undefined) {
+            alert("Ingresa el Area");
+            return false;
+        }
+
+        if (Anio == "" || Anio == undefined) {
+            alert("Ingresa el año");
+            return false;
+        }
+
+        if (Renta == "" || Renta == undefined) {
+            alert("Ingresa la renta");
+            return false;
+        }
+
+        if (Disponible == "" || Disponible == undefined) {
+            alert("Ingresa la disponibilidad");
+            return false;
+        }
+        /*
+        if(Creador== "" || Creador == undefined)
+        {
+            alert("Ingresa la disponibilidad");
+            return false;ss
+        }
+        */
+        // Objeto 1
+        var flat1 = {
+            city: Ciudad,
+            StreetName: Direccion,
+            StreetNumber: Numeracion,
+            AreaSize: Area,
+            HasAC: aireacondicionado,
+            YearBuilt: Anio,
+            RentPrice: Renta,
+            DateAvalible: Disponible,
+            Creator: "Creador",
+        }
+
+        let tmo = localStorage.getItem('bienes');
+        if (tmp) {
+            let arrai = JSON.parse(tmp);
+            let bienes = new Set(arrai);
+            bienes.add(flat1);
+            arrai = [...bienes];
+            localStorage.setItem('bienes', JSON.stringify(arrai));
+        } else {
+            let bienes = new Set(); //Conjunto de bienes (flats)
+            bienes.add(flat1);
+            // const arrai = Array.from(bienes);
+            const arrai = [...bienes];
+            localStorage.setItem('bienes', JSON.stringify(arrai));
+        }
+        //* alert('Tu información se ha cargado con éxito');
+        console.log('Proceso exitoso0000000000000000000000')
+
+    }
+</script>
+</body>
+</html>

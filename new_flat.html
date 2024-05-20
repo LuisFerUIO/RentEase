@@ -22,7 +22,9 @@ Date available Date
     <title>Title</title>
 </head>
 <body>
-<form id="newFlat">
+<h2 id="mensaje"></h2>
+<form id="formFlatRegister" name="formFlatRegister">
+    <input id="userkey" name="userkey" type="hidden"/>
     <label>Provincia</label>
     <select id="province" name="province">
         <option value="">Selecciona una Provincia</option>
@@ -54,25 +56,25 @@ Date available Date
         <option value="ZAMORA_CHINCHIPE">ZAMORA CHINCHIPE</option>
     </select>
     <label>Ciudad/Canton</label>
-    <select id="city"></select>
+    <select id="city" name="city"></select>
     <label>Calle</label>
-    <input id="streetName" type="text"/>
+    <input id="streetName" name="streetName" type="text"/>
     <label>Número</label>
-    <input id="streetNumber" type="text"/>
+    <input id="streetNumber" name="streetNumber" type="text"/>
     <label>Area m2</label>
-    <input id="areaSize" type="text"/>
+    <input id="areaSize" name="areaSize" type="text"/>
     <label>Con Aire Acondicionado</label>
-    <select>
+    <select name="hasAc">
         <option value="">Selecione una Opción</option>
         <option value="SI">SI</option>
         <option value="NO">NO</option>
     </select>
     <label>Año de Construcción</label>
-    <input id="yearBuilt" type="text"/>
+    <input id="yearBuilt" name="yearBuilt" type="text"/>
     <label>Precio Alquiler </label>
-    <input id="rentPrice" type="text"/>
+    <input id="rentPrice" name="rentPrice" type="text"/>
     <label>Fecha disponible</label>
-    <input id="start" max="2025-12-31" min="2024-05-01" name="start" type="date" value="2024-05-01"/>
+    <input id="dateAvailable" max="2025-12-31" min="2024-05-01" name="dateAvailable" type="date" value="2024-05-01"/>
     <div id="contenedor_button_form">
     <button class="btnForm" id="btnForm">Guardar</button>
     </div>

@@ -17,10 +17,10 @@ Birth Date
 <body>
 
 <h1>Registrate</h1>
-<form id="formr_register" name="formr_register" method="post">
+<form id="formrRegister" method="post" name="formrRegister">
 
     <label for="email">Email</label>
-    <input id="email" name="Email" type="text">
+    <input id="email" name="email" type="text">
 
     <label for="firstName">First Name</label>
     <input id="firstName" name="firstName" type="text">
@@ -33,12 +33,22 @@ Birth Date
 
     <label for="password">Password:</label>
     <input id="password" name="password" type="password">
+
+    <label for="passwordConfirmation">passwordConfirmation:</label>
+    <input id="passwordConfirmation" name="passwordConfirmation" type="password">
+
+    <input id="flats" name="flats" type="hidden">
+
     <div id="contenedor_button_form">
     <button>Enviar</button>
     </div>
 </form>
 <a class="btn" href="new_flat.html">Registrar Propiedad/Flat</a>
+
+<a class="btn" id="limpiarFormLocalStorage">Boton borra todo el LocalStorage para pruebas </a>
+
 <script src="js/classValidaciones.js"></script>
+<script src="js/classGuardar.js"></script>
 <script src="js/register.js"></script>
 </body>
 </html>
