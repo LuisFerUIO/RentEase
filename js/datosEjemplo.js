@@ -23,20 +23,20 @@ document.getElementById('limpiarFormLocalStorage').addEventListener('click', fun
  *****************************************************************************************/
 
 const objetData = {
-    "userkey": "lsuarez@krugerschool.edu.ec",
+    "userkey": "luis@1234.com",
     "firstName": "Luis",
     "lastName": "Suarez",
     "birthDate": "1984-12-25",
-    "password": "krugerschoolx",
+    "password": "1234",
     "flats": "",
 };
 
 const diana = {
     "userkey": "dsiguenza@krugerschool.edu.ec",
     "firstName": "Diana",
-    "lastName": "Sigueza",
+    "lastName": "Siguenza",
     "birthDate": "2004-12-25",
-    "password": "krugerschoolx",
+    "password": "1234",
     "flats": "",
 };
 
