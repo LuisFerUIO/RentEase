@@ -111,3 +111,29 @@ a.btn:active, button:hover {
 	box-shadow: #3c4fe0 0 3px 7px inset;
 	transform: translateY(2px);
 }
+
+/*****************************************************************************************
+ '		HOME DONDE SALE LA TABLA CON LAS PROPIEDADES
+ *****************************************************************************************/
+.flatsBox {
+	display: block;
+	width: 80%;
+	margin: 10px;
+	background-color: whitesmoke;
+	border: 1px solid gray;
+}
+
+.flatsBox li {
+	list-style: none;
+}
+
+.flatsBox img {
+	margin-bottom: 10px;
+}
+
+.flatsBox input {
+	display: inline;
+	position: relative;
+	width: auto;
+	margin: 0px;
+}
