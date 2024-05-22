@@ -9,7 +9,7 @@ const userkeyurlParams = urlParams.get('userkey');
 const firstName = urlParams.get('firstName');
 //imprimo en pantalla
 document.getElementById('nameUser').innerHTML = firstName;
-document.getElementById('userKey').innerHTML = 'Usuario' + userkeyurlParams;
+document.getElementById('userKey').innerHTML = userkeyurlParams;
 /*****************************************************************************************
  '		RECUPERAR FLATS DEL USUARIO
  *****************************************************************************************/

@@ -37,12 +37,33 @@ document.addEventListener('DOMContentLoaded', function () {
         //console.log('userkey = ' + userkey);
         const password = document.getElementById('password').value;
 
+
         //leer datos del usuario segun su userkay
         let readUser = localStorage.getItem(userkey)
         console.log('readUser = ' + readUser);
 
         // Convertir los datos a un objeto JavaScript
         let datos = JSON.parse(readUser);
+
+        if (readUser) {
+
+            if (password) {
+                //let readUserPass = localStorage.getItem(password)
+                //console.log('readUserPass = ' + readUser);
+                if (password == datos.password) {
+                    let firstName = datos.firstName;
+                    document.location.href = 'home.html?userkey=' + userkey + '&firstName=' + firstName;
+                } else {
+                    alert('la Clave es incorrecta');
+                }
+            } else {
+                alert('Ingrese su clave');
+            }
+        } else {
+            alert('El usuario no existe');
+        }
+
+
     }
 
 });
