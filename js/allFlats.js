@@ -28,14 +28,53 @@
 
 //console.log('localstore = ', window.localStorage);
 
-let keys = Object.keys(localStorage);
-for (let key of keys) {
-    console.log(`${key}: ${localStorage.getItem(key)}`);
-    let flatsBox = (`${key}: ${localStorage.getItem(key)}`);
-    document.getElementById('flat').innerHTML += flatsBox;
-    document.getElementById('flat').innerHTML += '<br/><br/><br/>';
-}
+// let keys = Object.keys(localStorage);
+// for (let key of keys) {
+//
+//     console.log(`${key}: ${localStorage.getItem(key)}`);
+//
+//     let flatsBox = (`${key}: ${localStorage.getItem(key)}`);
+//
+//     document.getElementById('flat').innerHTML += flatsBox;
+//     document.getElementById('flat').innerHTML += '<br/><br/><br/>';
+// }
 console.log(`****************************************`);
+
+// Obtener todas las claves almacenadas en localStorage
+let keys = Object.keys(localStorage);
+
+// Variable para almacenar el contenido que se va a mostrar en el elemento con ID 'flat'
+let content = '';
+
+for (let key of keys) {
+    // Obtener el valor asociado a la clave actual y parsearlo como un objeto JSON
+    let item = JSON.parse(localStorage.getItem(key));
+
+    // Verificar si el objeto tiene una propiedad 'flats'
+    if (item.flats) {
+        // Convertir los objetos dentro de 'flats' a una cadena JSON legible
+        let flatsContent = item.flats.map(flat => JSON.stringify(flat)).join('<br/>');
+
+        // Añadir la información de 'flats' al contenido
+        content += `Usuario: ${key} - Flats:<br/>${flatsContent}<br/><br/><br/>`;
+    } else {
+        // Si no tiene la propiedad 'flats', agregar un mensaje indicando que no tiene 'flats'
+        content += `Usuario: ${key} - No tiene flats<br/><br/><br/>`;
+    }
+}
+
+// Asignar el contenido al elemento HTML con ID 'flat'
+document.getElementById('flat').innerHTML = content;
+
+// localStorage.user = JSON.stringify({name: "John"});
+//
+// // en algún momento más tarde
+// let user = JSON.parse( localStorage.user );
+// alert( user.name ); // John
+
+
+// se ha añadido opciones de formato a JSON.stringify para que el objeto se lea mejor
+//alert( JSON.stringify(localStorage, null, 2) );
 
 //verifica su existe
 // hasOwnProperty(key)
