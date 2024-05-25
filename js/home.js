@@ -15,11 +15,10 @@ document.getElementById('userKey').innerHTML = userkeyurlParams;
  *****************************************************************************************/
 //leer datos del usuario segun su userkay
 let readUser = localStorage.getItem(userkeyurlParams);
-console.log("readUser = " + readUser);
+//console.log("readUser = " + readUser);
 
 // Convertir los datos a un objeto JavaScript
 let datos = JSON.parse(readUser);
-
 
 // Verificar si la propiedad "flats" existe y es un array
 let flatsBox;
@@ -27,7 +26,7 @@ if (Array.isArray(datos.flats)) {
     datos.flats.forEach(flat => {
 
         flatsBox += `<div class="flatsBox">`;
-        flatsBox += `<li class="img"><li class="img"> <img height="200px" src="../images/flats/flats_200x200px.jpg"></li>`;
+        flatsBox += `<li class="img"><li class="img"> <img height="200px" src="${flat.picture}"></li>`;
         flatsBox += `<li>${flat.dateRegisterKey}</li>`;
         flatsBox += `<li>${flat.favorite}</li>`;
         flatsBox += `<li>${flat.city}</li>`;
@@ -36,9 +35,9 @@ if (Array.isArray(datos.flats)) {
         flatsBox += `<li class="delete"><a class="btn">Eliminar</a></li>`;
         flatsBox += `</div>`;
 
-        document.getElementById('flat').innerHTML = flatsBox;
+        document.getElementById('flats').innerHTML = flatsBox;
 
-        console.log(flat.dateRegisterKey)
+        // console.log(flat.dateRegisterKey)
     });
 } else {
     console.log('error');

@@ -45,7 +45,8 @@ const objetData = {
             "hasAc": "SI",
             "yearBuilt": "2024",
             "rentPrice": "1500",
-            "dateAvailable": "2024-05-01"
+            "dateAvailable": "2024-05-01",
+            "picture": "../images/flats/picture_0001.png"
         },
             {
                 "dateRegisterKey": "20240522082420",
@@ -58,7 +59,8 @@ const objetData = {
                 "hasAc": "NO",
                 "yearBuilt": "1980",
                 "rentPrice": "300",
-                "dateAvailable": "2024-05-01"
+                "dateAvailable": "2024-05-01",
+                "picture": "../images/flats/picture_0002.png"
             }],
 };
 const objetData1 = {
@@ -79,7 +81,8 @@ const objetData1 = {
             "hasAc": "NO",
             "yearBuilt": "2000",
             "rentPrice": "500",
-            "dateAvailable": "2024-05-01"
+            "dateAvailable": "2024-05-01",
+            "picture": "../images/flats/picture_01.png"
         },
             {
                 "dateRegisterKey": "20240522082420",
@@ -92,7 +95,8 @@ const objetData1 = {
                 "hasAc": "NO",
                 "yearBuilt": "1990",
                 "rentPrice": "400",
-                "dateAvailable": "2024-05-01"
+                "dateAvailable": "2024-05-01",
+                "picture": "../images/flats/picture_01.png"
             }],
 };
 const objetData2 = {
@@ -112,7 +116,8 @@ const objetData2 = {
         "hasAc": "SI",
         "yearBuilt": "2005",
         "rentPrice": "1200",
-        "dateAvailable": "2024-06-01"
+        "dateAvailable": "2024-06-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "no",
@@ -124,7 +129,8 @@ const objetData2 = {
         "hasAc": "NO",
         "yearBuilt": "2010",
         "rentPrice": "800",
-        "dateAvailable": "2024-07-01"
+        "dateAvailable": "2024-07-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -145,7 +151,8 @@ const objetData3 = {
         "hasAc": "SI",
         "yearBuilt": "2008",
         "rentPrice": "700",
-        "dateAvailable": "2024-08-01"
+        "dateAvailable": "2024-08-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "no",
@@ -157,7 +164,8 @@ const objetData3 = {
         "hasAc": "NO",
         "yearBuilt": "2015",
         "rentPrice": "900",
-        "dateAvailable": "2024-09-01"
+        "dateAvailable": "2024-09-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -178,7 +186,8 @@ const objetData4 = {
         "hasAc": "NO",
         "yearBuilt": "2000",
         "rentPrice": "1000",
-        "dateAvailable": "2024-10-01"
+        "dateAvailable": "2024-10-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "si",
@@ -190,7 +199,8 @@ const objetData4 = {
         "hasAc": "SI",
         "yearBuilt": "2012",
         "rentPrice": "600",
-        "dateAvailable": "2024-11-01"
+        "dateAvailable": "2024-11-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -211,7 +221,8 @@ const objetData5 = {
         "hasAc": "NO",
         "yearBuilt": "2019",
         "rentPrice": "750",
-        "dateAvailable": "2024-12-01"
+        "dateAvailable": "2024-12-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "si",
@@ -223,7 +234,8 @@ const objetData5 = {
         "hasAc": "SI",
         "yearBuilt": "2018",
         "rentPrice": "650",
-        "dateAvailable": "2024-01-01"
+        "dateAvailable": "2024-01-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -244,7 +256,8 @@ const objetData6 = {
         "hasAc": "NO",
         "yearBuilt": "2020",
         "rentPrice": "1100",
-        "dateAvailable": "2024-02-01"
+        "dateAvailable": "2024-02-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "no",
@@ -256,7 +269,8 @@ const objetData6 = {
         "hasAc": "SI",
         "yearBuilt": "2011",
         "rentPrice": "550",
-        "dateAvailable": "2024-03-01"
+        "dateAvailable": "2024-03-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -277,7 +291,8 @@ const objetData7 = {
         "hasAc": "NO",
         "yearBuilt": "2017",
         "rentPrice": "1150",
-        "dateAvailable": "2024-04-01"
+        "dateAvailable": "2024-04-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "si",
@@ -289,7 +304,8 @@ const objetData7 = {
         "hasAc": "SI",
         "yearBuilt": "2021",
         "rentPrice": "850",
-        "dateAvailable": "2024-05-01"
+        "dateAvailable": "2024-05-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -310,7 +326,8 @@ const objetData8 = {
         "hasAc": "NO",
         "yearBuilt": "2014",
         "rentPrice": "650",
-        "dateAvailable": "2024-06-01"
+        "dateAvailable": "2024-06-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "no",
@@ -322,7 +339,8 @@ const objetData8 = {
         "hasAc": "SI",
         "yearBuilt": "2022",
         "rentPrice": "900",
-        "dateAvailable": "2024-07-01"
+        "dateAvailable": "2024-07-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -343,7 +361,8 @@ const objetData9 = {
         "hasAc": "NO",
         "yearBuilt": "2016",
         "rentPrice": "800",
-        "dateAvailable": "2024-08-01"
+        "dateAvailable": "2024-08-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "si",
@@ -355,7 +374,8 @@ const objetData9 = {
         "hasAc": "SI",
         "yearBuilt": "2013",
         "rentPrice": "850",
-        "dateAvailable": "2024-09-01"
+        "dateAvailable": "2024-09-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -376,7 +396,8 @@ const objetData10 = {
         "hasAc": "NO",
         "yearBuilt": "2009",
         "rentPrice": "950",
-        "dateAvailable": "2024-10-01"
+        "dateAvailable": "2024-10-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "no",
@@ -388,7 +409,8 @@ const objetData10 = {
         "hasAc": "SI",
         "yearBuilt": "2018",
         "rentPrice": "1050",
-        "dateAvailable": "2024-11-01"
+        "dateAvailable": "2024-11-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -409,7 +431,8 @@ const objetData11 = {
         "hasAc": "NO",
         "yearBuilt": "2007",
         "rentPrice": "1250",
-        "dateAvailable": "2024-12-01"
+        "dateAvailable": "2024-12-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "si",
@@ -421,7 +444,8 @@ const objetData11 = {
         "hasAc": "SI",
         "yearBuilt": "2023",
         "rentPrice": "1350",
-        "dateAvailable": "2024-01-01"
+        "dateAvailable": "2024-01-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -442,7 +466,8 @@ const objetData12 = {
         "hasAc": "NO",
         "yearBuilt": "2015",
         "rentPrice": "700",
-        "dateAvailable": "2024-02-01"
+        "dateAvailable": "2024-02-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "no",
@@ -454,7 +479,8 @@ const objetData12 = {
         "hasAc": "SI",
         "yearBuilt": "2021",
         "rentPrice": "950",
-        "dateAvailable": "2024-03-01"
+        "dateAvailable": "2024-03-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -475,7 +501,8 @@ const objetData13 = {
         "hasAc": "NO",
         "yearBuilt": "2010",
         "rentPrice": "850",
-        "dateAvailable": "2024-04-01"
+        "dateAvailable": "2024-04-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "si",
@@ -487,7 +514,8 @@ const objetData13 = {
         "hasAc": "SI",
         "yearBuilt": "2019",
         "rentPrice": "950",
-        "dateAvailable": "2024-05-01"
+        "dateAvailable": "2024-05-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -508,7 +536,8 @@ const objetData14 = {
         "hasAc": "NO",
         "yearBuilt": "2022",
         "rentPrice": "1100",
-        "dateAvailable": "2024-06-01"
+        "dateAvailable": "2024-06-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "no",
@@ -520,7 +549,8 @@ const objetData14 = {
         "hasAc": "SI",
         "yearBuilt": "2021",
         "rentPrice": "1200",
-        "dateAvailable": "2024-07-01"
+        "dateAvailable": "2024-07-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -541,7 +571,8 @@ const objetData15 = {
         "hasAc": "NO",
         "yearBuilt": "2020",
         "rentPrice": "1300",
-        "dateAvailable": "2024-08-01"
+        "dateAvailable": "2024-08-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "si",
@@ -553,7 +584,8 @@ const objetData15 = {
         "hasAc": "SI",
         "yearBuilt": "2018",
         "rentPrice": "1400",
-        "dateAvailable": "2024-09-01"
+        "dateAvailable": "2024-09-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -574,7 +606,8 @@ const objetData16 = {
         "hasAc": "NO",
         "yearBuilt": "2017",
         "rentPrice": "750",
-        "dateAvailable": "2024-10-01"
+        "dateAvailable": "2024-10-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "no",
@@ -586,7 +619,8 @@ const objetData16 = {
         "hasAc": "SI",
         "yearBuilt": "2021",
         "rentPrice": "850",
-        "dateAvailable": "2024-11-01"
+        "dateAvailable": "2024-11-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -607,7 +641,8 @@ const objetData17 = {
         "hasAc": "NO",
         "yearBuilt": "2016",
         "rentPrice": "950",
-        "dateAvailable": "2024-12-01"
+        "dateAvailable": "2024-12-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "si",
@@ -619,7 +654,8 @@ const objetData17 = {
         "hasAc": "SI",
         "yearBuilt": "2019",
         "rentPrice": "1150",
-        "dateAvailable": "2024-01-01"
+        "dateAvailable": "2024-01-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -640,7 +676,8 @@ const objetData18 = {
         "hasAc": "NO",
         "yearBuilt": "2020",
         "rentPrice": "1000",
-        "dateAvailable": "2024-02-01"
+        "dateAvailable": "2024-02-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "no",
@@ -652,7 +689,9 @@ const objetData18 = {
         "hasAc": "SI",
         "yearBuilt": "2021",
         "rentPrice": "1100",
-        "dateAvailable": "2024-03-01"
+        "dateAvailable": "2024-03-01",
+        "picture": "../images/flats/picture_01.png"
+
     }]
 };
 
@@ -673,7 +712,8 @@ const objetData19 = {
         "hasAc": "NO",
         "yearBuilt": "2018",
         "rentPrice": "1350",
-        "dateAvailable": "2024-04-01"
+        "dateAvailable": "2024-04-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "si",
@@ -685,7 +725,8 @@ const objetData19 = {
         "hasAc": "SI",
         "yearBuilt": "2022",
         "rentPrice": "1450",
-        "dateAvailable": "2024-05-01"
+        "dateAvailable": "2024-05-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 
@@ -706,7 +747,8 @@ const objetData20 = {
         "hasAc": "NO",
         "yearBuilt": "2019",
         "rentPrice": "1200",
-        "dateAvailable": "2024-06-01"
+        "dateAvailable": "2024-06-01",
+        "picture": "../images/flats/picture_01.png"
     }, {
         "dateRegisterKey": "20240522082420",
         "favorite": "no",
@@ -718,7 +760,8 @@ const objetData20 = {
         "hasAc": "SI",
         "yearBuilt": "2021",
         "rentPrice": "1300",
-        "dateAvailable": "2024-07-01"
+        "dateAvailable": "2024-07-01",
+        "picture": "../images/flats/picture_01.png"
     }]
 };
 

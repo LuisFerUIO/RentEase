@@ -64,7 +64,7 @@ for (let key of keys) {
 }
 
 // Asignar el contenido al elemento HTML con ID 'flat'
-document.getElementById('flat').innerHTML = content;
+document.getElementById('flats').innerHTML = content;
 
 // localStorage.user = JSON.stringify({name: "John"});
 //
