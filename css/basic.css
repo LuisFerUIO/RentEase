@@ -124,9 +124,13 @@ a.btn:active, button:hover {
 	background-color: whitesmoke;
 	border: 1px solid gray;
 }
+
+/* cada dato que se muestra del flat esta contenido en un <li> </li>*/
 .flatsBox li {
 	list-style: none;
 }
+
+/* apunta a la imagen/png del flat*/
 .flatsBox img {
 	margin-bottom: 10px;
 }
