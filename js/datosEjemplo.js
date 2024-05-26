@@ -1,4 +1,31 @@
 /*****************************************************************************************
+ '              boton borrado de local store
+ '.........................................................................................
+ 'Descripcion:
+ '		Borra el contenido de localStorage
+ '		Necesario porque en el servidor de pruebas tenia datos de formularios anteriores
+ '.........................................................................................
+ 'Parametros:
+ '		nunguno
+ *****************************************************************************************/
+document.getElementById('limpiarFormLocalStorage').addEventListener('click', function () {
+        localStorage.clear();
+        console.log('localStorage borrado.');
+    }
+);
+/*****************************************************************************************
+ '              boton carga de datos en  local store
+ '.........................................................................................
+ 'Descripcion:
+ '		Necesario para pruebas
+ '.........................................................................................
+ 'Parametros:
+ '		nunguno
+ *****************************************************************************************/
+document.getElementById('cargarDatosLocalStorage').addEventListener('click', cargarDatosLocalStorage());
+
+
+/*****************************************************************************************
  '		DATOS DE EJEMPLO
  '.........................................................................................
  '  Se agrega un suario con sus dos propiedades
@@ -849,6 +876,108 @@ function cargarDatosLocalStorage() {
         localStorage.setItem(userkey20, userRegister20);
 
         console.log('Grabado', window.localStorage);
+
+        ////////////////////////////////////////////////////////////
+        // PRUEBA
+        ////////////////////////////////////////////////////////////
+
+        // Función para guardar datos en localStorage
+        function saveToLocalStorage(key, data) {
+            localStorage.setItem(key, JSON.stringify(data));
+        }
+
+// Función para cargar datos de localStorage
+        function loadFromLocalStorage(key) {
+            return JSON.parse(localStorage.getItem(key)) || {};
+        }
+
+
+        // 1. Tabla de Usuarios
+        const users = {
+            "luis@1234.com": {
+                "firstName": "Luis",
+                "lastName": "Suarez",
+                "birthDate": "1984-12-25",
+                "password": "1234"
+            },
+            "diana@1234.com": {
+                "firstName": "Diana",
+                "lastName": "Siguenza",
+                "birthDate": "2004-12-25",
+                "password": "1234"
+            }
+        };
+
+
+// 2. Tabla de Propiedades
+        const properties = {
+            "prop1": {
+                "owner": "luis@1234.com",
+                "province": "MANABI",
+                "city": "MANTA",
+                "streetName": "Nicolas",
+                "streetNumber": "195",
+                "areaSize": "100",
+                "hasAc": "SI",
+                "yearBuilt": "2024",
+                "rentPrice": "1500",
+                "dateAvailable": "2024-05-01",
+                "image": "../images/flats/picture_0001.png"
+            },
+            "prop2": {
+                "owner": "luis@1234.com",
+                "province": "PICHINCHA",
+                "city": "QUITO",
+                "streetName": "Burgeus",
+                "streetNumber": "195",
+                "areaSize": "500",
+                "hasAc": "NO",
+                "yearBuilt": "1980",
+                "rentPrice": "300",
+                "dateAvailable": "2024-05-01",
+                "image": "../images/flats/picture_0002.png"
+            },
+            "prop3": {
+                "owner": "diana@1234.com",
+                "province": "PICHINCHA",
+                "city": "QUITO",
+                "streetName": "Nicolas",
+                "streetNumber": "195",
+                "areaSize": "100",
+                "hasAc": "NO",
+                "yearBuilt": "2000",
+                "rentPrice": "500",
+                "dateAvailable": "2024-05-01",
+                "image": "../images/flats/picture_01.png"
+            },
+            "prop4": {
+                "owner": "diana@1234.com",
+                "province": "AZUAY",
+                "city": "CUENCA",
+                "streetName": "Quito",
+                "streetNumber": "195",
+                "areaSize": "100",
+                "hasAc": "NO",
+                "yearBuilt": "1990",
+                "rentPrice": "400",
+                "dateAvailable": "2024-05-01",
+                "image": "../images/flats/picture_01.png"
+            }
+        };
+
+// 3. Tabla de Favoritos
+        const favorites = [
+            {"user": "luis@1234.com", "propertyId": "prop1"},
+            {"user": "luis@1234.com", "propertyId": "prop2"},
+            {"user": "luis@1234.com", "propertyId": "prop3"},
+            {"user": "luis@1234.com", "propertyId": "prop4"},
+            {"user": "diana@1234.com", "propertyId": "prop2"}
+        ];
+
+// Guardar las tablas en localStorage
+        saveToLocalStorage('users', users);
+        saveToLocalStorage('properties', properties);
+        saveToLocalStorage('favorites', favorites);
 
     } else {
         console.log('localStorage tiene elementos almacenados');
