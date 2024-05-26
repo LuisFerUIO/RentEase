@@ -11,9 +11,13 @@ Diana Siguenza
 * {
 	font-family: "JetBrains Mono", monospace;
 }
+
+/* DIV id="main" Solo esta colocado en la pagina index contiene todos los elementos de la pagina*/
 #main{
 	
 }
+
+/* div id="image_index" actualmente vacio pero se podria colocar una imagen sobre los botones */
 #image_index{	
 	display: flex;
 	justify-content: center;
@@ -21,6 +25,8 @@ Diana Siguenza
 #image_index .imagen{
 
 }
+
+/* div id="formIndex" contiene los botones del index.html */
 #formIndex{
 	text-align: center;
 }
@@ -40,23 +46,10 @@ form {
 	
 }
 
-/*botones*/
-/*a.btn {*/
-/*	display: inline-block;*/
-/*	width: 70%;*/
-/*	padding: 1em;*/
-/*	margin-bottom: 10px;*/
-/*	background-color: ghostwhite;*/
-/*	border: solid 1px black;*/
-/*	text-decoration: none;*/
-/*	font-size: 1em;*/
-/*	font-weight: bold;*/
-/*}*/
-
-/*a.btn:hover {*/
-/*	cursor: pointer;*/
-/*	background-color: darkgray;*/
-/*}*/
+/*****************************************************************************************
+ '		APLICA A LOS LINKS CON class="btn"
+ '		Y LOS BOTONES DE FORMULARIOS SIN NECESIDAD DE CLASS ASIGNADA <button></button>
+ *****************************************************************************************/
 label, input, select {
 	display: inline-block;
 	width: 70%;
@@ -68,6 +61,10 @@ label, input, select {
 	padding-top: 20px;
 }
 
+/*****************************************************************************************
+ '		APLICA A LOS LINKS CON class="btn"
+ '		Y LOS BOTONES DE FORMULARIOS SIN NECESIDAD DE CLASS ASIGNADA <button></button>
+ *****************************************************************************************/
 a.btn, button {
 	align-items: center;
 	appearance: none;
@@ -97,23 +94,19 @@ a.btn, button {
 	white-space: nowrap;
 	font-size: 16px;
 }
-
 a.btn:focus, button:focus {
 	box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 }
-
 a.btn:hover, button:hover {
 	box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 	transform: translateY(-2px);
 }
-
 a.btn:active, button:hover {
 	box-shadow: #3c4fe0 0 3px 7px inset;
 	transform: translateY(2px);
 }
-
 /*****************************************************************************************
- '	 Contenedor para que se muestre en columas
+ '	 DIV id="flats" que contiene todos las div pequeños de cada flat
  *****************************************************************************************/
 #flats {
 	display: grid;
@@ -122,7 +115,7 @@ a.btn:active, button:hover {
 	padding: 10px;
 }
 /*****************************************************************************************
- '		HOME DONDE SALE LA TABLA CON LAS PROPIEDADES
+ '	div class="flatsBox" con la foto e informacion de cada flat
  *****************************************************************************************/
 .flatsBox {
 	display: block;
@@ -131,15 +124,14 @@ a.btn:active, button:hover {
 	background-color: whitesmoke;
 	border: 1px solid gray;
 }
-
 .flatsBox li {
 	list-style: none;
 }
-
 .flatsBox img {
 	margin-bottom: 10px;
 }
 
+/* Para quitar la margenes de la cajita check */
 .flatsBox input {
 	display: inline;
 	position: relative;
