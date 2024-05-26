@@ -13,15 +13,36 @@ que el usuario ha creado
 hasta ahora.capacidad de filtrar y ordenar
 Botón para alternar
 marcar/desmarcar como favorito
+
+    Página “All Flats”
+    La página “All flats” contiene una tabla de todos los departamentos que el usuario ha creado
+    hasta ahora.
+    Cada fila de la tabla tendrá:
+    • Todas las propiedades de “flat” como se especifica en la sección Entidades.
+    • Botón para alternar marcar/desmarcar como favorito.
+    Adicionalmente, la tabla va a tener la capacidad de filtrar y ordenar.
+    Campo de opciones de filtro:
+    1. “City” (Ciudad)
+    2. “Price Range” (rango de precio)
+    3. “Area Size Range” (rango de tamaño del área)
+    Ordenar por categoria:
+    1. “City” (ciudad)
+    2. “Price” (precio)
+    3. “Area Size” (tamaño del area)
 </p>
 <h2 id="nameUser"></h2>
 <div><span>Usuario: </span><span id="userKey"></span></div>
-<div id="allFlats">
-    <a class="btn" href="all_flats.html">All Flats</a>
+<div id="menu">
+    <a class="btn" id="home">home</a>
+    <a class="btn" id="new_flat">New Flat</a>
+    <a class="btn" id="updateRegister">Actualizar Mis Datos</a>
 </div>
 <div id="flats"></div>
 
-
+<a class="btn" id="limpiarFormLocalStorage">Borrar datos del LocalStorage</a>
+<a class="btn" id="cargarDatosLocalStorage">Cargar datos en LocalStorage</a>
+<script src="js/datosEjemplo.js"></script>
+<script src="js/menu.js"></script>
 <script src="js/allFlats.js"></script>
 </body>
 </html>

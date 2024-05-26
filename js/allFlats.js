@@ -1,15 +1,15 @@
 /*****************************************************************************************
  '		RECUPERO EL USERKAY POR LA URL
  //  *****************************************************************************************/
-// // Obtener la URL actual
-// const urlParams = new URLSearchParams(window.location.search);
-//
-// // Obtener el valor del parámetro userkey
-// const userkeyurlParams = urlParams.get('userkey');
-// const firstName = urlParams.get('firstName');
-// //imprimo en pantalla
-// document.getElementById('nameUser').innerHTML = firstName;
-// document.getElementById('userKey').innerHTML = userkeyurlParams;
+// Obtener la URL actual
+const urlParams = new URLSearchParams(window.location.search);
+
+// Obtener el valor del parámetro userkey
+const userkeyurlParams = urlParams.get('userkey');
+const firstNameParams = urlParams.get('firstName');
+//imprimo en pantalla
+document.getElementById('nameUser').innerHTML = firstNameParams;
+document.getElementById('userKey').innerHTML = userkeyurlParams;
 /*****************************************************************************************
  '		RECUPERAR FLATS DE TODOS LOS USUARIOS
  *****************************************************************************************/
@@ -100,6 +100,20 @@ for (let key of keys) {
     }
 }
 document.getElementById('flats').innerHTML = content;
+/*****************************************************************************************
+ '                  BOTON update regsitre
+ *****************************************************************************************/
+// Obtener el elemento input
+const btnUpdateRegister = document.getElementById('updateRegister');
+
+// Asociar el manejador de eventos con el evento keypress del input
+btnUpdateRegister.addEventListener('click', function (event) {
+
+    event.preventDefault();
+
+    document.location.href = `update_register.html?userkey=${userkeyurlParams}&firstName=${firstNameParams}`;
+
+});
 
 
 

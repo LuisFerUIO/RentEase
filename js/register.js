@@ -1,20 +1,15 @@
 /*****************************************************************************************
- '              boton borrado de local store
- '.........................................................................................
- 'Descripcion:
- '		Borra el contenido de localStorage
- '		Necesario porque en el servidor de pruebas tenia datos de formularios anteriores
- '.........................................................................................
- 'Parametros:
- '		nunguno
- *****************************************************************************************/
-document.getElementById('limpiarFormLocalStorage').addEventListener('click', function () {
-        localStorage.clear();
-        console.log('localStorage borrado.');
-    }
-);
+ '		RECUPERO EL USERKAY POR LA URL
+ //  *****************************************************************************************/
+// Obtener la URL actual
+const urlParams = new URLSearchParams(window.location.search);
 
-
+// Obtener el valor del parámetro userkey
+const userkeyurlParams = urlParams.get('userkey');
+const firstName = urlParams.get('firstName');
+//imprimo en pantalla
+document.getElementById('nameUser').innerHTML = firstName;
+document.getElementById('userKey').innerHTML = userkeyurlParams;
 /*****************************************************************************************
  '                  VALIDAR INPUT firstName
  *****************************************************************************************/
@@ -139,26 +134,3 @@ function getDataForm(event) {
         document.location.href = 'new_flat.html?userkey=' + userkey + '&firstName=' + firstName;
     }
 }
-
-
-// const elementoForm = document.querySelector('form')
-// elementoForm.addEventListener('submit',getDataForm )
-// function getDataForm (event) {
-//     event.preventDefault()
-//     console.log('formulario completo', elementoForm);
-//
-//     const fromData = new FormData(elementoForm) // event.target
-//     console.log('Está pensado principalmente para enviar datos de formularios', fromData);
-//
-//     const data = Object.fromEntries(fromData)
-//     console.log('transforma una lista de pares con [clave-valor]', data)
-//
-//     console.log(JSON.stringify(data))
-//
-//     const userRegister = JSON.stringify(data)
-//
-//     localStorage.setItem('user', data);
-//     console.log(window.localStorage);
-// }
-
-
