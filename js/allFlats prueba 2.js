@@ -46,7 +46,6 @@ let keys = Object.keys(localStorage);
 // Variable para almacenar el contenido que se va a mostrar en el elemento con ID 'flat'
 let content = '';
 
-
 for (let key of keys) {
     // Obtener el valor asociado a la clave actual y parsearlo como un objeto JSON
     let item = JSON.parse(localStorage.getItem(key));
@@ -57,49 +56,52 @@ for (let key of keys) {
         let flatsContent = item.flats.map(flat => JSON.stringify(flat)).join('<br/>');
 
         // Añadir la información de 'flats' al contenido
-        //content += `Usuario: ${key} - Flats:<br/>${flatsContent}<br/><br/><br/>`;
-        //content += `Usuario: ${key}`;
-
-
-        item.flats.forEach((flat, index) => {
-
-            let flatsBox = '';
-
-            // Convertir el objeto 'flat' a una cadena JSON para fines demostrativos
-            let flatJson = JSON.stringify(flat);
-
-            // Agregar esta cadena JSON a nuestra variable 'flatsContent'
-            // Además, añadir un salto de línea '<br/>' para separar cada flat visualmente en HTML
-            //flatsContent += `Flat ${index + 1}: ${flatJson}<br/>`;
-
-            // También podemos mostrar cómo acceder a propiedades individuales
-            // Por ejemplo, imprimimos la ciudad y el precio de cada flat
-            //content += `Flat ${index + 1}: City - ${flat.city}, Price - $${flat.rentPrice}`;
-
-            flatsBox += `<div class="flatsBox">`;
-            flatsBox += `<li><span class="favorite">${flat.favorite}<span></li>`;
-            if (flat.favorite == 'si') {
-                flatsBox += `<input type="checkbox" id="" value="" checked />`;
-            } else {
-                flatsBox += `<input type="checkbox" id="" value=""/>`;
-            }
-            flatsBox += `<li class="picture"><img height="200px" src="${flat.picture}"></li>`;
-            flatsBox += `<li><span class="userkey">Usuario:<span> ${key}</li>`;
-            flatsBox += `<li><span class="dateRegisterKey">ID:<span>${flat.dateRegisterKey}</li>`;
-            flatsBox += `<li><span class="city">Ciudad:<span>${flat.city}</li>`;
-            flatsBox += `<li><span class="rentPrice">Precio:<span>$${flat.rentPrice}</li>`;
-            flatsBox += `<li><span class="areaSize">Metros2:<span>${flat.areaSize}</li>`;
-            flatsBox += `</div>`;
-            content += flatsBox;
-        });
-
-
+        content += `Usuario: ${key} - Flats:<br/>${flatsContent}<br/><br/><br/>`;
     } else {
         // Si no tiene la propiedad 'flats', agregar un mensaje indicando que no tiene 'flats'
         content += `Usuario: ${key} - No tiene flats<br/><br/><br/>`;
     }
 }
+
+// Asignar el contenido al elemento HTML con ID 'flat'
 document.getElementById('flats').innerHTML = content;
 
+// localStorage.user = JSON.stringify({name: "John"});
+//
+// // en algún momento más tarde
+// let user = JSON.parse( localStorage.user );
+// alert( user.name ); // John
 
 
+// se ha añadido opciones de formato a JSON.stringify para que el objeto se lea mejor
+//alert( JSON.stringify(localStorage, null, 2) );
+
+//verifica su existe
+// hasOwnProperty(key)
+
+
+// Convertir los datos a un objeto JavaScript
+//let datos = JSON.parse(readUser);
+
+// Verificar si la propiedad "flats" existe y es un array
+// let flatsBox;
+// if (Array.isArray(datos.flats)) {
+//     datos.flats.forEach(flat => {
+//
+//         flatsBox += `<div class="flatsBox">`;
+//         flatsBox += `<li class="favorite"><span>Favorito:</span><input type="checkbox" id="favorite" name="favorite" value="second_checkbox"/></li>`;
+//         flatsBox += `<li class="img"><li class="img"> <img height="200px" src="../images/flats/flats_200x200px.jpg"></li>`;
+//         flatsBox += `<li>${flat.dateRegisterKey}</li>`;
+//         flatsBox += `<li>${flat.favorite}</li>`;
+//         flatsBox += `<li>${flat.city}</li>`;
+//         flatsBox += `<li>${flat.rentPrice}</li>`;
+//         flatsBox += `<li>${flat.areaSize}</li>`;
+//         flatsBox += `</div>`;
+//
+//         document.getElementById('flat').innerHTML = flatsBox;
+//
+//         console.log(flat.dateRegisterKey)
+//     });
+// } else {
+//     console.log('error');
+// }
