@@ -40,10 +40,12 @@ form {
 .center{
 	height: 50px;
 	margin-bottom: 5px;
+	background-color: #5adaff;
 }
 
 .center{
 	height: 50px;
+	align-content: center;
 	
 }
 
