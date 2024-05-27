@@ -9,20 +9,27 @@ Diana Siguenza
 //////////////////////////////////////////////
 */
 * {
-	font-family: "JetBrains Mono", monospace;
+	font-family: "verdana";
 }
 #main{
+	margin: 50px;
+	height: 100px;
 	
 }
 #image_index{	
 	display: flex;
 	justify-content: center;
+	height: 300px;
+	margin: 50px;
+
 }
 #image_index .imagen{
+	height: 150px;
 
 }
 #formIndex{
 	text-align: center;
+	background-color: ;
 }
 
 form {
@@ -74,7 +81,9 @@ a.btn, button {
 	background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
 	border: 30px;
 	border-radius: 6px;
+	/*
 	box-sizing: border-box;
+	*/
 	color: #fff;
 	cursor: pointer;
 	display: inline-flex;
@@ -82,7 +91,7 @@ a.btn, button {
 	height: 48px;
 	width: 300px;
 	justify-content: center;
-	line-height: 1;
+	/* line-height: 1;
 	list-style: none;
 	overflow: hidden;
 	padding-left: 16px;
@@ -93,23 +102,29 @@ a.btn, button {
 	transition: box-shadow .15s, transform .15s;
 	user-select: none;
 	-webkit-user-select: none;
-	touch-action: manipulation;
+	touch-action: manipulation; 
+	*/
+
 	white-space: nowrap;
 	font-size: 16px;
 }
 
 a.btn:focus, button:focus {
-	box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+	box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -0px 0 inset;
 }
 
 a.btn:hover, button:hover {
+
+	color: black;
+	/* 
 	box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-	transform: translateY(-2px);
+	transform: translateY(-0px);
+	*/
 }
 
 a.btn:active, button:hover {
 	box-shadow: #3c4fe0 0 3px 7px inset;
-	transform: translateY(2px);
+	transform: translateY(0px);
 }
 
 /*****************************************************************************************
