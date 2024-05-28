@@ -1,4 +1,18 @@
 /*****************************************************************************************
+ '                  BOTON update register id="updateRegister"
+ *****************************************************************************************/
+// Obtener el elemento input
+const btnUpdateRegister = document.getElementById('updateRegister');
+
+// Asociar el manejador de eventos con el evento keypress del input
+btnUpdateRegister.addEventListener('click', function (event) {
+
+    event.preventDefault();
+
+    document.location.href = `update_register.html?userkey=${userkeyurlParams}&firstName=${firstNameParams}`;
+
+});
+/*****************************************************************************************
  '		RECUPERO EL USERKAY POR LA URL
  //  *****************************************************************************************/
 // Obtener la URL actual
@@ -13,33 +27,6 @@ document.getElementById('userKey').innerHTML = userkeyurlParams;
 /*****************************************************************************************
  '		RECUPERAR FLATS DE TODOS LOS USUARIOS
  *****************************************************************************************/
-//console.log('Grabado', window.localStorage);
-
-// for(let i=0; i<localStorage.length; i++) {
-//     let key = localStorage.key(i);
-//     alert(`${key}: ${localStorage.getItem(key)}`);
-// }
-
-//leer datos del usuario segun su userkay
-// let readUser = localStorage.getItem('userkey');
-// console.log("readUser = "+readUser);
-// let userKeys = localStorage.getItem('userkeys');
-// console.log("userKeys = "+ userKeys);
-
-//console.log('localstore = ', window.localStorage);
-
-// let keys = Object.keys(localStorage);
-// for (let key of keys) {
-//
-//     console.log(`${key}: ${localStorage.getItem(key)}`);
-//
-//     let flatsBox = (`${key}: ${localStorage.getItem(key)}`);
-//
-//     document.getElementById('flat').innerHTML += flatsBox;
-//     document.getElementById('flat').innerHTML += '<br/><br/><br/>';
-// }
-console.log(`****************************************`);
-
 // Obtener todas las claves almacenadas en localStorage
 let keys = Object.keys(localStorage);
 
@@ -77,11 +64,11 @@ for (let key of keys) {
             //content += `Flat ${index + 1}: City - ${flat.city}, Price - $${flat.rentPrice}`;
 
             flatsBox += `<div class="flatsBox">`;
-            flatsBox += `<li><span class="favorite">${flat.favorite}<span></li>`;
+            //flatsBox += `<li><span class="favorite">${flat.favorite}<span></li>`;
             if (flat.favorite == 'si') {
-                flatsBox += `<input type="checkbox" id="" value="" checked />`;
+                flatsBox += `<label>Favorito:</label><input type="checkbox" id="" value="" checked />`;
             } else {
-                flatsBox += `<input type="checkbox" id="" value=""/>`;
+                flatsBox += `<label>Favorito:</label><input type="checkbox" id="" value=""/>`;
             }
             flatsBox += `<li class="picture"><img height="200px" src="${flat.picture}"></li>`;
             flatsBox += `<li><span class="userkey">Usuario:<span> ${key}</li>`;
@@ -100,20 +87,6 @@ for (let key of keys) {
     }
 }
 document.getElementById('flats').innerHTML = content;
-/*****************************************************************************************
- '                  BOTON update regsitre
- *****************************************************************************************/
-// Obtener el elemento input
-const btnUpdateRegister = document.getElementById('updateRegister');
-
-// Asociar el manejador de eventos con el evento keypress del input
-btnUpdateRegister.addEventListener('click', function (event) {
-
-    event.preventDefault();
-
-    document.location.href = `update_register.html?userkey=${userkeyurlParams}&firstName=${firstNameParams}`;
-
-});
 
 
 
