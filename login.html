@@ -7,24 +7,17 @@
     <title>Login</title>
 </head>
 <body>
-luis@1234.com</br>
-1234
 <div class="logotipo">
     <div class="imglogotipo"></div>
-    <img height="200px" src="./css/img/logo.png">
+    <!--    <img height="200px" src="./css/img/logo.png">-->
 </div>
+<img alt="" height="300px" src="assets/logo.svg"/>
 <p>Ingresa los datos solicitados</p>
-
 <form id="formLogin" name="formLogin">
     <div>
-        <label>Email</label>
-        <input id="email" name="email" type="text">
-
+        <input id="email" name="email" placeholder="Ejemplo@mail.com" type="text">
         </br>
-
-        <label>Contraseña</label>
-        <input id="password" name="password" type="text">
-
+        <input id="password" name="password" placeholder="Contraseña" type="text">
     </div>
 
     <div>
@@ -32,6 +25,13 @@ luis@1234.com</br>
     </div>
 
 </form>
+
+<div id="btnPruebas">
+    <a class="btn" id="limpiarFormLocalStorage">Borrar LocalStorage</a>
+    <a class="btn" id="cargarDatosLocalStorage">Cargar LocalStorage</a>
+</div>
+
+
 <script src="js/classValidaciones.js"></script>
 <script src="js/login.js"></script>
 </body>

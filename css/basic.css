@@ -9,26 +9,37 @@ Diana Siguenza
 //////////////////////////////////////////////
 */
 * {
-	font-family: "JetBrains Mono", monospace;
+	font-family: "verdana";
 }
 
 /* DIV id="main" Solo esta colocado en la pagina index contiene todos los elementos de la pagina*/
 #main{
-	
+	margin: 50px;
+	/*height: 100px;*/
+
 }
 
 /* div id="image_index" actualmente vacio pero se podria colocar una imagen sobre los botones */
-#image_index{	
+#image_index {
 	display: flex;
 	justify-content: center;
+	height: 300px;
+	margin: 50px;
+
 }
 #image_index .imagen{
+	height: 150px;
 
 }
 
 /* div id="formIndex" contiene los botones del index.html */
 #formIndex{
 	text-align: center;
+	background-color: ;
+}
+
+/* div id="formLogin" contiene los botones del login.html */
+#formLogin {
 }
 
 form {
@@ -39,11 +50,13 @@ form {
 .center{
 	height: 50px;
 	margin-bottom: 5px;
+	background-color: #5adaff;
 }
 
 .center{
 	height: 50px;
-	
+	align-content: center;
+
 }
 
 /*****************************************************************************************
@@ -71,7 +84,9 @@ a.btn, button {
 	background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
 	border: 30px;
 	border-radius: 6px;
+	/*
 	box-sizing: border-box;
+	*/
 	color: #fff;
 	cursor: pointer;
 	display: inline-flex;
@@ -79,7 +94,7 @@ a.btn, button {
 	height: 48px;
 	width: 300px;
 	justify-content: center;
-	line-height: 1;
+	/* line-height: 1;
 	list-style: none;
 	overflow: hidden;
 	padding-left: 16px;
@@ -91,19 +106,26 @@ a.btn, button {
 	user-select: none;
 	-webkit-user-select: none;
 	touch-action: manipulation;
+	*/
+
 	white-space: nowrap;
 	font-size: 16px;
+	text-decoration: none;
 }
 a.btn:focus, button:focus {
-	box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+	box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -0px 0 inset;
 }
 a.btn:hover, button:hover {
+
+	color: black;
+	/*
 	box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-	transform: translateY(-2px);
+	transform: translateY(-0px);
+	*/
 }
 a.btn:active, button:hover {
 	box-shadow: #3c4fe0 0 3px 7px inset;
-	transform: translateY(2px);
+	transform: translateY(0px);
 }
 /*****************************************************************************************
  '	 DIV id="flats" que contiene todos las div pequeños de cada flat
@@ -141,4 +163,16 @@ a.btn:active, button:hover {
 	position: relative;
 	width: auto;
 	margin: 0px;
+}
+
+/*BOTES PARA CARGAR Y BORRAR EL LOCALSTORE*/
+#btnPruebas {
+	position: relative;
+	display: block;
+}
+
+#btnPruebas #limpiarFormLocalStorage, #btnPruebas #cargarDatosLocalStorage {
+	background-color: whitesmoke !important;
+	background-image: none;
+	color: gray;
 }
