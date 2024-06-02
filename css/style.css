@@ -1,34 +1,49 @@
 #register{
-border: 20%;
-margin: 0px;
+margin: 10px;
+
+
 
 }
+
+* {
+	font-family: "verdana";
+	}
+
 #encabezado {
-    display: flex;
+  
 	height: 80px;
 	margin: 0px;
-    align-items: flex-end;
+    /*align-items: flex-end;*/
 }
 
-#atras{
+#image_index{
+	height: 150px;
+	align-items: center;
+
+
+}
+
+.btnAtras{
   
     height: 50px;
     width: 50px;
     align-content: left;
 }
 
-button {
-    size: 50px;
-  }
+img, atras{
+	height: 50px;
+}
+
+
 
 #cuerpo {
-    display: flex;
-	height: 100%;
-	margin-top: 8px;
+   /* display: flex;*/
+	height: 300px;
+	margin-top: 8;
 }
 
 #formIndex{
-	text-align: center;
+	
 	height: auto;
     display: block;
 	padding: 0px;
@@ -46,13 +61,13 @@ label, input, select {
 }
 
 #intermedio {
-    display: flex;
+ 
 	justify-content: center;
 	height: 50px;
 	margin: 0px;
 }
 #pie {
-    display: flex;
+  
 	justify-content: center;
 	height: 100px;
 	margin: 0px;
@@ -64,4 +79,40 @@ h1{
     font-size: 16px;
     text-decoration: rgb(39, 39, 39);
     text-align: left;
+}
+
+a {
+	color: rgb(0, 0, 0); /* Azul */
+	text-decoration: none; /* Quitar el subrayado */
+  }
+
+a.btn, button {
+	align-items: center;
+	appearance: none;
+	background-color: #000000;
+	border: 30px;
+	border-radius: 6px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: "verdana";
+	height: 48px;
+	width: 300px;
+	justify-content: center;
+	white-space: nowrap;
+	font-size: 16px;
+}
+
+a.btn:hover, button:hover {
+	color: rgb(142, 142, 142);
+	
+}
+
+a.btn:active, button:hover {
+	box-shadow: #666666 0 3px 7px inset;
+	transform: translateY(0px);
+}
+
+a.btnOlvidasteContraseña{
+	text-decoration: #000000;
 }

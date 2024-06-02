@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
 </head>
-<body id="register">
+<body>
 
-    <div id="encabezado" style="background-color:red;">
-        <div id="atras">
-        <img src="./assets/atras-02.svg" alt="Atrás" href="./index.html">
-        </div>
+<div id="register">
 
+    <div id="encabezado">
+    
         <div>
-            <button type="btnAtras">
-                <img src="./assets/atras-02.svg" alt="Atrás" href="./index.html">
-              </button>
+            <a class="btnAtras" id="btnAtras" href="./index.html">
+                <img id="atras" src="./assets/atras-02.svg" alt="Atrás">
+            </a>
             </div>
 	</div>
 
-   
-
-    <div id="cuerpo" style="background-color: aqua;">
+    <div id="cuerpo">
         
         <div class="titulo">
         <h1>Crea tu cuenta RENTEASY</br>Ingresa los datos solicitados</h1>
@@ -34,7 +31,6 @@
             <div class="center">
             <form id="formrRegister" method="post" name="formrRegister">
            
-        
             <label for="firstName">Nombre</label>
             <input id="firstName" name="firstName" type="text" placeholder="">
         
@@ -59,20 +55,13 @@
         
     </div>
 
-    <div id="intermedio" style="background-color: rgb(27, 57, 57);">
-        <p>Boton 1</p>
+    <div id="pie">
+        <div class="center">
+            <button>Crear cuenta</button>
+        </div>
     </div>
 
-    <div id="intermedio" style="background-color: rgb(27, 57, 57);">
-        <p>Boton 2</p>
-    </div>
-    <div id="intermedio" style="background-color: rgb(27, 57, 57);">
-        <p>Boton 3</p>
-    </div>
-
-    <div id="pie" style="background-color: blueviolet;">
-        <p>Footer</p>
-    </div>
+</div>
     
 </body>
 </html>
