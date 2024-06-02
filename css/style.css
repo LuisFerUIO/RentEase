@@ -1,0 +1,67 @@
+#register{
+border: 20%;
+margin: 0px;
+
+}
+#encabezado {
+    display: flex;
+	height: 80px;
+	margin: 0px;
+    align-items: flex-end;
+}
+
+#atras{
+  
+    height: 50px;
+    width: 50px;
+    align-content: left;
+}
+
+button {
+    size: 50px;
+  }
+
+#cuerpo {
+    display: flex;
+	height: 100%;
+	margin-top: 8px;
+}
+
+#formIndex{
+	text-align: center;
+	height: auto;
+    display: block;
+	padding: 0px;
+}
+
+label {
+	text-align: left;
+}
+
+label, input, select {
+	display: inline-block;
+	height: 30px;
+	width: 70%;
+	margin: 2px;
+}
+
+#intermedio {
+    display: flex;
+	justify-content: center;
+	height: 50px;
+	margin: 0px;
+}
+#pie {
+    display: flex;
+	justify-content: center;
+	height: 100px;
+	margin: 0px;
+}
+
+h1{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-decoration: rgb(39, 39, 39);
+    text-align: left;
+}
