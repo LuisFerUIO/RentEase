@@ -6,32 +6,31 @@
     <link href="css/basic.css" rel="stylesheet" type="text/css"/>
     <title>Login</title>
 </head>
-<body>
-<div class="logotipo">
-    <div class="imglogotipo"></div>
-    <!--    <img height="200px" src="./css/img/logo.png">-->
+<body class="bodylogin">
+
+<div id="image_index">
+    <img src="./images/iconos/logo.svg" alt="logo" >
 </div>
-<img alt="" height="300px" src="assets/logo.svg"/>
-<p>Ingresa los datos solicitados</p>
-<form id="formLogin" name="formLogin">
-    <div>
-        <input id="email" name="email" placeholder="Ejemplo@mail.com" type="text">
-        </br>
-        <input id="password" name="password" placeholder="Contraseña" type="text">
+
+<div form id="formIndex" name="formIndex">
+    <label>Ingresa los datos solicitados</label>
+    <div class="center">
+        <input id="email" name="email" type="text" placeholder="ejemplo@mail.com">
+    </div>
+</br>
+    <div class="center">  
+        <input id="password" name="password" type="text" placeholder="Contraseña">
     </div>
 
-    <div>
-        <button>Iniciar sesión</button>
-    </div>
+</div>
+</br>
+
+<div class="center">
+    <button>Iniciar sesión</button>
+</div>
+
 
 </form>
-
-<div id="btnPruebas">
-    <a class="btn" id="limpiarFormLocalStorage">Borrar LocalStorage</a>
-    <a class="btn" id="cargarDatosLocalStorage">Cargar LocalStorage</a>
-</div>
-
-
 <script src="js/classValidaciones.js"></script>
 <script src="js/login.js"></script>
 </body>
