@@ -9,7 +9,7 @@ const inputEmail = document.getElementById('email');
 
 // Asociar el manejador de eventos con el evento keypress del input
 inputEmail.addEventListener('focusout', function (event) {
-    let mensaje = 'ERROR';
+    let mensaje = '';
     let mitexto = inputEmail;
     //let mitexto = inputEmail.value ;
 

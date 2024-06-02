@@ -16,35 +16,47 @@ Birth Date
 </head>
 <body>
 
-<h1>Registrate</h1>
-<form id="formrRegister" method="post" name="formrRegister">
+    <div id="image_index" style="background-color: bisque;">
+        <a class="btnAtras" img src="./assets/atras-02.svg" alt="Atrás" href="index.html" >
+    </div>
+    <div id="image_index">
+        <h1>Crea tu cuenta RENTEASY</h1>
+        </br>
+        <h1>Ingresa los datos solicitados</h1>
+    </div>
 
-    <label for="email">Email</label>
-    <input id="email" name="email" type="text">
+<div id="formIndex" style="background-color: rgb(189, 255, 127);">
 
-    <label for="firstName">First Name</label>
-    <input id="firstName" name="firstName" type="text">
+    <div class="center">
+    <form id="formrRegister" method="post" name="formrRegister">
+   
 
-    <label for="lastName">Last Name</label>
+    <label for="firstName">Nombre</label>
+    <input id="firstName" name="firstName" type="text" placeholder="">
+
+    <label for="lastName">Apellido</label>
     <input id="lastName" name="lastName" type="text">
 
-    <label for="birthDate">Birth Date</label>
+    <label for="email">email</label>
+    <input id="email" name="email" type="text">
+
+    <label for="birthDate">Fecha de nacimiento</label>
     <input id="birthDate" max="2010-01-01" min="1900-01-01" name="birthDate" type="date" value=""/>
 
-    <label for="password">Password:</label>
+    <label for="password">Contraseña</label>
     <input id="password" name="password" type="password">
 
-    <label for="passwordConfirmation">passwordConfirmation:</label>
+    <label for="passwordConfirmation">Confirma tu contraseña</label>
     <input id="passwordConfirmation" name="passwordConfirmation" type="password">
 
     <input id="flats" name="flats" type="hidden">
 
-    <div id="contenedor_button_form">
+</div>
+
+<div id="futher" style="background-color: aqua;">
     <button>Enviar</button>
     </div>
 </form>
-<a class="btn" href="new_flat.html">Registrar Propiedad/Flat</a>
-
 <a class="btn" id="limpiarFormLocalStorage">Boton borra todo el LocalStorage para pruebas </a>
 
 <script src="js/classValidaciones.js"></script>
