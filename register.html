@@ -7,45 +7,63 @@ Last Name
 Birth Date 
 -->
 
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Register</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="css/basic.css" rel="stylesheet" type="text/css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="./css/style.css" rel="stylesheet" type="text/css" />
+<title>Document</title>
 </head>
 <body>
 
-<h1>Registrate</h1>
-<form id="formrRegister" method="post" name="formrRegister">
+<div id="register">
 
-    <label for="email">Email</label>
-    <input id="email" name="email" type="text">
+<div id="encabezado">
 
-    <label for="firstName">First Name</label>
-    <input id="firstName" name="firstName" type="text">
+    <div>
+        <a class="btnAtras" id="btnAtras" href="./index.html">
+            <img id="atras" src="./assets/atras-02.svg" alt="Atrás">
+        </a>
+        </div>
+</div>
 
-    <label for="lastName">Last Name</label>
-    <input id="lastName" name="lastName" type="text">
-
-    <label for="birthDate">Birth Date</label>
-    <input id="birthDate" max="2010-01-01" min="1900-01-01" name="birthDate" type="date" value=""/>
-
-    <label for="password">Password:</label>
-    <input id="password" name="password" type="password">
-
-    <label for="passwordConfirmation">passwordConfirmation:</label>
-    <input id="passwordConfirmation" name="passwordConfirmation" type="password">
-
-    <input id="flats" name="flats" type="hidden">
-
-    <div id="contenedor_button_form">
-    <button>Enviar</button>
+<div id="cuerpo">
+    
+    <div class="titulo">
+    <h1>Crea tu cuenta RENTEASY</br>Ingresa los datos solicitados</h1>
     </div>
-</form>
-<a class="btn" href="new_flat.html">Registrar Propiedad/Flat</a>
 
-<a class="btn" id="limpiarFormLocalStorage">Boton borra todo el LocalStorage para pruebas </a>
+
+    <div id="formIndex">
+
+        <div class="center">
+        <form id="formrRegister" method="post" name="formrRegister">
+       
+     
+        <input id="firstName" name="firstName" type="text" placeholder="Nombre">
+
+        <input id="lastName" name="lastName" type="text" placeholder="Apellido">
+    
+        <input id="email" name="email" type="text" placeholder="email">
+    
+        <input id="birthDate" max="2010-01-01" min="1900-01-01" name="birthDate" type="date" value="" placeholder="Fecha de nacimiento"/>
+    
+        <input id="password" name="password" type="password" placeholder="Contraseña">
+    
+        <input id="passwordConfirmation" name="passwordConfirmation" type="password" placeholder="Confirma tu constraseña">
+    
+        <input id="flats" name="flats" type="hidden">
+    
+    </div>
+    
+</div>
+</div>
+</form>
+
+<div id="pie">
+    <div class="center">
+        <button>Crear cuenta</button>
+    </div>
+</div>
+<a class="btn" id="limpiarFormLocalStorage">Borrar LocalStorage</a>
 
 <script src="js/classValidaciones.js"></script>
 <script src="js/classGuardar.js"></script>

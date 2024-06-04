@@ -8,38 +8,47 @@ Diana Siguenza
 
 //////////////////////////////////////////////
 */
+
+
+.bodyindex {
+	background: url(../assets/pexelswithe.jpg) no-repeat center scroll;
+	opacity: 1; /* Valor de opacidad (entre 0 y 1) */
+	}
+
+.bodyindex input {
+	height: 80px;
+	}
+
+.bodylogin {
+background-color: #fff;
+text-align: center;
+}
+  
 * {
-	font-family: "verdana";
+font-family: "verdana";
 }
 
-/* DIV id="main" Solo esta colocado en la pagina index contiene todos los elementos de la pagina*/
 #main{
 	margin: 50px;
-	/*height: 100px;*/
-
+	height: 100px;
+	background-color: black;	
 }
 
-/* div id="image_index" actualmente vacio pero se podria colocar una imagen sobre los botones */
-#image_index {
+#image_index{	
 	display: flex;
 	justify-content: center;
 	height: 300px;
 	margin: 50px;
-
 }
+
 #image_index .imagen{
 	height: 150px;
 
 }
 
-/* div id="formIndex" contiene los botones del index.html */
 #formIndex{
 	text-align: center;
-	background-color: ;
-}
-
-/* div id="formLogin" contiene los botones del login.html */
-#formLogin {
+	height: auto;
 }
 
 form {
@@ -47,88 +56,73 @@ form {
 	padding: 0px;
 }
 
+#formLogin {
+	height: 300px;
+}
+
+
 .center{
 	height: 50px;
 	margin-bottom: 5px;
-	background-color: #5adaff;
-}
-
-.center{
-	height: 50px;
 	align-content: center;
-
+	
 }
 
-/*****************************************************************************************
- '		APLICA A LOS LINKS CON class="btn"
- '		Y LOS BOTONES DE FORMULARIOS SIN NECESIDAD DE CLASS ASIGNADA <button></button>
- *****************************************************************************************/
+
+label {
+	text-align: left;
+}
+
 label, input, select {
 	display: inline-block;
+	height: 30px;
 	width: 70%;
-	margin: 10px 10px 0 10px;
+	margin: 2px;
 }
 
 #contenedor_button_form {
 	position: relative;
-	padding-top: 20px;
+	padding-top: 0px;
 }
 
-/*****************************************************************************************
- '		APLICA A LOS LINKS CON class="btn"
- '		Y LOS BOTONES DE FORMULARIOS SIN NECESIDAD DE CLASS ASIGNADA <button></button>
- *****************************************************************************************/
+a {
+	color: rgb(0, 0, 0); /* Azul */
+	text-decoration: none; /* Quitar el subrayado */
+  }
+
 a.btn, button {
 	align-items: center;
 	appearance: none;
-	background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+	background-color: #000000;
 	border: 30px;
 	border-radius: 6px;
-	/*
-	box-sizing: border-box;
-	*/
 	color: #fff;
 	cursor: pointer;
 	display: inline-flex;
-	font-family: "JetBrains Mono", monospace;
+	font-family: "verdana";
 	height: 48px;
 	width: 300px;
 	justify-content: center;
-	/* line-height: 1;
-	list-style: none;
-	overflow: hidden;
-	padding-left: 16px;
-	padding-right: 16px;
-	position: relative;
-	text-align: left;
-	text-decoration: none;
-	transition: box-shadow .15s, transform .15s;
-	user-select: none;
-	-webkit-user-select: none;
-	touch-action: manipulation;
-	*/
-
 	white-space: nowrap;
 	font-size: 16px;
-	text-decoration: none;
 }
-a.btn:focus, button:focus {
-	box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -0px 0 inset;
-}
-a.btn:hover, button:hover {
 
-	color: black;
-	/*
-	box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-	transform: translateY(-0px);
-	*/
+a.btn:hover, button:hover {
+	color: rgb(142, 142, 142);
+	
 }
+
 a.btn:active, button:hover {
-	box-shadow: #3c4fe0 0 3px 7px inset;
+	box-shadow: #666666 0 3px 7px inset;
 	transform: translateY(0px);
 }
+
+a.btnOlvidasteContraseña{
+	text-decoration: #000000;
+}
+
 /*****************************************************************************************
- '	 DIV id="flats" que contiene todos las div pequeños de cada flat
+ '	 Contenedor para que se muestre en columas
  *****************************************************************************************/
 #flats {
 	display: grid;
@@ -137,7 +131,7 @@ a.btn:active, button:hover {
 	padding: 10px;
 }
 /*****************************************************************************************
- '	div class="flatsBox" con la foto e informacion de cada flat
+ '		HOME DONDE SALE LA TABLA CON LAS PROPIEDADES
  *****************************************************************************************/
 .flatsBox {
 	display: block;
@@ -147,17 +141,14 @@ a.btn:active, button:hover {
 	border: 1px solid gray;
 }
 
-/* cada dato que se muestra del flat esta contenido en un <li> </li>*/
 .flatsBox li {
 	list-style: none;
 }
 
-/* apunta a la imagen/png del flat*/
 .flatsBox img {
 	margin-bottom: 10px;
 }
 
-/* Para quitar la margenes de la cajita check */
 .flatsBox input {
 	display: inline;
 	position: relative;
@@ -165,14 +156,11 @@ a.btn:active, button:hover {
 	margin: 0px;
 }
 
-/*BOTES PARA CARGAR Y BORRAR EL LOCALSTORE*/
-#btnPruebas {
-	position: relative;
-	display: block;
+.imglogotipo{
+	height: 150px;
+	align-content: center;
 }
-
-#btnPruebas #limpiarFormLocalStorage, #btnPruebas #cargarDatosLocalStorage {
-	background-color: whitesmoke !important;
-	background-image: none;
-	color: gray;
+img.imglogotipo{
+	margin: auto;
+	width: 200px;
 }

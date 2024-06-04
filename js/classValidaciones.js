@@ -148,7 +148,7 @@ class classValidaciones {
 
         if (!perfect) {
             //alert('\nEl e-mail ' + mensaje + '\'' + campo.value + '\' no es inv\xE0lido.\n\nPor favor corrija la informaci\xF3n.');
-            alert('\nEl e-mail ' + mensaje + ' \'' + campo.value + '\' no es válido.\n\nPor favor corrija la información.');
+            alert('\nEl e-mail ingresado ' + mensaje + ' \'' + campo.value + '\' no es correcto.\n\nPor favor inténtalo nuevamente.');
             // document.form_sorteo.email.focus();
 
             return false;
