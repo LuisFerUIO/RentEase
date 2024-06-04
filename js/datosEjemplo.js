@@ -22,7 +22,7 @@ document.getElementById('limpiarFormLocalStorage').addEventListener('click', fun
  'Parametros:
  '		nunguno
  *****************************************************************************************/
-document.getElementById('cargarDatosLocalStorage').addEventListener('click', cargarDatosLocalStorage());
+document.getElementById('cargarDatosLocalStorage').addEventListener('click', cargarDatosLocalStorage);
 
 
 /*****************************************************************************************
@@ -143,7 +143,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData3 = {
         "userkey": "mike@abcd.com",
         "firstName": "Mike",
@@ -178,7 +177,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData4 = {
         "userkey": "jane@abcd.com",
         "firstName": "Jane",
@@ -213,7 +211,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData5 = {
         "userkey": "paul@abcd.com",
         "firstName": "Paul",
@@ -248,7 +245,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData6 = {
         "userkey": "emma@abcd.com",
         "firstName": "Emma",
@@ -283,7 +279,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData7 = {
         "userkey": "lucy@abcd.com",
         "firstName": "Lucy",
@@ -318,7 +313,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData8 = {
         "userkey": "max@abcd.com",
         "firstName": "Max",
@@ -353,7 +347,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData9 = {
         "userkey": "nick@abcd.com",
         "firstName": "Nick",
@@ -388,7 +381,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData10 = {
         "userkey": "olga@abcd.com",
         "firstName": "Olga",
@@ -423,7 +415,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData11 = {
         "userkey": "chris@abcd.com",
         "firstName": "Chris",
@@ -458,7 +449,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData12 = {
         "userkey": "sam@abcd.com",
         "firstName": "Sam",
@@ -493,7 +483,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData13 = {
         "userkey": "dave@abcd.com",
         "firstName": "Dave",
@@ -528,7 +517,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData14 = {
         "userkey": "jake@abcd.com",
         "firstName": "Jake",
@@ -563,7 +551,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData15 = {
         "userkey": "anna@abcd.com",
         "firstName": "Anna",
@@ -598,7 +585,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData16 = {
         "userkey": "nina@abcd.com",
         "firstName": "Nina",
@@ -633,7 +619,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData17 = {
         "userkey": "alex@abcd.com",
         "firstName": "Alex",
@@ -668,7 +653,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData18 = {
         "userkey": "john@abcd.com",
         "firstName": "John",
@@ -704,7 +688,6 @@ function cargarDatosLocalStorage() {
 
         }]
     };
-
     const objetData19 = {
         "userkey": "emma@abcd.com",
         "firstName": "Emma",
@@ -739,7 +722,6 @@ function cargarDatosLocalStorage() {
             "picture": "../images/flats/picture_01.png"
         }]
     };
-
     const objetData20 = {
         "userkey": "mary@abcd.com",
         "firstName": "Mary",
@@ -828,7 +810,7 @@ function cargarDatosLocalStorage() {
 
     if (localStorage.length === 0) {
 
-        console.log('localStorage está vacío');
+        console.log('localStorage está vacío - procedo a grabar');
 
         const userRegister = JSON.stringify(objetData);
         const userRegister1 = JSON.stringify(objetData1);
@@ -877,9 +859,49 @@ function cargarDatosLocalStorage() {
 
         console.log('Grabado', window.localStorage);
 
-        ////////////////////////////////////////////////////////////
-        // PRUEBA
-        ////////////////////////////////////////////////////////////
+    } else {
+        console.log('localStorage tiene elementos almacenados');
+    }
+}
+
+/*****************************************************************************************
+ '		DATOS DE EJEMPLO LOCAL STORE NO-RELACIONAL
+ '.........................................................................................
+ '  Se agrega un suario con sus dos propiedades
+ '  Estos datos se cargan al entrar en la pagina index por primera vez
+ '
+ ' pront para 20 ejemplos
+ ' usando el codigo a continuacion dame 20 objectData adicionales el pasword que sea el mismo. los emails que sean inventados con maximo 4 caracteres en nombre y dominio.
+ ' FirsteName y Lasteme invetados de igual manera el resto de propiedasdes. Las provincias si deben ser de Ecuador y la ciudad que corresponda a la provinvia.
+ ' Quiero que me des el texto listo para copiar no un script para generar.
+ *****************************************************************************************/
+/*****************************************************************************************
+ '              boton carga de datos en  local store
+ '.........................................................................................
+ 'Descripcion:
+ '		Necesario para pruebas
+ '.........................................................................................
+ 'Parametros:
+ '		nunguno
+ *****************************************************************************************/
+document.getElementById('cargarDatosLocalStorageNoRelacional').addEventListener('click', cargarDatosLocalStorageNoRelacional);
+
+function cargarDatosLocalStorageNoRelacional() {
+
+// const firstName = objetData.firstName;
+// console.log('userkey = ' + userkey + ' firstName = ' + firstName);
+
+// elimino del objeto porque lo usare de key asi no puede haber dos iguales
+// delete objetData.userkey;
+
+// este campo es solo para la validacion se debe borrar
+//delete objetData.passwordConfirmation;
+
+//console.log(objetData);
+
+    if (localStorage.length === 0) {
+
+        console.log('localStorage está vacío procedo a grabar NoRelacional');
 
         // Función para guardar datos en localStorage
         function saveToLocalStorage(key, data) {
@@ -980,7 +1002,7 @@ function cargarDatosLocalStorage() {
         saveToLocalStorage('favorites', favorites);
 
     } else {
-        console.log('localStorage tiene elementos almacenados');
+        console.log('localStorage tiene elementos almacenados -- No Relacional --');
     }
 
 }

@@ -69,29 +69,4 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// var user = {
-//         "login":"",
-//         "contraseña":"",
-//         profile:{
-//             id: 0,
-//             nameProfile:'',
-//         }
-// }
-// var procesarClic = function(){
-//     var user1 = document.getElementById('Email').value;
-//     var contraseña1 = document.getElementById('contraseña').value;
-// if(contraseña1 == "1234"){
-//     user.profile.nameProfile="admin";
-//     user.profile.id=5;
-//     user.login = user1;
-//     user.contraseña = contraseña1;
-//     document.getElementById('profile').style = "display:block";
-//     document.getElementById('autenticación').style = "display:none";
-//     document.getElementById('mensaje').innerHTML = "Bienvenid@" + user.login + "Usted es el usuario con el rol:" +user.profile.nameProfile;
-// }
-// else{
-// alert('La clave ingresada es inválida. Inténtalo nuevamente.');
-// }
-// }
-//
 
