@@ -56,7 +56,7 @@ function cargarDatosLocalStorage() {
                 "yearBuilt": "2024",
                 "rentPrice": "1500",
                 "dateAvailable": "2024-05-01",
-                "picture": "../images/flats/picture_0002.png"
+                "picture": "images/flats/picture_0002.png"
             },
                 {
                     "dateRegisterKey": "20240522081818",
@@ -70,7 +70,7 @@ function cargarDatosLocalStorage() {
                     "yearBuilt": "1980",
                     "rentPrice": "300",
                     "dateAvailable": "2024-05-01",
-                    "picture": "../images/flats/picture_0001.png"
+                    "picture": "images/flats/picture_0001.png"
                 }],
     };
     const objetData1 = {
@@ -92,7 +92,7 @@ function cargarDatosLocalStorage() {
                 "yearBuilt": "2000",
                 "rentPrice": "500",
                 "dateAvailable": "2024-05-01",
-                "picture": "../images/flats/picture_01.png"
+                "picture": "images/flats/picture_01.png"
             },
                 {
                     "dateRegisterKey": "20240522082420",
@@ -106,7 +106,7 @@ function cargarDatosLocalStorage() {
                     "yearBuilt": "1990",
                     "rentPrice": "400",
                     "dateAvailable": "2024-05-01",
-                    "picture": "../images/flats/picture_01.png"
+                    "picture": "images/flats/picture_01.png"
                 }],
     };
     const objetData2 = {
@@ -127,7 +127,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2005",
             "rentPrice": "1200",
             "dateAvailable": "2024-06-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "no",
@@ -140,7 +140,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2010",
             "rentPrice": "800",
             "dateAvailable": "2024-07-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData3 = {
@@ -161,7 +161,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2008",
             "rentPrice": "700",
             "dateAvailable": "2024-08-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "no",
@@ -174,7 +174,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2015",
             "rentPrice": "900",
             "dateAvailable": "2024-09-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData4 = {
@@ -195,7 +195,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2000",
             "rentPrice": "1000",
             "dateAvailable": "2024-10-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "si",
@@ -208,7 +208,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2012",
             "rentPrice": "600",
             "dateAvailable": "2024-11-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData5 = {
@@ -229,7 +229,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2019",
             "rentPrice": "750",
             "dateAvailable": "2024-12-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "si",
@@ -242,7 +242,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2018",
             "rentPrice": "650",
             "dateAvailable": "2024-01-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData6 = {
@@ -263,7 +263,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2020",
             "rentPrice": "1100",
             "dateAvailable": "2024-02-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "no",
@@ -276,7 +276,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2011",
             "rentPrice": "550",
             "dateAvailable": "2024-03-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData7 = {
@@ -297,7 +297,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2017",
             "rentPrice": "1150",
             "dateAvailable": "2024-04-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "si",
@@ -310,7 +310,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2021",
             "rentPrice": "850",
             "dateAvailable": "2024-05-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData8 = {
@@ -331,7 +331,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2014",
             "rentPrice": "650",
             "dateAvailable": "2024-06-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "no",
@@ -344,7 +344,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2022",
             "rentPrice": "900",
             "dateAvailable": "2024-07-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData9 = {
@@ -365,7 +365,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2016",
             "rentPrice": "800",
             "dateAvailable": "2024-08-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "si",
@@ -378,7 +378,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2013",
             "rentPrice": "850",
             "dateAvailable": "2024-09-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData10 = {
@@ -399,7 +399,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2009",
             "rentPrice": "950",
             "dateAvailable": "2024-10-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "no",
@@ -412,7 +412,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2018",
             "rentPrice": "1050",
             "dateAvailable": "2024-11-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData11 = {
@@ -433,7 +433,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2007",
             "rentPrice": "1250",
             "dateAvailable": "2024-12-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "si",
@@ -446,7 +446,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2023",
             "rentPrice": "1350",
             "dateAvailable": "2024-01-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData12 = {
@@ -467,7 +467,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2015",
             "rentPrice": "700",
             "dateAvailable": "2024-02-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "no",
@@ -480,7 +480,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2021",
             "rentPrice": "950",
             "dateAvailable": "2024-03-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData13 = {
@@ -501,7 +501,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2010",
             "rentPrice": "850",
             "dateAvailable": "2024-04-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "si",
@@ -514,7 +514,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2019",
             "rentPrice": "950",
             "dateAvailable": "2024-05-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData14 = {
@@ -535,7 +535,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2022",
             "rentPrice": "1100",
             "dateAvailable": "2024-06-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "no",
@@ -548,7 +548,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2021",
             "rentPrice": "1200",
             "dateAvailable": "2024-07-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData15 = {
@@ -569,7 +569,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2020",
             "rentPrice": "1300",
             "dateAvailable": "2024-08-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "si",
@@ -582,7 +582,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2018",
             "rentPrice": "1400",
             "dateAvailable": "2024-09-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData16 = {
@@ -603,7 +603,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2017",
             "rentPrice": "750",
             "dateAvailable": "2024-10-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "no",
@@ -616,7 +616,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2021",
             "rentPrice": "850",
             "dateAvailable": "2024-11-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData17 = {
@@ -637,7 +637,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2016",
             "rentPrice": "950",
             "dateAvailable": "2024-12-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "si",
@@ -650,7 +650,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2019",
             "rentPrice": "1150",
             "dateAvailable": "2024-01-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData18 = {
@@ -671,7 +671,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2020",
             "rentPrice": "1000",
             "dateAvailable": "2024-02-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "no",
@@ -684,7 +684,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2021",
             "rentPrice": "1100",
             "dateAvailable": "2024-03-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
 
         }]
     };
@@ -706,7 +706,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2018",
             "rentPrice": "1350",
             "dateAvailable": "2024-04-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "si",
@@ -719,7 +719,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2022",
             "rentPrice": "1450",
             "dateAvailable": "2024-05-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
     const objetData20 = {
@@ -740,7 +740,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2019",
             "rentPrice": "1200",
             "dateAvailable": "2024-06-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
             "dateRegisterKey": "20240522082420",
             "favorite": "no",
@@ -753,7 +753,7 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2021",
             "rentPrice": "1300",
             "dateAvailable": "2024-07-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }]
     };
 
@@ -944,7 +944,7 @@ function cargarDatosLocalStorageNoRelacional() {
                 "yearBuilt": "2024",
                 "rentPrice": "1500",
                 "dateAvailable": "2024-05-01",
-                "image": "../images/flats/picture_0001.png"
+                "image": "images/flats/picture_0001.png"
             },
             "prop2": {
                 "owner": "luis@1234.com",
@@ -957,7 +957,7 @@ function cargarDatosLocalStorageNoRelacional() {
                 "yearBuilt": "1980",
                 "rentPrice": "300",
                 "dateAvailable": "2024-05-01",
-                "image": "../images/flats/picture_0002.png"
+                "image": "images/flats/picture_0002.png"
             },
             "prop3": {
                 "owner": "diana@1234.com",
@@ -970,7 +970,7 @@ function cargarDatosLocalStorageNoRelacional() {
                 "yearBuilt": "2000",
                 "rentPrice": "500",
                 "dateAvailable": "2024-05-01",
-                "image": "../images/flats/picture_01.png"
+                "image": "images/flats/picture_01.png"
             },
             "prop4": {
                 "owner": "diana@1234.com",
@@ -983,7 +983,7 @@ function cargarDatosLocalStorageNoRelacional() {
                 "yearBuilt": "1990",
                 "rentPrice": "400",
                 "dateAvailable": "2024-05-01",
-                "image": "../images/flats/picture_01.png"
+                "image": "images/flats/picture_01.png"
             }
         };
 
