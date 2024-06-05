@@ -164,3 +164,26 @@ img.imglogotipo{
 	margin: auto;
 	width: 200px;
 }
+
+/*****************************************************************************************
+ '		FOOTER Y MENU FOOTER
+ *****************************************************************************************/
+#footer {
+	position: fixed;
+	bottom: 0;
+	background-color: white;
+	width: 100%;
+	align-content: center;
+}
+
+#footerMenu {
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*aplica a todos lo elementos img dentro de #footerMenu*/
+#footerMenu img {
+	/*/fill: black !important;*/
+	/*opacity: 1;*/
+}

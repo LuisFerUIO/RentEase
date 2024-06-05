@@ -1,18 +1,4 @@
 /*****************************************************************************************
- '                  BOTON update register id="updateRegister"
- *****************************************************************************************/
-// Obtener el elemento input
-const btnUpdateRegister = document.getElementById('updateRegister');
-
-// Asociar el manejador de eventos con el evento keypress del input
-btnUpdateRegister.addEventListener('click', function (event) {
-
-    event.preventDefault();
-
-    document.location.href = `update_register.html?userkey=${userkeyurlParams}&firstName=${firstNameParams}`;
-
-});
-/*****************************************************************************************
  '		RECUPERO EL USERKAY POR LA URL
  //  *****************************************************************************************/
 // Obtener la URL actual
@@ -89,4 +75,51 @@ for (let key of keys) {
 document.getElementById('flats').innerHTML = content;
 
 
+/*****************************************************************************************
+ '                  BOTON update register id="updateRegister"
+ *****************************************************************************************/
+document.addEventListener('DOMContentLoaded', function () {
+// Obtener el elemento input
+    const btnUpdateRegister = document.getElementById('updateRegister');
 
+// Asociar el manejador de eventos con el evento keypress del input
+    btnUpdateRegister.addEventListener('click', function (event) {
+
+        event.preventDefault();
+
+        document.location.href = `update_register.html?userkey=${userkeyurlParams}&firstName=${firstNameParams}`;
+
+    });
+});
+/*****************************************************************************************
+ '                  BOTON home.index id="home"
+ *****************************************************************************************/
+document.addEventListener('DOMContentLoaded', function () {
+// Obtener el elemento input
+    const btnHome = document.getElementById('home');
+
+// Asociar el manejador de eventos con el evento keypress del input
+    btnHome.addEventListener('click', function (event) {
+
+        event.preventDefault();
+
+        document.location.href = `home.html?userkey=${userkeyurlParams}&firstName=${firstNameParams}`;
+
+    });
+});
+/*****************************************************************************************
+ '                  BOTON nuevo flat pasar datos del usuario
+ *****************************************************************************************/
+document.addEventListener('DOMContentLoaded', function () {
+// Obtener el elemento input
+    const btnNewFlat = document.getElementById('new_flat');
+
+// Asociar el manejador de eventos con el evento keypress del input
+    btnNewFlat.addEventListener('click', function (event) {
+
+        event.preventDefault();
+
+        document.location.href = `new_flat.html?userkey=${userkeyurlParams}&firstName=${firstNameParams}`;
+
+    });
+});
