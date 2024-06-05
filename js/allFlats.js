@@ -56,7 +56,7 @@ for (let key of keys) {
             } else {
                 flatsBox += `<label>Favorito:</label><input type="checkbox" id="" value=""/>`;
             }
-            flatsBox += `<li class="picture"><img height="200px" src="${flat.picture}"></li>`;
+            flatsBox += `<li class="picture"><img src="${flat.picture}"></li>`;
             flatsBox += `<li><span class="userkey">Usuario:<span> ${key}</li>`;
             flatsBox += `<li><span class="dateRegisterKey">ID:<span>${flat.dateRegisterKey}</li>`;
             flatsBox += `<li><span class="city">Ciudad:<span>${flat.city}</li>`;
@@ -75,22 +75,18 @@ for (let key of keys) {
 document.getElementById('flats').innerHTML = content;
 
 
-/*****************************************************************************************
- '                  BOTON update register id="updateRegister"
- *****************************************************************************************/
-document.addEventListener('DOMContentLoaded', function () {
-// Obtener el elemento input
-    const btnUpdateRegister = document.getElementById('updateRegister');
-
-// Asociar el manejador de eventos con el evento keypress del input
-    btnUpdateRegister.addEventListener('click', function (event) {
-
-        event.preventDefault();
-
-        document.location.href = `update_register.html?userkey=${userkeyurlParams}&firstName=${firstNameParams}`;
-
-    });
-});
+// /*****************************************************************************************
+//  '                  BOTON update register id="updateRegister"
+//  *****************************************************************************************/
+// document.addEventListener('DOMContentLoaded', function () {
+// // Obtener el elemento input
+//     const btnUpdateRegister = document.getElementById('updateRegister');
+// // Asociar el manejador de eventos con el evento keypress del input
+//     btnUpdateRegister.addEventListener('click', function (event) {
+//         event.preventDefault();
+//         document.location.href = `update_register.html?userkey=${userkeyurlParams}&firstName=${firstNameParams}`;
+//     });
+// });
 /*****************************************************************************************
  '                  BOTON home.index id="home"
  *****************************************************************************************/

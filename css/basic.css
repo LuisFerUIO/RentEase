@@ -90,34 +90,33 @@ a {
 	text-decoration: none; /* Quitar el subrayado */
   }
 
-a.btn, button {
+.btn, button {
 	align-items: center;
 	appearance: none;
 	background-color: #000000;
-	border: 30px;
 	border-radius: 6px;
 	color: #fff;
 	cursor: pointer;
 	display: inline-flex;
 	font-family: "verdana";
 	height: 48px;
-	width: 300px;
+	width: 100%;
 	justify-content: center;
 	white-space: nowrap;
 	font-size: 16px;
 }
 
-a.btn:hover, button:hover {
+.btn:hover, button:hover {
 	color: rgb(142, 142, 142);
 	
 }
 
-a.btn:active, button:hover {
+.btn:active, button:hover {
 	box-shadow: #666666 0 3px 7px inset;
 	transform: translateY(0px);
 }
 
-a.btnOlvidasteContraseña{
+.btnOlvidasteContraseña {
 	text-decoration: #000000;
 }
 
@@ -126,15 +125,20 @@ a.btnOlvidasteContraseña{
  *****************************************************************************************/
 #flats {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 10px;
-	padding: 10px;
+	gap: 1rem;
+	grid-auto-columns: 22rem;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+#flats .flatsBox img {
+	width: 100%;
+	height: auto;
 }
 /*****************************************************************************************
  '		HOME DONDE SALE LA TABLA CON LAS PROPIEDADES
  *****************************************************************************************/
 .flatsBox {
-	display: block;
+	/*display: block;*/
 	width: 80%;
 	margin: 10px;
 	background-color: whitesmoke;
@@ -156,13 +160,14 @@ a.btnOlvidasteContraseña{
 	margin: 0px;
 }
 
+
 .imglogotipo{
 	height: 150px;
 	align-content: center;
 }
 img.imglogotipo{
 	margin: auto;
-	width: 200px;
+	/* width: 200px;*/
 }
 
 /*****************************************************************************************
@@ -177,13 +182,9 @@ img.imglogotipo{
 }
 
 #footerMenu {
+	min-width: 375px;
 	width: fit-content;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-/*aplica a todos lo elementos img dentro de #footerMenu*/
-#footerMenu img {
-	/*/fill: black !important;*/
-	/*opacity: 1;*/
-}
