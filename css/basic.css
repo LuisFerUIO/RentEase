@@ -182,9 +182,14 @@ img.imglogotipo{
 }
 
 #footerMenu {
-	min-width: 375px;
+	
 	width: fit-content;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 25px;
+	align-content: center;
 }
 
+#footerMenu a {
+	margin: 0 15px 0 15px;
+}
