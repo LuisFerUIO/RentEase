@@ -52,9 +52,11 @@ for (let key of keys) {
             flatsBox += `<div class="flatsBox">`;
             //flatsBox += `<li><span class="favorite">${flat.favorite}<span></li>`;
             if (flat.favorite == 'si') {
-                flatsBox += `<label>Favorito:</label><input type="checkbox" id="" value="" checked />`;
+                //flatsBox += `<label>Favorito:</label><input type="checkbox" id="" value="" checked />`;
+                flatsBox += `<div><img  class="flatFavorito" src="assets/like.svg" alt=""></div>`;
             } else {
-                flatsBox += `<label>Favorito:</label><input type="checkbox" id="" value=""/>`;
+                //flatsBox += `<label>Favorito:</label><input type="checkbox" id="" value=""/>`;
+                flatsBox += `<div><img  class="FlatNoFavorito" src="assets/like.svg" alt=""></div>`;
             }
             flatsBox += `<li class="picture"><img src="${flat.picture}"></li>`;
             flatsBox += `<li><span class="userkey">Usuario:<span> ${key}</li>`;

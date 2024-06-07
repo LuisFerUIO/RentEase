@@ -193,3 +193,17 @@ img.imglogotipo{
 #footerMenu a {
 	margin: 0 15px 0 15px;
 }
+
+/*****************************************************************************************
+ '		SELECCION DE FLATA FAVORITO
+ *****************************************************************************************/
+img.flatFavorito {
+	width: 20px !important;
+	height: 20px !important;
+}
+
+img.FlatNoFavorito {
+	width: 20px !important;
+	height: 20px !important;
+	opacity: 0.2;
+}
