@@ -234,39 +234,38 @@ margin-top: 1.5rem;
 	margin-top: 0.5em;
 	width: 100%;
 	height: 15em;
-	background-color: #f62121;
+	border-color: #ed0000;
+	border-width: ancho;
+	border-style: estilo;
+	
 }
 
 #fotoflat{
 	background-color: #666666;
 	margin-top: 1em;
 	width: 100%;
-	height: 10em;
+	height: 15em;
 
 }
 
 #descripciónflat{
-	background-color: #432525;
 	width: 40%;
 	height: 3.5em;
 
 }
 
 #ciudadflat{
-	background-color: #bc7272;
 	width: 45%;
 	height: 1.8em;
 	float: left;
 }
 
 #likeflat{
-	background-color: #e28282;
 	width: 45%;
 	height: 1.8em;
 	float: right;
 }
 #detalleflat{
-	background-color: #997f7f;
 	width: 45%;
 	height: 1.8em;
 	float: left;
@@ -274,15 +273,13 @@ margin-top: 1.5rem;
 }
 
 #precioflat{
-	background-color: #7aa643;
 	width: 45%;
 	height: 1.8em;
 	float: right;
 }
 
 #estadoflat{
-	background-color: #4f7027;
 	width: 45%;
 	height: 1.8em;
-	float: right;
+	float: left;
 }
