@@ -33,7 +33,7 @@ if (Array.isArray(datos.flats)) {
         flatsBox += `<li>${flat.rentPrice}</li>`;
         flatsBox += `<li>${flat.areaSize}</li>`;
         flatsBox += `<li class="delete"><a class="btn" href=delete_Flat.html?userkey=${userkeyurlParams}&dateRegisterKey=${flat.dateRegisterKey}&firstName=${firstNameParams}>Eliminar</a></li>`;
-        //document.location.href = 'new_flat.html?userkey=' + userkey + '&firstName=' + firstName;
+        flatsBox += `<li class="update"><a class="btn" href=update_flat.html?userkey=${userkeyurlParams}&dateRegisterKey=${flat.dateRegisterKey}&firstName=${firstNameParams}>Actualizar</a></li>`;
         flatsBox += `</div>`;
 
         document.getElementById('flats').innerHTML = flatsBox;

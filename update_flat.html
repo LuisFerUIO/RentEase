@@ -1,19 +1,4 @@
 <!DOCTYPE html>
-<!--
-
-todas las propiedades
-del departamento departamento.nuevo “flat” es marcado como favorito
-
-
-City String
-Street name String
-Street number Number
-Area size Number
-Has AC Boolean
-Year built Number
-Rent price Number
-Date available Date
--->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -23,20 +8,17 @@ Date available Date
 </head>
 <body>
 
-<div id="encabezadohome">
-    <div id="saludo">
-        <h2 id="nameUser">Hola</h2>
-        <div><h2 id="nameUser"></h2></div>
-        <div><span>Usuario: </span><span id="userKey"></span></div>  
-    </div>
- 
-    <div id="perfil">
-        <a class="" id="miperfil" href="./index.html">
-            <img id="MiPerfil" src="./assets/perfil.svg" alt="Mi perfil">
+<div id="encabezado">
+    <div>
+        <a class="btnAtras" href="./index.html" id="btnAtras">
+            <img alt="Atrás" id="atras" src="./assets/atras-02.svg">
         </a>
     </div>
 </div>
 
+
+<h2 id="mensaje"></h2>
+<h2 id="nameUser"></h2>
 <form id="formFlatRegister" name="formFlatRegister">
     <input id="userkey" name="userkey" type="hidden"/>
     <input id="dateRegisterKey" name="dateRegisterKey" type="hidden"/>
@@ -93,16 +75,16 @@ Date available Date
     <label>Fecha disponible</label>
     <input id="dateAvailable" max="2025-12-31" min="2024-05-01" name="dateAvailable" type="date" value="2024-05-01"/>
     <div id="contenedor_button_form">
-    <button class="btnForm" id="btnForm">Guardar</button>
+        <button class="btnForm" id="btnForm">Guardar</button>
     </div>
 </form>
 
 <div id="footer">
     <div id="footerMenu">
-        <a id="all_flats"><img height="46" src="./assets/home.svg" width="46px"></a>
-        <a id="new_flat"><img height="46" src="./assets/nuevo.svg" width="46px"></a>
-        <a href="" id="Like"><img height="46" src="./assets/like.svg" width="46px"></a>
-        <a href="" id="home"><img height="46" src="./assets/lista.svg" width="46px"></a>
+        <a id="all_flats"><img height="46" src="assets/icon-home.png" width="46px"></a>
+        <a id="new_flat"><img height="46" src="assets/icon-nuevo.png" width="46px"></a>
+        <a id="Like"><img height="46" src="assets/icon-like.svg" width="46px"></a>
+        <a id="home"><img height="46" src="assets/icon-mis-flats.png" width="46px"></a>
     </div>
 </div>
 

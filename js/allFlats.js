@@ -58,14 +58,18 @@ for (let key of keys) {
             //flatsBox += `<li><span class="favorite">${flat.favorite}<span></li>`;
             if (flat.favorite == 'si') {
                 //flatsBox += `<label>Favorito:</label><input type="checkbox" id="" value="" checked />`;
-                flatsBox += `<div><img  class="flatFavorito" src="assets/like.svg" alt=""></div>`;
+                //flatsBox += `<button class="seleccionFavorito" data-id="${flat.dateRegisterKey}"><img  class="flatFavorito" src="assets/like.svg" alt=""></button>`;
+                //flatsBox += `<button class="seleccionFavorito" data-id="${flat.dateRegisterKey}"><div  class="flatFavorito"></div></button>`;
+                flatsBox += `<button class="flatFavorito" data-id="${flat.dateRegisterKey}"></button>`;
             } else {
                 //flatsBox += `<label>Favorito:</label><input type="checkbox" id="" value=""/>`;
-                flatsBox += `<div><img  class="FlatNoFavorito" src="assets/like.svg" alt=""></div>`;
+                //flatsBox += `<button class="seleccionFavorito" data-id="${flat.dateRegisterKey}"><div class="flatNoFavorito"></div></button>`;
+                //flatsBox += `<button class="seleccionFavorito" data-id="${flat.dateRegisterKey}"><img  class="flatFavorito" src="assets/like1.svg" alt=""></button>`;
+                flatsBox += `<button class="flatNoFavorito" data-id="${flat.dateRegisterKey}"></button>`;
+
             }
             flatsBox += `<li class="picture"><img src="${flat.picture}"></li>`;
             flatsBox += `<li><span class="userkey">Usuario:<span> ${key}</li>`;
-            flatsBox += `<li><span class="dateRegisterKey">ID:<span>${flat.dateRegisterKey}</li>`;
             flatsBox += `<li><span class="city">Ciudad:<span>${flat.city}</li>`;
             flatsBox += `<li><span class="rentPrice">Precio:<span>$${flat.rentPrice}</li>`;
             flatsBox += `<li><span class="areaSize">Metros2:<span>${flat.areaSize}</li>`;
@@ -82,16 +86,55 @@ for (let key of keys) {
 document.getElementById('flats').innerHTML = content;
 
 
-// /*****************************************************************************************
-//  '                  BOTON update register id="updateRegister"
-//  *****************************************************************************************/
+/*****************************************************************************************
+ '                  BOTON update register id="updateRegister"
+ *****************************************************************************************/
+document.addEventListener('DOMContentLoaded', function () {
+// Seleccionamos el contenedor de los botones
+    const contenedorFlats = document.getElementById('flats');
+
+// Definimos el manejador de eventos para el contenedor
+    contenedorFlats.addEventListener('click', function (event) {
+        // Verificamos si el elemento clicado es un botón
+        if (event.target.tagName === 'BUTTON') {
+            // Obtenemos el valor del atributo data-id
+            const buttonId = event.target.getAttribute('data-id');
+            // imprimir
+            console.log('Botón clicado con data-id:', buttonId);
+
+            //document.querySelector("button.seleccionFavorito[data-id=\'"+ buttonId + " \']").removeChild(img);
+            //event.target.querySelector('.seleccionFavorito').classList.toggle('hidden');
+            // event.target.classList.toggle('flatFavorito');
+
+            // let claseHjoSelecionado = event.target.firstChild.className ;
+            // let btnSelecionado = event.target;
+            // if (claseHjoSelecionado != 'flatFavorito') {
+            //     btnSelecionado.firstChild.className  = 'flatFavorito';
+            // }else {
+            //     btnSelecionado.firstChild.className  = 'flatNoFavorito';
+            // }
+
+            let claseHjoSelecionado = event.target.className;
+            let btnSelecionado = event.target;
+            if (claseHjoSelecionado != 'flatFavorito') {
+                btnSelecionado.className = 'flatFavorito';
+            } else {
+                btnSelecionado.className = 'flatNoFavorito';
+            }
+
+
+        }
+    });
+
+});
+
 // document.addEventListener('DOMContentLoaded', function () {
 // // Obtener el elemento input
-//     const btnUpdateRegister = document.getElementById('updateRegister');
-// // Asociar el manejador de eventos con el evento keypress del input
-//     btnUpdateRegister.addEventListener('click', function (event) {
+//     const seleccionFavorito = document.getElementById('seleccionFavorito');
+// // Asociar el manejador de eventos con el evento
+//     seleccionFavorito.addEventListener('click', function (event) {
 //         event.preventDefault();
-//         document.location.href = `update_register.html?userkey=${userkeyurlParams}&firstName=${firstNameParams}`;
+//         console.log(seleccionFavorito);
 //     });
 // });
 /*****************************************************************************************
@@ -103,11 +146,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Asociar el manejador de eventos con el evento keypress del input
     btnHome.addEventListener('click', function (event) {
-
         event.preventDefault();
-
         document.location.href = `home.html?userkey=${userkeyurlParams}&firstName=${firstNameParams}`;
-
     });
 });
 /*****************************************************************************************
