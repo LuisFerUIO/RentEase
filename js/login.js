@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 //console.log('readUserPass = ' + readUser);
                 if (password == datos.password) {
                     let firstName = datos.firstName;
-                    document.location.href = 'home.html?userkey=' + userkey + '&firstName=' + firstName;
+                    document.location.href = 'all_flats.html?userkey=' + userkey + '&firstName=' + firstName;
                 } else {
                     alert('la Clave es incorrecta');
                 }
