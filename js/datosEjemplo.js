@@ -81,7 +81,7 @@ function cargarDatosLocalStorage() {
         "password": "1234",
         "flats":
             [{
-                "dateRegisterKey": "20240522082420",
+                "dateRegisterKey": "20240522082419",
                 "favorite": "si",
                 "province": "PICHINCHA",
                 "city": "QUITO",
@@ -95,7 +95,7 @@ function cargarDatosLocalStorage() {
                 "picture": "images/flats/picture_01.png"
             },
                 {
-                    "dateRegisterKey": "20240522082420",
+                    "dateRegisterKey": "20240522082422",
                     "favorite": "si",
                     "province": "AZUAY",
                     "city": "CUENCA",
@@ -116,7 +116,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1990-01-01",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082423",
             "favorite": "no",
             "province": "GUAYAS",
             "city": "GUAYAQUIL",
@@ -129,7 +129,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-06-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082424",
             "favorite": "no",
             "province": "IMBABURA",
             "city": "IBARRA",
@@ -150,7 +150,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1985-02-02",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082425",
             "favorite": "no",
             "province": "CARCHI",
             "city": "TULCAN",
@@ -163,7 +163,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-08-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082426",
             "favorite": "no",
             "province": "LOJA",
             "city": "LOJA",
@@ -184,7 +184,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1992-03-03",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082427",
             "favorite": "si",
             "province": "CHIMBORAZO",
             "city": "RIOBAMBA",
@@ -197,7 +197,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-10-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082428",
             "favorite": "si",
             "province": "ESMERALDAS",
             "city": "ESMERALDAS",
@@ -218,7 +218,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1987-04-04",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082428",
             "favorite": "si",
             "province": "TUNGURAHUA",
             "city": "AMBATO",
@@ -231,7 +231,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-12-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082429",
             "favorite": "si",
             "province": "MANABI",
             "city": "PORTOVIEJO",
@@ -252,7 +252,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1994-05-05",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082430",
             "favorite": "no",
             "province": "COTOPAXI",
             "city": "LATACUNGA",
@@ -265,7 +265,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-02-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082431",
             "favorite": "no",
             "province": "BOLIVAR",
             "city": "GUARANDA",
@@ -286,7 +286,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1989-06-06",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082432",
             "favorite": "si",
             "province": "ORELLANA",
             "city": "COCA",
@@ -299,7 +299,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-04-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082433",
             "favorite": "si",
             "province": "EL ORO",
             "city": "MACHALA",
@@ -320,7 +320,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1991-07-07",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082434",
             "favorite": "no",
             "province": "SUCUMBIOS",
             "city": "NUEVA LOJA",
@@ -333,7 +333,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-06-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082435",
             "favorite": "no",
             "province": "SANTA ELENA",
             "city": "LA LIBERTAD",
@@ -354,7 +354,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1988-08-08",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082436",
             "favorite": "si",
             "province": "NAPO",
             "city": "TENA",
@@ -367,7 +367,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-08-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082437",
             "favorite": "si",
             "province": "ZAMORA CHINCHIPE",
             "city": "ZAMORA",
@@ -388,7 +388,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1993-09-09",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082438",
             "favorite": "no",
             "province": "PASTAZA",
             "city": "PUYO",
@@ -401,7 +401,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-10-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082439",
             "favorite": "no",
             "province": "SANTO DOMINGO",
             "city": "SANTO DOMINGO",
@@ -422,7 +422,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1986-10-10",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082440",
             "favorite": "si",
             "province": "MORONA SANTIAGO",
             "city": "MACAS",
@@ -435,7 +435,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-12-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082441",
             "favorite": "si",
             "province": "GALAPAGOS",
             "city": "PUERTO AYORA",
@@ -456,7 +456,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1983-11-11",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082442",
             "favorite": "no",
             "province": "LOS RIOS",
             "city": "BABAHOYO",
@@ -469,7 +469,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-02-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082443",
             "favorite": "no",
             "province": "SUCUMBIOS",
             "city": "SHUSHUFINDI",
@@ -490,7 +490,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1995-12-12",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082444",
             "favorite": "si",
             "province": "ORELLANA",
             "city": "FRANCISCO DE ORELLANA",
@@ -503,7 +503,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-04-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082445",
             "favorite": "si",
             "province": "IMBABURA",
             "city": "COTACACHI",
@@ -524,7 +524,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1996-01-13",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082446",
             "favorite": "no",
             "province": "PASTAZA",
             "city": "MERA",
@@ -537,7 +537,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-06-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082447",
             "favorite": "no",
             "province": "NAPO",
             "city": "ARCHIDONA",
@@ -558,7 +558,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1997-02-14",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082448",
             "favorite": "si",
             "province": "GALAPAGOS",
             "city": "PUERTO BAQUERIZO MORENO",
@@ -571,7 +571,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-08-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082449",
             "favorite": "si",
             "province": "SANTO DOMINGO",
             "city": "LA CONCORDIA",
@@ -592,7 +592,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1998-03-15",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082450",
             "favorite": "no",
             "province": "LOS RIOS",
             "city": "VENTANAS",
@@ -605,7 +605,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-10-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082451",
             "favorite": "no",
             "province": "BOLIVAR",
             "city": "CHILLANES",
@@ -626,7 +626,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1999-04-16",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082452",
             "favorite": "si",
             "province": "SUCUMBIOS",
             "city": "LAGO AGRIO",
@@ -639,7 +639,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-12-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082453",
             "favorite": "si",
             "province": "MORONA SANTIAGO",
             "city": "GUALAQUIZA",
@@ -660,7 +660,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "2000-05-17",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082454",
             "favorite": "no",
             "province": "ORELLANA",
             "city": "DAYUMA",
@@ -673,7 +673,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-02-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082455",
             "favorite": "no",
             "province": "NAPO",
             "city": "EL CHACO",
@@ -695,7 +695,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "2001-06-18",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082456",
             "favorite": "si",
             "province": "GUAYAS",
             "city": "GUAYAQUIL",
@@ -708,7 +708,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-04-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082457",
             "favorite": "si",
             "province": "ESMERALDAS",
             "city": "ESMERALDAS",
@@ -729,7 +729,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "2002-07-19",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082458",
             "favorite": "no",
             "province": "TUNGURAHUA",
             "city": "AMBATO",
@@ -742,7 +742,7 @@ function cargarDatosLocalStorage() {
             "dateAvailable": "2024-06-01",
             "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
+            "dateRegisterKey": "20240522082459",
             "favorite": "no",
             "province": "BOLIVAR",
             "city": "GUARANDA",

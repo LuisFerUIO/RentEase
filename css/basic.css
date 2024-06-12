@@ -196,20 +196,25 @@ img.imglogotipo{
 /*****************************************************************************************
  '		SELECCION DE FLAT FAVORITO
  *****************************************************************************************/
-
-img.flatFavorito {
-	width: 20px !important;
-	height: 20px !important;
-	cursor: pointer;
+.flatsBox button {
+	background-color: white;
 }
 
-img.FlatNoFavorito {
+.flatFavorito {
 	width: 20px !important;
 	height: 20px !important;
-	opacity: 0.2;
-	cursor: pointer;
+	background-image: url('/assets/like.svg');
+	background-repeat: no-repeat;
+	border: none;
 }
 
+.flatNoFavorito {
+	width: 20px !important;
+	height: 20px !important;
+	background-image: url('/assets/like1.svg');
+	background-repeat: no-repeat;
+	border: none;
+}
 /*****************************************************************************************
  '		ENCABEZADO
  *****************************************************************************************/
