@@ -194,20 +194,30 @@ img.imglogotipo{
 }
 
 /*****************************************************************************************
- '		SELECCION DE FLATA FAVORITO
+ '		SELECCION DE FLAT FAVORITO
  *****************************************************************************************/
+
 img.flatFavorito {
 	width: 20px !important;
 	height: 20px !important;
+	cursor: pointer;
 }
 
 img.FlatNoFavorito {
 	width: 20px !important;
 	height: 20px !important;
 	opacity: 0.2;
+	cursor: pointer;
 }
 
-
+/*****************************************************************************************
+ '		ENCABEZADO
+ *****************************************************************************************/
+.btnAtras img {
+	height: 50px;
+	width: 50px;
+	align-content: left;
+}
 #encabezadohome{
 	background-color: aqua;
 	height: 50px;
@@ -279,6 +289,7 @@ margin-top: 1.5rem;
 	height: 1.8em;
 	float: right;
 }
+
 
 #estadoflat{
 	background-color: #4f7027;
