@@ -55,13 +55,12 @@ for (let key of keys) {
                 //flatsBox += `<label>Favorito:</label><input type="checkbox" id="" value="" checked />`;
                 //flatsBox += `<button class="seleccionFavorito" data-id="${flat.dateRegisterKey}"><img  class="flatFavorito" src="assets/like.svg" alt=""></button>`;
                 //flatsBox += `<button class="seleccionFavorito" data-id="${flat.dateRegisterKey}"><div  class="flatFavorito"></div></button>`;
-                flatsBox += `<button class="flatFavorito" data-id="${flat.dateRegisterKey}"></button>`;
+                flatsBox += `<button class="flatFavorito" data-id="${flat.dateRegisterKey}\&${key}"></button>`;
             } else {
                 //flatsBox += `<label>Favorito:</label><input type="checkbox" id="" value=""/>`;
                 //flatsBox += `<button class="seleccionFavorito" data-id="${flat.dateRegisterKey}"><div class="flatNoFavorito"></div></button>`;
                 //flatsBox += `<button class="seleccionFavorito" data-id="${flat.dateRegisterKey}"><img  class="flatFavorito" src="assets/like1.svg" alt=""></button>`;
-                flatsBox += `<button class="flatNoFavorito" data-id="${flat.dateRegisterKey}"></button>`;
-
+                flatsBox += `<button class="flatNoFavorito" data-id="${flat.dateRegisterKey}\&${key}"></button>`;
             }
             flatsBox += `<li class="picture"><img src="${flat.picture}"></li>`;
             flatsBox += `<li><span class="userkey">Usuario:<span> ${key}</li>`;
@@ -82,7 +81,7 @@ document.getElementById('flats').innerHTML = content;
 
 
 /*****************************************************************************************
- '                  BOTON update register id="updateRegister"
+ '                  BOTON seleccion de favoritos/corazon
  *****************************************************************************************/
 document.addEventListener('DOMContentLoaded', function () {
 // Seleccionamos el contenedor de los botones
@@ -113,14 +112,18 @@ document.addEventListener('DOMContentLoaded', function () {
             let btnSelecionado = event.target;
             if (claseHjoSelecionado != 'flatFavorito') {
                 btnSelecionado.className = 'flatFavorito';
+                let variables = buttonId.split('&');
+                console.log(`${variables[0]} = ${variables[1]}`);
+                guardarFavoritos(variables[0], variables[1], userkeyurlParams);
+
+                //  let favorito = true;
             } else {
                 btnSelecionado.className = 'flatNoFavorito';
+                //guardarFavoritos(variables[0],variables[1]);
+                //favorito = false;
             }
-
-
         }
     });
-
 });
 
 // document.addEventListener('DOMContentLoaded', function () {
@@ -132,6 +135,55 @@ document.addEventListener('DOMContentLoaded', function () {
 //         console.log(seleccionFavorito);
 //     });
 // });
+/*****************************************************************************************
+ '                 FUNCTION GUARDAR FAVORITOS
+ *****************************************************************************************/
+function guardarFavoritos(dateRegisterKey, userkey, userkeyClick) {
+
+    if (localStorage.getItem(userkey) !== null) {
+
+        //leer datos del usuario segun su userkay
+        let readUser = localStorage.getItem(userkey);
+        // console.log('getItem(userkey) ='+ readUser);
+
+        // Convertir los datos a un objeto JavaScript
+        let datos = JSON.parse(readUser);
+        // console.log('parse(readUser) ='+ datos);
+
+        if (datos.flats) {
+            // Convertir los objetos dentro de 'flats' a una cadena JSON legible
+            let flatsContent = datos.flats.map(flat => JSON.stringify(flat));
+            //console.log('flatsContent =' + flatsContent);
+
+            datos.flats.forEach((flat, index) => {
+                if (flat.dateRegisterKey == dateRegisterKey) {
+                    console.log('datos.flats.forEach((flat = ' + flat.favorite);
+                    Arrfavoritos = flat.favorite;
+                    let objetData = {favoriteUserkey: userkeyClick};
+                    Arrfavoritos.push(objetData);
+                    console.log(Arrfavoritos);
+                    // flat.forEach((favorite, index) => {
+                    //     let objetData = {favoriteUserkey : userkeyClick};
+                    //     Arrfavoritos.push(objetData);
+                    //     console.log(Arrfavoritos);
+                    // });
+                }
+            });
+        }
+
+        // // Agregar la propiedad "flats" al objeto "datos" si no existe
+        // if (!datos.flats.favorite) {
+        //     datos.flats.favorite = [];
+        // }
+
+        // Guardar los datos actualizados en localStorage
+        localStorage.setItem(userkey, JSON.stringify(datos));
+        //console.log('graba', window.localStorage);
+    } else {
+        alert('ERROR GRABAR FAVORITOS');
+    }
+}
+
 /*****************************************************************************************
  '                  BOTON home.index id="home"
  *****************************************************************************************/
@@ -161,3 +213,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 });
+

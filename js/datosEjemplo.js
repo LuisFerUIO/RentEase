@@ -696,7 +696,6 @@ function cargarDatosLocalStorage() {
         "password": "1234",
         "flats": [{
             "dateRegisterKey": "20240522082456",
-            "favorite": "si",
             "province": "GUAYAS",
             "city": "GUAYAQUIL",
             "streetName": "Martinez",
@@ -706,10 +705,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2018",
             "rentPrice": "1350",
             "dateAvailable": "2024-04-01",
-            "picture": "images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
             "dateRegisterKey": "20240522082457",
-            "favorite": "si",
             "province": "ESMERALDAS",
             "city": "ESMERALDAS",
             "streetName": "Leon",
@@ -719,41 +718,8 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2022",
             "rentPrice": "1450",
             "dateAvailable": "2024-05-01",
-            "picture": "images/flats/picture_01.png"
-        }]
-    };
-    const objetData20 = {
-        "userkey": "mary@abcd.com",
-        "firstName": "Mary",
-        "lastName": "Johnson",
-        "birthDate": "2002-07-19",
-        "password": "1234",
-        "flats": [{
-            "dateRegisterKey": "20240522082458",
-            "favorite": "no",
-            "province": "TUNGURAHUA",
-            "city": "AMBATO",
-            "streetName": "Moreno",
-            "streetNumber": "50",
-            "areaSize": "180",
-            "hasAc": "NO",
-            "yearBuilt": "2019",
-            "rentPrice": "1200",
-            "dateAvailable": "2024-06-01",
-            "picture": "images/flats/picture_01.png"
-        }, {
-            "dateRegisterKey": "20240522082459",
-            "favorite": "no",
-            "province": "BOLIVAR",
-            "city": "GUARANDA",
-            "streetName": "Cruz",
-            "streetNumber": "78",
-            "areaSize": "190",
-            "hasAc": "SI",
-            "yearBuilt": "2021",
-            "rentPrice": "1300",
-            "dateAvailable": "2024-07-01",
-            "picture": "images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "emma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
 
@@ -795,7 +761,7 @@ function cargarDatosLocalStorage() {
     const userkey17 = objetData18.userkey;
     const userkey18 = objetData18.userkey;
     const userkey19 = objetData19.userkey;
-    const userkey20 = objetData20.userkey;
+    // const userkey20 = objetData20.userkey;
 
 // const firstName = objetData.firstName;
 // console.log('userkey = ' + userkey + ' firstName = ' + firstName);
@@ -832,7 +798,7 @@ function cargarDatosLocalStorage() {
         const userRegister17 = JSON.stringify(objetData17);
         const userRegister18 = JSON.stringify(objetData18);
         const userRegister19 = JSON.stringify(objetData19);
-        const userRegister20 = JSON.stringify(objetData20);
+        // const userRegister20 = JSON.stringify(objetData20);
         //console.log('grabar estos datos' , userRegister);
 
         localStorage.setItem(userkey, userRegister);
@@ -855,7 +821,7 @@ function cargarDatosLocalStorage() {
         localStorage.setItem(userkey17, userRegister17);
         localStorage.setItem(userkey18, userRegister18);
         localStorage.setItem(userkey19, userRegister19);
-        localStorage.setItem(userkey20, userRegister20);
+        //localStorage.setItem(userkey20, userRegister20);
 
         console.log('Grabado', window.localStorage);
 
@@ -908,7 +874,7 @@ function cargarDatosLocalStorageNoRelacional() {
             localStorage.setItem(key, JSON.stringify(data));
         }
 
-// Función para cargar datos de localStorage
+        // Función para leer datos de localStorage
         function loadFromLocalStorage(key) {
             return JSON.parse(localStorage.getItem(key)) || {};
         }
@@ -996,7 +962,7 @@ function cargarDatosLocalStorageNoRelacional() {
             {"user": "diana@1234.com", "propertyId": "prop2"}
         ];
 
-// Guardar las tablas en localStorage
+        // Guardar las tablas en localStorage
         saveToLocalStorage('users', users);
         saveToLocalStorage('properties', properties);
         saveToLocalStorage('favorites', favorites);
