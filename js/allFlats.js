@@ -154,14 +154,31 @@ function guardarFavoritos(dateRegisterKey, userkey, userkeyClick) {
             // Convertir los objetos dentro de 'flats' a una cadena JSON legible
             let flatsContent = datos.flats.map(flat => JSON.stringify(flat));
             //console.log('flatsContent =' + flatsContent);
-
+            let miFavorito = false;
             datos.flats.forEach((flat, index) => {
                 if (flat.dateRegisterKey == dateRegisterKey) {
-                    console.log('datos.flats.forEach((flat = ' + flat.favorite);
+                    console.log(flat.favorite);
                     Arrfavoritos = flat.favorite;
-                    let objetData = {favoriteUserkey: userkeyClick};
-                    Arrfavoritos.push(objetData);
-                    console.log(Arrfavoritos);
+                    flat.favorite.forEach((favoriteUsers, index) => {
+                        if (favoriteUsers.favoriteUserkey == userkeyClick) {
+                            //console.log('ya es mi favorito');
+                            miFavorito = true;
+                        } else {
+                            //console.log('no es mi favorito');
+                            miFavorito = false;
+                        }
+                        console.log('miFavorito = ' + miFavorito);
+                    });
+
+                    if (miFavorito == false) {
+                        console.log('miFavorito = ' + miFavorito);
+                        let objetData = {favoriteUserkey: userkeyClick};
+                        Arrfavoritos.push(objetData);
+                        console.log(Arrfavoritos);
+                    }
+
+
+
                     // flat.forEach((favorite, index) => {
                     //     let objetData = {favoriteUserkey : userkeyClick};
                     //     Arrfavoritos.push(objetData);
