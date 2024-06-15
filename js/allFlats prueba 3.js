@@ -10,15 +10,10 @@ const firstNameParams = urlParams.get('firstName');
 //imprimo en pantalla
 document.getElementById('nameUser').innerHTML = firstNameParams;
 document.getElementById('userKey').innerHTML = userkeyurlParams;
-
-
 /*****************************************************************************************
  '		RECUPERAR FLATS DE TODOS LOS USUARIOS
  *****************************************************************************************/
-//leer datos del usuario segun su userkay
-let readUser = localStorage.getItem(userkeyurlParams);
-
- // Obtener todas las claves almacenadas en localStorage
+// Obtener todas las claves almacenadas en localStorage
 let keys = Object.keys(localStorage);
 
 // Variable para almacenar el contenido que se va a mostrar en el elemento con ID 'flat'
@@ -181,7 +176,6 @@ function guardarFavoritos(dateRegisterKey, userkey, userkeyClick) {
                         Arrfavoritos.push(objetData);
                         console.log(Arrfavoritos);
                     }
-
 
 
                     // flat.forEach((favorite, index) => {

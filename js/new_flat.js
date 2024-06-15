@@ -340,12 +340,12 @@ function getDataForm(event) {
     const objetData = Object.fromEntries(formData);
     console.log('transforma una lista de pares con [clave-valor]', objetData);
 
-    //elimino lo qu eno necisito
+    //elimino lo que no necisito
     delete objetData.userkey;
 
 //asignar la fecha y hora de registro
 
-// creo una kay por medio de la fecha,hora,min,seg del sistema
+// creo una key por medio de la fecha,hora,min,seg del sistema
     function obtenerFechaHoraActual() {
         const ahora = new Date();
 
@@ -371,7 +371,6 @@ function getDataForm(event) {
     console.log('userkey campo oculto = ' + userkey);
 
     if (localStorage.getItem(userkey) !== null) {
-
 
         //leer datos del usuario segun su userkay
         let readUser = localStorage.getItem(userkey)
