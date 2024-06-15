@@ -28,12 +28,12 @@ if (Array.isArray(datos.flats)) {
         flatsBox += `<div class="flatsBox">`;
         flatsBox += `<li class="img"><li class="img"> <img src="${flat.picture}"></li>`;
         flatsBox += `<li>${flat.dateRegisterKey}</li>`;
-        flatsBox += `<li>${flat.favorite}</li>`;
+        // flatsBox += `<li>${flat.favorite}</li>`;
         flatsBox += `<li>${flat.city}</li>`;
         flatsBox += `<li>${flat.rentPrice}</li>`;
         flatsBox += `<li>${flat.areaSize}</li>`;
         flatsBox += `<li class="delete"><a class="btn" href=delete_Flat.html?userkey=${userkeyurlParams}&dateRegisterKey=${flat.dateRegisterKey}&firstName=${firstNameParams}>Eliminar</a></li>`;
-        flatsBox += `<li class="update"><a class="btn" href=update_flat.html?userkey=${userkeyurlParams}&dateRegisterKey=${flat.dateRegisterKey}&firstName=${firstNameParams}>Actualizar</a></li>`;
+        flatsBox += `<li class="update"><a class="btn" href=update_flat.html?userkey=${userkeyurlParams}&dateRegisterKey=${flat.dateRegisterKey}&firstName=${firstNameParams}&update=true>Actualizar</a></li>`;
         flatsBox += `</div>`;
 
         document.getElementById('flats').innerHTML = flatsBox;
