@@ -87,6 +87,7 @@ document.getElementById('flats').innerHTML = content;
 
 /*****************************************************************************************
  '                  BOTON seleccion de favoritos/corazon
+ '                      en cada clic se debe verificar antes de guardar o eliminar
  *****************************************************************************************/
 document.addEventListener('DOMContentLoaded', function () {
 // Seleccionamos el contenedor de los botones
