@@ -131,35 +131,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
             let claseHjoSelecionado = event.target.className;
             let btnSelecionado = event.target;
+            let variables = buttonId.split('&');
             if (claseHjoSelecionado != 'flatFavorito') {
                 btnSelecionado.className = 'flatFavorito';
-                let variables = buttonId.split('&');
                 console.log(`${variables[0]} = ${variables[1]}`);
-                guardarFavoritos(variables[0], variables[1], userkeyurlParams);
-
+                guardarFavoritos(variables[0], variables[1], userkeyurlParams, "save");
                 //  let favorito = true;
-            } else {
+            } else if (claseHjoSelecionado != 'flatNoFavorito') {
                 btnSelecionado.className = 'flatNoFavorito';
+                guardarFavoritos(variables[0], variables[1], userkeyurlParams, "delete");
                 //guardarFavoritos(variables[0],variables[1]);
                 //favorito = false;
             }
         }
     });
 });
-
-// document.addEventListener('DOMContentLoaded', function () {
-// // Obtener el elemento input
-//     const seleccionFavorito = document.getElementById('seleccionFavorito');
-// // Asociar el manejador de eventos con el evento
-//     seleccionFavorito.addEventListener('click', function (event) {
-//         event.preventDefault();
-//         console.log(seleccionFavorito);
-//     });
-// });
 /*****************************************************************************************
  '                 FUNCTION GUARDAR FAVORITOS
  *****************************************************************************************/
-function guardarFavoritos(dateRegisterKey, userkey, userkeyClick) {
+function guardarFavoritos(dateRegisterKey, userkey, userkeyClick, accion) {
 
     if (localStorage.getItem(userkey) !== null) {
 
@@ -173,29 +163,38 @@ function guardarFavoritos(dateRegisterKey, userkey, userkeyClick) {
 
         if (datos.flats) {
             // Convertir los objetos dentro de 'flats' a una cadena JSON legible
-            let flatsContent = datos.flats.map(flat => JSON.stringify(flat));
+            //let flatsContent = datos.flats.map(flat => JSON.stringify(flat));
             //console.log('flatsContent =' + flatsContent);
+
             let miFavorito = false;
             datos.flats.forEach((flat, index) => {
                 if (flat.dateRegisterKey == dateRegisterKey) {
                     console.log(flat.favorite);
                     Arrfavoritos = flat.favorite;
                     flat.favorite.forEach((favoriteUsers, index) => {
-                        if (favoriteUsers.favoriteUserkey == userkeyClick) {
+                        if (favoriteUsers.favoriteUserkey === userkeyClick) {
                             //console.log('ya es mi favorito');
                             miFavorito = true;
-                        } else {
-                            //console.log('no es mi favorito');
-                            miFavorito = false;
                         }
-                        console.log('miFavorito = ' + miFavorito);
                     });
+                    console.log('miFavorito = ' + miFavorito);
 
-                    if (miFavorito == false) {
-                        console.log('miFavorito = ' + miFavorito);
-                        let objetData = {favoriteUserkey: userkeyClick};
-                        Arrfavoritos.push(objetData);
+                    if (miFavorito === false) {
+                        console.log('miFavorito save');
+                        let newUserkeyClick = {favoriteUserkey: userkeyClick};
+                        Arrfavoritos.push(newUserkeyClick);
                         console.log(Arrfavoritos);
+                        // Guardar los datos actualizados en localStorage
+                        localStorage.setItem(userkey, JSON.stringify(datos));
+                    } else if (miFavorito === true) {
+                        console.log('miFavorito delete');
+                        const filatradoUserkeyClick = Arrfavoritos.filter(item => item.favoriteUserkey !== userkeyClick);
+                        flat.favorite = filatradoUserkeyClick;
+                        console.log(Arrfavoritos);
+                        // Guardar los datos actualizados en localStorage
+                        localStorage.setItem(userkey, JSON.stringify(datos));
+                    } else {
+                        console.log("error");
                     }
 
 
@@ -214,8 +213,7 @@ function guardarFavoritos(dateRegisterKey, userkey, userkeyClick) {
         //     datos.flats.favorite = [];
         // }
 
-        // Guardar los datos actualizados en localStorage
-        localStorage.setItem(userkey, JSON.stringify(datos));
+
         //console.log('graba', window.localStorage);
     } else {
         alert('ERROR GRABAR FAVORITOS');
