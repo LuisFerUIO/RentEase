@@ -56,7 +56,7 @@ function cargarDatosLocalStorage() {
                 "rentPrice": "1500",
                 "dateAvailable": "2024-05-01",
                 "picture": "images/flats/picture_0002.png",
-                "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
+                "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}, {"favoriteUserkey": "luis@1234.com"}]
             },
                 {
                     "dateRegisterKey": "20240522081818",
@@ -70,7 +70,7 @@ function cargarDatosLocalStorage() {
                     "rentPrice": "300",
                     "dateAvailable": "2024-05-01",
                     "picture": "images/flats/picture_0001.png",
-                    "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
+                    "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}, {"favoriteUserkey": "luis@1234.com"}]
                 }],
     };
     const objetData1 = {
