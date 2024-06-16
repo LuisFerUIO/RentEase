@@ -52,3 +52,44 @@ function verificarFavorito(userkey, dateRegisterKey) {
         alert('ERROR EL USUARIO NO EXISTE EN LOCALSTORE');
     }
 }
+
+/*****************************************************************************************
+ '               CERRAR SESION CON VARIABLES GLOBALES
+ *****************************************************************************************/
+document.addEventListener('DOMContentLoaded', function () {
+// Seleccionamos el contenedor de los botones
+    const logOut = document.getElementById('logOut');
+
+// Definimos el manejador de eventos para el contenedor
+    logOut.addEventListener('click', function (event) {
+        var userkeyurlParams = null;
+        var firstNameParams = null;
+        delete window.userkeyurlParams;
+        delete window.firstNameParams;
+        console.log("logOut");
+    });
+});
+/*****************************************************************************************
+ '		RECUPERO EL USERKAY POR LA URL
+ //  *****************************************************************************************/
+
+//Variables globales
+var userkeyurlParams;
+var firstNameParams;
+
+(function () {
+// Obtener la URL actual
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams != undefined) {
+// Obtener el valor del parámetro userkey
+        var userkeyurlParams = urlParams.get('userkey');
+        var firstNameParams = urlParams.get('firstName');
+//imprimo en pantalla
+        document.getElementById('nameUser').innerHTML = firstNameParams;
+        document.getElementById('userKey').innerHTML = userkeyurlParams;
+    } else {
+        let h1 = document.createElement('h1');
+        h1.textContent = "SIN DATOS DEL USUARIO"
+        document.querySelector(body).appendChild(h1);
+    }
+})();

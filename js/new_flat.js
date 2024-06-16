@@ -1,26 +1,22 @@
-/*****************************************************************************************
- City String
- Street name String
- Street number Number
- Area size Number
- Has AC Boolean
- Year built Number
- Rent price Number
- Date available Date
- */
+// /*****************************************************************************************
+//  '		RECUPERO EL USERKAY POR LA URL
+//  *****************************************************************************************/
+// // Obtener la URL actual
+// const urlParams = new URLSearchParams(window.location.search);
+//
+// // Obtener el valor del parámetro userkey
+// const userkey = urlParams.get('userkey');
+// document.getElementById('userkey').value = userkey;
+// const firstName = urlParams.get('firstName');
+// document.getElementById('mensaje').innerHTML = 'bienvenido ' + firstName;
 
-/*****************************************************************************************
- '		RECUPERO EL USERKAY POR LA URL
- *****************************************************************************************/
-// Obtener la URL actual
-const urlParams = new URLSearchParams(window.location.search);
-
-// Obtener el valor del parámetro userkey
-const userkey = urlParams.get('userkey');
-document.getElementById('userkey').value = userkey;
-const firstName = urlParams.get('firstName');
-document.getElementById('mensaje').innerHTML = 'bienvenido ' + firstName;
-
+// Se dispara cuando haya cargado la pagina y verificar la sesión al cargar la página
+window.onload = function () {
+    let sessionUser = verificarSesion();
+    userkey = sessionUser.userkey;
+    firstNameParams = sessionUser.firstName;
+    document.getElementById('userkey').value = userkey;
+}
 /*****************************************************************************************
  'GENERADOR DE CANTONES
  '.........................................................................................
@@ -404,36 +400,3 @@ function getDataForm(event) {
         alert('ERROR!');
     }
 }
-
-/*****************************************************************************************
- '                  BOTON home.index id="home"
- *****************************************************************************************/
-document.addEventListener('DOMContentLoaded', function () {
-// Obtener el elemento input
-    const btnHome = document.getElementById('home');
-
-// Asociar el manejador de eventos con el evento keypress del input
-    btnHome.addEventListener('click', function (event) {
-
-        event.preventDefault();
-
-        document.location.href = `home.html?userkey=${userkey}&firstName=${firstName}`;
-
-    });
-});
-/*****************************************************************************************
- '                  BOTON all flat pasar datos del usuario
- *****************************************************************************************/
-document.addEventListener('DOMContentLoaded', function () {
-// Obtener el elemento input
-    let btnAllFlats = document.getElementById('all_flats');
-
-// Asociar el manejador de eventos con el evento keypress del input
-    btnAllFlats.addEventListener('click', function (event) {
-
-        event.preventDefault();
-
-        document.location.href = `all_flats.html?userkey=${userkey}&firstName=${firstName}`;
-
-    });
-});

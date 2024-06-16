@@ -20,39 +20,30 @@ inputEmail.addEventListener('focusout', function (event) {
     }
 
 });
+
 /*****************************************************************************************
  '                  COMPROBAR SI USUARIO EXISTE EN EL LOCALSTORE
  *****************************************************************************************/
-//const elementFormLogin = document.querySelector('form[name=formrLogin]');
-
 document.addEventListener('DOMContentLoaded', function () {
-
     document.addEventListener('submit', validoUsuario);
-
-
     function validoUsuario(event) {
         event.preventDefault()
-
-        const userkey = document.getElementById('email').value;
-        //console.log('userkey = ' + userkey);
-        const password = document.getElementById('password').value;
-
-
-        //leer datos del usuario segun su userkay
+        let userkey = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+        console.log(userkey);
+        //leer datos del usuario según su userkay
         let readUser = localStorage.getItem(userkey)
-        console.log('readUser = ' + readUser);
-
         // Convertir los datos a un objeto JavaScript
         let datos = JSON.parse(readUser);
-
         if (readUser) {
-
             if (password) {
-                //let readUserPass = localStorage.getItem(password)
-                //console.log('readUserPass = ' + readUser);
-                if (password == datos.password) {
+                if (password === datos.password) {
                     let firstName = datos.firstName;
-                    document.location.href = 'all_flats.html?userkey=' + userkey + '&firstName=' + firstName;
+                    //Crear sesión en session storage
+                    if (createSession(userkey, firstName)) {
+                        //document.location.href = 'all_flats.html?userkey=' + userkey + '&firstName=' + firstName;
+                        document.location.href = 'all_flats.html';
+                    }
                 } else {
                     alert('la Clave es incorrecta');
                 }
@@ -62,11 +53,21 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             alert('El usuario no existe');
         }
-
-
     }
-
 });
 
-
-
+/*****************************************************************************************
+ '                  CREADOR SE SESIÓN EN SESIONSTORAGE
+ *****************************************************************************************/
+function createSession(userkey, firstName) {
+    let userkeySession = userkey;
+    let firstNameSession = firstName;
+    objetoSession = {
+        userkey: userkeySession,
+        firstName: firstNameSession
+    }
+    console.log(userkeySession + firstNameSession);
+    //sessionStorage.setItem(userkeySession,JSON.stringify(firstNameSession));
+    sessionStorage.setItem('session', JSON.stringify(objetoSession));
+    return true;
+}
