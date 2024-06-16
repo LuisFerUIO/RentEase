@@ -32,7 +32,7 @@ for (let key of keys) {
     // Verificar si el objeto tiene una propiedad 'flats'
     if (item.flats) {
         // Convertir los objetos dentro de 'flats' a una cadena JSON legible
-        let flatsContent = item.flats.map(flat => JSON.stringify(flat)).join('<br/>');
+        // let flatsContent = item.flats.map(flat => JSON.stringify(flat)).join('<br/>');
 
         // Añadir la información de 'flats' al contenido
         //content += `Usuario: ${key} - Flats:<br/>${flatsContent}<br/><br/><br/>`;
@@ -44,7 +44,7 @@ for (let key of keys) {
             let flatsBox = '';
 
             // Convertir el objeto 'flat' a una cadena JSON para fines demostrativos
-            let flatJson = JSON.stringify(flat);
+            //let flatJson = JSON.stringify(flat);
 
             // Agregar esta cadena JSON a nuestra variable 'flatsContent'
             // Además, añadir un salto de línea '<br/>' para separar cada flat visualmente en HTML
@@ -54,9 +54,24 @@ for (let key of keys) {
             // Por ejemplo, imprimimos la ciudad y el precio de cada flat
             //content += `Flat ${index + 1}: City - ${flat.city}, Price - $${flat.rentPrice}`;
 
+            // Itera dentro de Favorite de cada flat buscando si el ID del usuario esta registrado devuelve true : false
+            function corazon(flat) {
+                let corazon = false;
+                if (flat.favorite) {
+                    for (let favoritos of flat.favorite) {
+                        if (favoritos.favoriteUserkey === userkeyurlParams) {
+                            corazon = true;
+                        }
+                    }
+                }
+                console.log(`corazon ${corazon}`);
+                return corazon;
+            }
+
+
             flatsBox += `<div class="flatsBox">`;
             //flatsBox += `<li><span class="favorite">${flat.favorite}<span></li>`;
-            if (flat.favorite == 'si') {
+            if (corazon(flat)) {
                 //flatsBox += `<label>Favorito:</label><input type="checkbox" id="" value="" checked />`;
                 //flatsBox += `<button class="seleccionFavorito" data-id="${flat.dateRegisterKey}"><img  class="flatFavorito" src="assets/like.svg" alt=""></button>`;
                 //flatsBox += `<button class="seleccionFavorito" data-id="${flat.dateRegisterKey}"><div  class="flatFavorito"></div></button>`;
@@ -87,6 +102,7 @@ document.getElementById('flats').innerHTML = content;
 
 /*****************************************************************************************
  '                  BOTON seleccion de favoritos/corazon
+ '                      en cada clic se debe verificar antes de guardar o eliminar
  *****************************************************************************************/
 document.addEventListener('DOMContentLoaded', function () {
 // Seleccionamos el contenedor de los botones
