@@ -8,8 +8,13 @@ Diana Siguenza
 
 //////////////////////////////////////////////
 */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-
+* {
+	font-family: "Raleway", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
 .bodyindex {
 	background: url(../assets/pexelswithe.jpg) no-repeat center scroll;
 	opacity: 1; /* Valor de opacidad (entre 0 y 1) */
@@ -19,15 +24,9 @@ Diana Siguenza
 	height: 80px;
 	}
 
-
-
 .bodylogin {
 background-color: #fff;
 text-align: center;
-}
-  
-* {
-font-family: "verdana";
 }
 
 #main{
@@ -94,26 +93,28 @@ a {
 .btn, button {
 	align-items: center;
 	appearance: none;
-	background-color: #000000;
+	background-color: #4acbbb;
 	border-radius: 6px;
-	color: #fff;
+	color: #000;
 	cursor: pointer;
 	display: inline-flex;
-	font-family: "verdana";
 	height: 48px;
 	width: 300px;
 	justify-content: center;
 	white-space: nowrap;
 	font-size: 16px;
+	font-family: "Raleway", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: bold;
+	font-style: normal;
 }
-
 .btn:hover, button:hover {
-	color: rgb(142, 142, 142);
+	color: #000;
 	
 }
 
 .btn:active, button:hover {
-	box-shadow: #666666 0 3px 7px inset;
+	box-shadow: #000 0 3px 7px inset;
 	transform: translateY(0px);
 }
 
@@ -121,6 +122,10 @@ a {
 	text-decoration: #000000;
 }
 
+#btnPruebas a {
+	background-color: transparent;
+	color: darkgray;
+}
 
 
 /*****************************************************************************************
