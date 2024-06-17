@@ -2,16 +2,35 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="css/basic.css" rel="stylesheet" type="text/css"/>
+    <title>All Flats</title>
 </head>
 <body>
-<!--tabla de todos los departamentos favoritos del usuario. La-->
-<!--estructura de la tabla debe tener ser la misma que la Página "All Flats", excepto una-->
-<!--distinción: en lugar de tener un botón de alternar, tendrá un botón de remove ”. Después de-->
-<!--presionarlo, va a ser eliminado de la tabla y el departamento apropiado ya no será-->
-<!--considerado como favorito del usuario.-->
+<!--<p>-->
+<!--tabla de todos los departamentos-->
+<!--que el usuario ha creado-->
+<!--hasta ahora.capacidad de filtrar y ordenar-->
+<!--Botón para alternar-->
+<!--marcar/desmarcar como favorito-->
+
+<!--    Página “All Flats”-->
+<!--    La página “All flats” contiene una tabla de todos los departamentos que el usuario ha creado-->
+<!--    hasta ahora.-->
+<!--    Cada fila de la tabla tendrá:-->
+<!--    • Todas las propiedades de “flat” como se especifica en la sección Entidades.-->
+<!--    • Botón para alternar marcar/desmarcar como favorito.-->
+<!--    Adicionalmente, la tabla va a tener la capacidad de filtrar y ordenar.-->
+<!--    Campo de opciones de filtro:-->
+<!--    1. “City” (Ciudad)-->
+<!--    2. “Price Range” (rango de precio)-->
+<!--    3. “Area Size Range” (rango de tamaño del área)-->
+<!--    Ordenar por categoria:-->
+<!--    1. “City” (ciudad)-->
+<!--    2. “Price” (precio)-->
+<!--    3. “Area Size” (tamaño del area)-->
+
+
 <div id="encabezadohome">
     <div id="logOut">logOut</div>
 
@@ -26,8 +45,8 @@
 </div>
 
 
-
 <div id="flats"></div>
+
 
 <div id="footer">
     <div id="footerMenu">
@@ -39,6 +58,6 @@
 </div>
 
 <script src="js/sesion.js"></script>
-<script src="js/home.js"></script>
+<script src="js/my_favourites.js"></script>
 </body>
 </html>

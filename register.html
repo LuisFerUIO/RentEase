@@ -6,16 +6,11 @@
     <link href="./css/basic.css" rel="stylesheet" type="text/css"/>
     <title>Document</title>
 </head>
+
 <body>
-
 <div id="register">
-
     <div id="encabezado">
-        <div>
-            <a class="btnAtras" href="./index.html" id="btnAtras">
-                <img alt="Atrás" id="atras" src="./assets/atras-02.svg">
-            </a>
-        </div>
+
     </div>
 
     <div id="cuerpo">
@@ -24,42 +19,26 @@
             <h1>Crea tu cuenta RENTEASY</br>Ingresa los datos solicitados</h1>
         </div>
 
-
         <div id="formIndex">
-
             <div class="center">
                 <form id="formrRegister" method="post" name="formrRegister">
-
-
                     <input id="firstName" name="firstName" placeholder="Nombre" type="text">
-
                     <input id="lastName" name="lastName" placeholder="Apellido" type="text">
-
                     <input id="email" name="email" placeholder="email" type="text">
-
-                    <input id="birthDate" max="2010-01-01" min="1900-01-01" name="birthDate" placeholder="Fecha de nacimiento" type="date"
-                           value=""/>
-
+                    <input id="birthDate" max="2010-01-01" min="1900-01-01" name="birthDate"
+                           placeholder="Fecha de nacimiento" type="date" value=""/>
                     <input id="password" name="password" placeholder="Contraseña" type="password">
-
                     <input id="passwordConfirmation" name="passwordConfirmation" placeholder="Confirma tu constraseña"
                            type="password">
-
                     <input id="flats" name="flats" type="hidden">
-
+                </form>
             </div>
-
         </div>
-    </div>
-    </form>
 
-    <div id="pie">
-        <div class="center">
-            <button>Crear cuenta</button>
-        </div>
     </div>
-    <a class="btn" id="limpiarFormLocalStorage">Borrar LocalStorage</a>
-
+    <div class="center">
+        <button>Crear cuenta</button>
+    </div>
     <script src="js/classValidaciones.js"></script>
     <script src="js/classGuardar.js"></script>
     <script src="js/register.js"></script>

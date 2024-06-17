@@ -7,9 +7,36 @@ const urlParams = new URLSearchParams(window.location.search);
 // Obtener el valor del parámetro userkey
 const userkeyurlParams = urlParams.get('userkey');
 const firstName = urlParams.get('firstName');
+const updateParams = urlParams.get('update');
 //imprimo en pantalla
 document.getElementById('nameUser').innerHTML = firstName;
 document.getElementById('userKey').innerHTML = userkeyurlParams;
+/*****************************************************************************************
+ '                  CREAR REGISTRO O EDITAR REGISTRO
+ *****************************************************************************************/
+if (updateParams == true) {
+
+    if (localStorage.getItem(userkeyurlParams) !== null) {
+        alert('Usuario existe');
+    } else {
+        //leer datos del usuario segun su userkay
+        let readUser = localStorage.getItem(userkeyurlParams);
+        //console.log("readUser = " + readUser);
+
+        // Convertir los datos a un objeto JavaScript
+        let datos = JSON.parse(readUser);
+
+        document.querySelector(input[name = "firstName"]).innerHTML.value = datos.firstName;
+        document.querySelector(input[name = "lastName"]).innerHTML.value = datos.lastName;
+        document.querySelector(input[name = "birthDate"]).innerHTML.value = datos.birthDate;
+        // password
+    }
+} else if (updateParams == false) {
+    //no hace nada
+    console.log(`el usuario se va a registrar`);
+} else {
+    document.location.href = 'index.html';
+}
 /*****************************************************************************************
  '                  VALIDAR INPUT firstName
  *****************************************************************************************/
@@ -111,6 +138,37 @@ function getDataForm(event) {
 
     const objetData = Object.fromEntries(formData);
     //console.log('transforma una lista de pares con [clave-valor]', objetData);
+
+    let vacio = true;
+    //validacion que todos los campos tengan un valor ingresado
+    for (let input of objetData) {
+        if (input.length != 0) {
+            vacio = false;
+        }
+    }
+    console.log(`input = ${vacio}`);
+
+
+    //Validacion de minimo dos caracteres
+    console.log(`validacion 2 caracteres ${firstName} ${lastName}`);
+
+    let validacionCaracteresFirst = false;
+    let validacionCaracteresLast = false;
+
+    if (objetData.firstName.length <= 2) {
+        validacionCaracteresFirst = false;
+    } else {
+        validacionCaracteresFirst = true;
+    }
+    console.log(`First = ${validacionCaracteresFirst}`);
+
+    if (objetData.lastName.length <= 2) {
+        validacionCaracteresLast = false;
+    } else {
+        validacionCaracteresLast = true;
+    }
+
+    console.log(`Last = ${validacionCaracteresLast}`);
 
     // Acceder al email y firstName
     const userkey = objetData.email;
