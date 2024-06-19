@@ -347,10 +347,14 @@ function new_flats(sessionUser) {
         let campos = new classValidaciones()
         let campoVacio = campos.camposVacios(objetData);
 
+
         //Creo y agrego el ID del flat al Objeto
         objetData.dateRegisterKey = obtenerFechaHoraActual();
         objetData.picture = "images/flats/picture_0002.png";
-        objetData.favorte = {favoriteUserkey: userkey};
+        objetData.favorite = [{favoriteUserkey: userkey}];
+        //datos.flats.favorite.push = {favoriteUserkey: userkey};
+
+
         console.log(objetData);
 
         //si la BD tiene el ID del Usuario y todos los campos tienen valores
@@ -359,7 +363,11 @@ function new_flats(sessionUser) {
             //leer datos del usuario segun su userkay
             let readUser = localStorage.getItem(userkey)
             datos = JSON.parse(readUser);
+            if (!datos.flats) {
+                datos.flats = [];
+            }
             datos.flats.push(objetData);
+
             localStorage.setItem(userkey, JSON.stringify(datos));
             console.log('graba', window.localStorage);
 
