@@ -21,6 +21,11 @@ class classValidaciones {
                                 alertify.message('OK______________________');
                             });
                             return false;
+                        } else if (dataFormulario[key] == null || dataFormulario[key] == "" || dataFormulario[key] == 0) {
+                            alertify.alert('Aviso', 'Ingres su email', function () {
+                                alertify.message('OK______________________');
+                            });
+                            return false;
                         }
                         break;
                     case'password':
