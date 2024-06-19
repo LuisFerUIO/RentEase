@@ -352,8 +352,6 @@ function new_flats(sessionUser) {
         objetData.dateRegisterKey = obtenerFechaHoraActual();
         objetData.picture = "images/flats/picture_0002.png";
         objetData.favorite = [{favoriteUserkey: userkey}];
-        //datos.flats.favorite.push = {favoriteUserkey: userkey};
-
 
         console.log(objetData);
 
@@ -367,8 +365,12 @@ function new_flats(sessionUser) {
                 datos.flats = [];
             }
             datos.flats.push(objetData);
-
             localStorage.setItem(userkey, JSON.stringify(datos));
+
+            alertify.alert('Aviso', 'Registro exitoso', function () {
+                alertify.message('OK______________________');
+            });
+            document.getElementById('formFlatRegister').reset();
             console.log('graba', window.localStorage);
 
             //document.location.href = 'home.html?userkey=' + userkey + '&firstName=' + firstName;
