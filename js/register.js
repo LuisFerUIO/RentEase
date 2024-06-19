@@ -88,9 +88,7 @@ inputEmail.addEventListener('focusout', function (event) {
     }
 
 });
-/*****************************************************************************************
- '                 FUNCTION GUARDAR USUARIO
- *****************************************************************************************/
+
 /*****************************************************************************************
  '                  CREADOR SE SESIÓN EN SESSION STORAGE
  *****************************************************************************************/
@@ -107,6 +105,9 @@ function createSession(userkey, firstName) {
     return true;
 }
 
+/*****************************************************************************************
+ '                 FUNCTION GUARDAR USUARIO
+ *****************************************************************************************/
 const elementFormRegister = document.querySelector('form[name=formrRegister]');
 elementFormRegister.addEventListener('submit', guardarRegistro);
 
@@ -115,14 +116,15 @@ function guardarRegistro(event) {
     const formData = new FormData(elementFormRegister);
     const objetData = Object.fromEntries(formData);
 
+    let validarCampos = new classValidaciones();
+    let grabar = validarCampos.camposRegistro(objetData);
+
     let userkey = objetData.email;
     let firstName = objetData.firstName;
     // borro campos del objeto antes de enviar a guardar
     delete objetData.email;
     delete objetData.passwordConfirmation;
 
-    let validarCampos = new classValidaciones();
-    let grabar = validarCampos.camposRegistro(objetData);
     if (grabar) {
         const userRegister = JSON.stringify(objetData);
         console.log(userRegister);

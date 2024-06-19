@@ -21,15 +21,36 @@ class classValidaciones {
                                 alertify.message('OK______________________');
                             });
                             return false;
+                        } else if (dataFormulario[key] == null || dataFormulario[key] == "" || dataFormulario[key] == 0) {
+                            alertify.alert('Aviso', 'Ingres su email', function () {
+                                alertify.message('OK______________________');
+                            });
+                            return false;
                         }
+
                         break;
                     case'password':
+                        // Expresiones regulares para verificar letras, números y caracteres especiales
+                        var contieneLetras = /[a-zA-Z]/.test(dataFormulario[key]);
+                        var contieneNumeros = /\d/.test(dataFormulario[key]);
+                        var contieneCaracterEspecial = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>\/?]/.test(dataFormulario[key]);
+
                         if (dataFormulario[key].length < 6) {
                             //alert("Ingrese al menos 6 caracter");
                             alertify.alert('Aviso', 'ingresa al menos 6 caracteres', function () {
                                 alertify.message('OK______________________');
                             });
                             return false;
+                        } else {
+                            // Verificar si cumple con todos los criterios
+                            if (contieneLetras && contieneNumeros && contieneCaracterEspecial) {
+
+                            } else {
+                                alertify.alert('Aviso', 'Su clave debe contener letras, números y caracteres especiales', function () {
+                                    alertify.message('OK______________________');
+                                });
+                                return false;
+                            }
                         }
                         break;
                     case'passwordConfirmation':

@@ -71,7 +71,7 @@ function imprimirFlats(sessionUser) {
 
         } else {
             // Si no tiene la propiedad 'flats', agregar un mensaje indicando que no tiene 'flats'
-            content += `Usuario: ${key} - No tiene flats<br/><br/><br/>`;
+            //content += `Usuario: ${key} - No tiene flats<br/><br/><br/>`;
         }
     }
     document.getElementById('flats').innerHTML = content;
