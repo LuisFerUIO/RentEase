@@ -1,7 +1,150 @@
 class classValidaciones {
     constructor() {
+        let elementos;
     }
 
+    camposRegistro(dataFormulario) {
+        let tipoDato = typeof dataFormulario;
+        console.log("tipoDato = " + tipoDato);
+        console.log("dataFormulario = " + dataFormulario);
+        let validacion = true;
+        console.log(dataFormulario.birthDate);
+        if (tipoDato == "object") {
+            for (let key of Object.keys(dataFormulario)) {
+                console.log("key = " + key);
+                console.log("objetData[key] = " + dataFormulario[key] + dataFormulario[key].length);
+                let pass;
+                switch (key) {
+                    case'email':
+                        if (localStorage.getItem(dataFormulario[key]) !== null) {
+                            alertify.alert('Aviso', 'El email ya fue registrado', function () {
+                                alertify.message('OK______________________');
+                            });
+                            return false;
+                        } else if (dataFormulario[key] == null || dataFormulario[key] == "" || dataFormulario[key] == 0) {
+                            alertify.alert('Aviso', 'Ingres su email', function () {
+                                alertify.message('OK______________________');
+                            });
+                            return false;
+                        }
+
+                        break;
+                    case'password':
+                        // Expresiones regulares para verificar letras, números y caracteres especiales
+                        var contieneLetras = /[a-zA-Z]/.test(dataFormulario[key]);
+                        var contieneNumeros = /\d/.test(dataFormulario[key]);
+                        var contieneCaracterEspecial = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>\/?]/.test(dataFormulario[key]);
+
+                        if (dataFormulario[key].length < 6) {
+                            //alert("Ingrese al menos 6 caracter");
+                            alertify.alert('Aviso', 'ingresa al menos 6 caracteres', function () {
+                                alertify.message('OK______________________');
+                            });
+                            return false;
+                        } else {
+                            // Verificar si cumple con todos los criterios
+                            if (contieneLetras && contieneNumeros && contieneCaracterEspecial) {
+
+                            } else {
+                                alertify.alert('Aviso', 'Su clave debe contener letras, números y caracteres especiales', function () {
+                                    alertify.message('OK______________________');
+                                });
+                                return false;
+                            }
+                        }
+                        break;
+                    case'passwordConfirmation':
+                        if (dataFormulario[key] !== dataFormulario.password) {
+                            //alert("Ingrese al menos 6 caracter");
+                            alertify.alert('Aviso', 'Confirme que su password sea igual', function () {
+                                alertify.message('OK______________________');
+                            });
+                            return false;
+                        }
+                        break;
+                    case'birthDate':
+                        let now = new Date();
+                        //let birth = new Date(`1984/12/25 00:00:00`);
+                        let birth = new Date(dataFormulario.birthDate);
+                        let anios = now.getFullYear() - birth.getFullYear();
+                        if (dataFormulario[key] == "" || dataFormulario[key] == 0 || dataFormulario[key] == undefined) {
+                            alertify.alert('Aviso', 'Ingrese su fecha de nacimiento', function () {
+                                alertify.message('OK______________________');
+                            });
+                            return false;
+                        } else if (anios < 18) {
+                            alertify.alert('Aviso', 'Debe ser mayor de edad para registrarse', function () {
+                                alertify.message('OK______________________');
+                            });
+                            return false;
+                        } else if (anios > 120) {
+                            alertify.alert('Aviso', 'Debe tener menos de 120 años', function () {
+                                alertify.message('OK______________________');
+                            });
+                            return false;
+                        }
+
+
+                        break;
+                    case'firstName':
+                        if (dataFormulario[key].length < 2) {
+                            //alert("Ingrese al menos 6 caracter");
+                            alertify.alert('Aviso', 'Ingrese al menos dos caracteres', function () {
+                                alertify.message('OK______________________');
+                            });
+                            return false;
+                        }
+
+                        break;
+                    case'lastName':
+                        if (dataFormulario[key].length < 2) {
+                            //alert("Ingrese al menos 6 caracter");
+                            alertify.alert('Aviso', 'Ingrese al menos dos caracteres', function () {
+                                alertify.message('OK______________________');
+                            });
+                            return false;
+                        }
+
+                        break;
+                }
+
+            }
+
+        }
+        return validacion;
+    }
+
+    camposVacios(dataFormulario) {
+        let tipoDato = typeof dataFormulario;
+        console.log("tipoDato = " + tipoDato);
+        let validacion = true;
+        if (tipoDato == "object") {
+            for (let key of Object.keys(dataFormulario)) {
+                // console.log("key = " + key);
+                // console.log("objetData[key] = " + dataFormulario[key] + dataFormulario[key].length);
+                if (key == "streetNumber") {
+                    if (dataFormulario[key].length < 1) {
+                        //alert("Seleccione una opción en" + key );
+                        alert("Seleccione una provincia");
+                        return false;
+                    }
+                } else if (key == "city" || key == "province") {
+                    if (dataFormulario[key].length < 1) {
+                        alert("Seleccione una ciudad");
+                        return false;
+                    }
+                } else {
+                    if (dataFormulario[key].length < 2) {
+                        alert("Ingrese al menos 2 caracter" + key);
+                        return false;
+                    }
+                }
+            }
+            return validacion;
+        }
+
+        //return  elemeto = elemeto || false;
+    }
     camposNumeros(elEvento, permitidos, mitexto) {
         /*****************************************************************************************
          '                      validacion de texto y numeros

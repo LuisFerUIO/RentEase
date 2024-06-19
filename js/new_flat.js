@@ -1,21 +1,7 @@
-// /*****************************************************************************************
-//  '		RECUPERO EL USERKAY POR LA URL
-//  *****************************************************************************************/
-// // Obtener la URL actual
-// const urlParams = new URLSearchParams(window.location.search);
-//
-// // Obtener el valor del parámetro userkey
-// const userkey = urlParams.get('userkey');
-// document.getElementById('userkey').value = userkey;
-// const firstName = urlParams.get('firstName');
-// document.getElementById('mensaje').innerHTML = 'bienvenido ' + firstName;
-
 // Se dispara cuando haya cargado la pagina y verificar la sesión al cargar la página
 window.onload = function () {
     let sessionUser = verificarSesion();
-    userkey = sessionUser.userkey;
-    firstNameParams = sessionUser.firstName;
-    document.getElementById('userkey').value = userkey;
+    new_flats(sessionUser);
 }
 /*****************************************************************************************
  'GENERADOR DE CANTONES
@@ -213,7 +199,6 @@ const selectProvince = document.getElementById('province');
 
 // Asociar el manejador de eventos con el evento keypress del input
 selectProvince.addEventListener('change', function (event) {
-
     const selectedOption = selectProvince.options[selectProvince.selectedIndex].text;
     canton.generarSelect(selectedOption);
     event.preventDefault();
@@ -221,7 +206,7 @@ selectProvince.addEventListener('change', function (event) {
 /*****************************************************************************************
  '                  INPUT streetName
  *****************************************************************************************/
-//intancio la class permitidos
+//instancia la class permitidos
 const validarStreetName = new classValidaciones();
 
 // Obtener el elemento input
@@ -236,12 +221,11 @@ inputStreetName.addEventListener('keypress', function (event) {
     if (!validarStreetName.camposNumeros(event, permitidos, mitexto)) {
         event.preventDefault();
     }
-
 });
 /*****************************************************************************************
  '                  INPUT AreaSize
  *****************************************************************************************/
-//intancio la class permitidos
+//instancia la class permitidos
 const validarAreaSize = new classValidaciones();
 
 // Obtener el elemento input
@@ -256,12 +240,11 @@ inputAreaSize.addEventListener('keypress', function (event) {
     if (!validarAreaSize.camposNumeros(event, permitidos, mitexto)) {
         event.preventDefault();
     }
-
 });
 /*****************************************************************************************
  '                  INPUT StreetNumber
  *****************************************************************************************/
-//intancio la class permitidos
+//instancia la class permitidos
 const validarStreetNumber = new classValidaciones();
 
 // Obtener el elemento input
@@ -280,7 +263,7 @@ inputStreetNumber.addEventListener('keypress', function (event) {
 /*****************************************************************************************
  '                  INPUT YearBuilt
  *****************************************************************************************/
-//intancio la class permitidos
+//instancia la class permitidos
 const validarYearBuilt = new classValidaciones();
 
 // Obtener el elemento input
@@ -299,7 +282,7 @@ inputYearBuilt.addEventListener('keypress', function (event) {
 /*****************************************************************************************
  '                  INPUT rentPrice
  *****************************************************************************************/
-//intancio la class permitidos
+//instancia la class permitidos
 const validarRentPrice = new classValidaciones();
 
 // Obtener el elemento input
@@ -316,87 +299,83 @@ inputRentPrice.addEventListener('keypress', function (event) {
     }
 });
 /*****************************************************************************************
- '                 FUNCTION GUARDAR FLAT
+ '                 FUNCTION GENERAR ID PARA LOS FLATS
  *****************************************************************************************/
 
-// Obtener el formulario
-const elementFlatRegister = document.querySelector('form[name=formFlatRegister]');
-//detecto la accion en el boton y ejecuto la funcion
-elementFlatRegister.addEventListener('submit', getDataForm);
+//Creo una key por medio de la fecha, hora, min, seg del sistema
+function obtenerFechaHoraActual() {
+    const ahora = new Date();
 
-//funcion
-function getDataForm(event) {
-    event.preventDefault()
+    const año = ahora.getFullYear();
+    const mes = String(ahora.getMonth() + 1).padStart(2, '0'); // Los meses son 0-indexados
+    const dia = String(ahora.getDate()).padStart(2, '0');
 
+    const horas = String(ahora.getHours()).padStart(2, '0');
+    const minutos = String(ahora.getMinutes()).padStart(2, '0');
+    const segundos = String(ahora.getSeconds()).padStart(2, '0');
+
+    const fechaHora = `${año}${mes}${dia}${horas}${minutos}${segundos}`;
+    return fechaHora;
+}
+
+/*****************************************************************************************
+ '                 FUNCTION GUARDAR FLAT
+ *****************************************************************************************/
+function new_flats(sessionUser) {
+    console.log(sessionUser);
+    userkey = sessionUser.userkey;
+    //serkeyurlParams = sessionUser.userkey;
+    firstNameParams = sessionUser.firstName;
+
+
+    // Recojo los elementos del formulario
+    const elementFlatRegister = document.querySelector('form[name=formFlatRegister]');
     console.log('formulario completo', elementFlatRegister);
 
-    const formData = new FormData(elementFlatRegister);
-    //console.log('Está pensado principalmente para enviar datos de formularios', formData);
+    //detecto la acción en el botón y ejecuto la función
+    elementFlatRegister.addEventListener('submit', getDataForm);
 
-    const objetData = Object.fromEntries(formData);
-    console.log('transforma una lista de pares con [clave-valor]', objetData);
+    function getDataForm(event) {
+        event.preventDefault()
 
-    //elimino lo que no necisito
-    delete objetData.userkey;
+        const formData = new FormData(elementFlatRegister);
 
-//asignar la fecha y hora de registro
+        const objetData = Object.fromEntries(formData);
+        console.log('transforma una lista de pares con [clave-valor]', objetData);
 
-// creo una key por medio de la fecha,hora,min,seg del sistema
-    function obtenerFechaHoraActual() {
-        const ahora = new Date();
+        //validar que cada campo tenga un valor min 2 caracteres
+        let campos = new classValidaciones()
+        let campoVacio = campos.camposVacios(objetData);
 
-        const año = ahora.getFullYear();
-        const mes = String(ahora.getMonth() + 1).padStart(2, '0'); // Los meses son 0-indexados
-        const dia = String(ahora.getDate()).padStart(2, '0');
 
-        const horas = String(ahora.getHours()).padStart(2, '0');
-        const minutos = String(ahora.getMinutes()).padStart(2, '0');
-        const segundos = String(ahora.getSeconds()).padStart(2, '0');
+        //Creo y agrego el ID del flat al Objeto
+        objetData.dateRegisterKey = obtenerFechaHoraActual();
+        objetData.picture = "images/flats/picture_0002.png";
+        objetData.favorite = [{favoriteUserkey: userkey}];
 
-        const fechaHora = `${año}${mes}${dia}${horas}${minutos}${segundos}`;
-        return fechaHora;
-    }
+        console.log(objetData);
 
-    let dateNow = obtenerFechaHoraActual()
-    //guardo el valor generado
-    //objetData[dateRegisterKey] = dateNow;
-    objetData.dateRegisterKey = dateNow;
+        //si la BD tiene el ID del Usuario y todos los campos tienen valores
+        if (localStorage.getItem(userkey) !== null && campoVacio) {
 
-    //asigno el valor del campo oculto userkey
-    let userkey = document.getElementById('userkey').value;
-    console.log('userkey campo oculto = ' + userkey);
+            //leer datos del usuario segun su userkay
+            let readUser = localStorage.getItem(userkey)
+            datos = JSON.parse(readUser);
+            if (!datos.flats) {
+                datos.flats = [];
+            }
+            datos.flats.push(objetData);
+            localStorage.setItem(userkey, JSON.stringify(datos));
 
-    if (localStorage.getItem(userkey) !== null) {
+            alertify.alert('Aviso', 'Registro exitoso', function () {
+                alertify.message('OK______________________');
+            });
+            document.getElementById('formFlatRegister').reset();
+            console.log('graba', window.localStorage);
 
-        //leer datos del usuario segun su userkay
-        let readUser = localStorage.getItem(userkey)
-        console.log(readUser);
-
-        // Convertir los datos a un objeto JavaScript
-        let datos = JSON.parse(readUser);
-
-        // Agregar la propiedad "flats" al objeto "datos" si no existe
-        if (!datos.flats) {
-            datos.flats = [];
+            //document.location.href = 'home.html?userkey=' + userkey + '&firstName=' + firstName;
+        } else {
+            console.log('NO PUEDE GRABAR ERROR!');
         }
-
-        //const flatRegister = JSON.stringify(objetData);
-        //console.log('grabar estos datos' , userRegister);
-        // let flat1 = {
-        //     calle: 'alonso',
-        // }
-        // flat = JSON.parse(flat1);
-        //datos.flats.push(flat1);
-
-        //flat = JSON.parse(objetData);
-        datos.flats.push(objetData);
-
-        // Guardar los datos actualizados en localStorage
-        localStorage.setItem(userkey, JSON.stringify(datos));
-        console.log('graba', window.localStorage);
-
-        document.location.href = 'home.html?userkey=' + userkey + '&firstName=' + firstName;
-    } else {
-        alert('ERROR!');
     }
 }
