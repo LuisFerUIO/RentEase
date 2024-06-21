@@ -197,7 +197,7 @@ function cargarDatosLocalStorage() {
             "picture": "images/flats/picture_01.png",
             "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082428",
+            "dateRegisterKey": "20240322082428",
             "province": "ESMERALDAS",
             "city": "ESMERALDAS",
             "streetName": "Garcia",
@@ -218,7 +218,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1987-04-04",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082428",
+            "dateRegisterKey": "20240122082428",
             "province": "TUNGURAHUA",
             "city": "AMBATO",
             "streetName": "Lara",

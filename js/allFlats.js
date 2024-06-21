@@ -3,6 +3,8 @@ window.onload = function () {
     let sessionUser = verificarSesion();
     imprimirFlats(sessionUser);
     listCities();
+    loadPriceRange();
+    loadaAreaRange();
 }
 /*****************************************************************************************
  '		RECUPERAR FLATS DE TODOS LOS USUARIOS
@@ -255,12 +257,14 @@ function citiesSelect(selectedValue) {
     return dataFilter;
     //console.log( dataFilter);
 }
-
 /********************* OCULTA DIVS CON ID QUE NO SON PARTE DE LA SELECCION**********************************/
 function hideDiv(citiesSelect) {
     console.log(typeof citiesSelect);
     citiesSelect = citiesSelect.map(id => id.dateRegisterKey);
     console.log(citiesSelect);
+
+    if (citiesSelect.length != 0) {
+
     let divContent = document.getElementById('flats');
     const divsFlats = divContent.querySelectorAll("div");
 
@@ -270,7 +274,7 @@ function hideDiv(citiesSelect) {
         if (divsFlatsBox.getAttribute('data-id')) {
             const dataId = divsFlatsBox.getAttribute('data-id');
 
-            // si no encuentra devuelve true
+            // si no encuentra devuelve true y hace que si esta en el array de  false
             let hide = !citiesSelect.includes(dataId);
             console.log(hide);
 
@@ -313,10 +317,108 @@ function hideDiv(citiesSelect) {
             }
         }
     }
+    } else {
+        console.log("citiesSelect error");
+    }
 }
 
 /*****************************************************************************************
  '                 FILTRO POR RANGO DE PRECIO
  *****************************************************************************************/
+var ArrAllPrice = [];
+var ArrListPrice = [];
 
+function loadPriceRange() {
+    let keys = Object.keys(localStorage);
+    for (let key of keys) {
+        let item = JSON.parse(localStorage.getItem(key));
+        console.log(item)
+        // Verificar si el objeto tiene una propiedad 'flats'
+        if (item.flats) {
+            item.flats.forEach((flat, index) => {
+                let dataRentPrice = flat.rentPrice;
+                let dataDateRegisterKey = flat.dateRegisterKey;
+                ArrAllPrice.push({rentPrice: dataRentPrice, dateRegisterKey: dataDateRegisterKey});
+                ArrListPrice.push(flat.rentPrice);
+                //console.log(ArrAllPrice);
+                //console.log(ArrListPrice);
+            });
+        }
+    }
+    document.querySelector('input[name="filerPriceMin"]').placeholder = Math.min(...ArrListPrice);
+    document.querySelector('input[name="filerPriceMax"]').placeholder = Math.max(...ArrListPrice);
+}
 
+/*****************************FILTRO  PRECIO*****************************************************/
+const elementFormRegisterFilerPrice = document.querySelector('form[name=filerPrice]');
+elementFormRegisterFilerPrice.addEventListener('submit', filerPrice);
+
+function filerPrice(event) {
+    event.preventDefault()
+
+    let min = document.querySelector('input[name="filerPriceMin"]').value;
+    let max = document.querySelector('input[name="filerPriceMax"]').value;
+    // Filtrar los valores dentro del rango usando una función regular
+    let Arrfilter = ArrAllPrice.filter(function (objetRentPrice) {
+        //return !(price >= min && price <= max);
+        if (objetRentPrice.rentPrice >= min && objetRentPrice.rentPrice <= max) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    console.log("Arrfilter" + Arrfilter);
+    document.querySelector('form[name="filerArea"]').reset();
+    hideDiv(Arrfilter);
+
+}
+
+/*****************************************************************************************
+ '                 FILTRO POR RANGO DE AREA
+ *****************************************************************************************/
+var ArrAllArea = [];
+var ArrListArea = [];
+
+function loadaAreaRange() {
+
+    let keys = Object.keys(localStorage);
+    for (let key of keys) {
+        let item = JSON.parse(localStorage.getItem(key));
+        console.log(item)
+        // Verificar si el objeto tiene una propiedad 'flats'
+        if (item.flats) {
+            item.flats.forEach((flat, index) => {
+                let dataAreaSize = flat.areaSize;
+                let dataDateRegisterKey = flat.dateRegisterKey;
+                ArrAllArea.push({areaSize: dataAreaSize, dateRegisterKey: dataDateRegisterKey});
+                ArrListArea.push(flat.areaSize);
+                console.log(ArrAllArea);
+                console.log(ArrListArea);
+            });
+        }
+    }
+    document.querySelector('input[name="filterAreaMin"]').placeholder = Math.min(...ArrListArea);
+    document.querySelector('input[name="filterAreaMax"]').placeholder = Math.max(...ArrListArea);
+}
+
+/*****************************FILTRO  AREA*****************************************************/
+const elementFormFilerArea = document.querySelector('form[name=filerArea]');
+elementFormFilerArea.addEventListener('submit', filerArea);
+
+function filerArea(event) {
+    event.preventDefault()
+    let min = document.querySelector('input[name="filterAreaMin"]').value;
+    let max = document.querySelector('input[name="filterAreaMax"]').value;
+    // Filtrar los valores dentro del rango usando una función regular
+    let ArrfilterArea = ArrAllArea.filter(function (objetAreaSize) {
+        //return !(price >= min && price <= max);
+        if (objetAreaSize.areaSize >= min && objetAreaSize.areaSize <= max) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    console.log("ArrfilterArea" + ArrfilterArea);
+    document.querySelector('form[name="filerPrice"]').reset();
+    hideDiv(ArrfilterArea);
+}
