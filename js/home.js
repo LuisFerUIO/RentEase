@@ -26,7 +26,7 @@ function imprimirMisFlats(sessionUser) {
             flatsBox += `<li>${flat.rentPrice}</li>`;
             flatsBox += `<li>${flat.areaSize}</li>`;
             flatsBox += `<li class="delete"><a class="btn" href=delete_Flat.html?userkey=${userkeyurlParams}&dateRegisterKey=${flat.dateRegisterKey}&firstName=${firstNameParams}>Eliminar</a></li>`;
-            flatsBox += `<li class="update"><a class="btn" href=update_flat.html?userkey=${userkeyurlParams}&dateRegisterKey=${flat.dateRegisterKey}&firstName=${firstNameParams}&update=true>Actualizar</a></li>`;
+            // flatsBox += `<li class="update"><a class="btn" href=update_flat.html?userkey=${userkeyurlParams}&dateRegisterKey=${flat.dateRegisterKey}&firstName=${firstNameParams}&update=true>Actualizar</a></li>`;
             flatsBox += `</div>`;
             document.getElementById('flats').innerHTML = flatsBox;
             // console.log(flat.dateRegisterKey)

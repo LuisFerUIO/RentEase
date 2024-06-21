@@ -1,18 +1,4 @@
-/*****************************************************************************************
- '                  CREADOR SE SESIÓN EN SESSION STORAGE
- *****************************************************************************************/
-function createSession(userkey, firstName) {
-    let userkeySession = userkey;
-    let firstNameSession = firstName;
-    objetoSession = {
-        userkey: userkeySession,
-        firstName: firstNameSession
-    }
-    console.log(userkeySession + firstNameSession);
-    //sessionStorage.setItem(userkeySession,JSON.stringify(firstNameSession));
-    sessionStorage.setItem('session', JSON.stringify(objetoSession));
-    return true;
-}
+
 
 /*****************************************************************************************
  '                  VALIDAR INPUT email
@@ -76,4 +62,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
+/*****************************************************************************************
+ '                  CREADOR SE SESIÓN EN SESSION STORAGE
+ *****************************************************************************************/
+function createSession(userkey, firstName) {
+    let userkeySession = userkey;
+    let firstNameSession = firstName;
+    objetoSession = {
+        userkey: userkeySession,
+        firstName: firstNameSession
+    }
+    console.log(userkeySession + firstNameSession);
+    //sessionStorage.setItem(userkeySession,JSON.stringify(firstNameSession));
+    sessionStorage.setItem('session', JSON.stringify(objetoSession));
+    return true;
+}
