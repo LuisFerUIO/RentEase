@@ -93,3 +93,12 @@ var firstNameParams;
         document.querySelector(body).appendChild(h1);
     }
 })();
+
+/********************* FILTRA Y DEVUELVE ARRAY  CON ID CIUDADES SELECCIONADA**********************************/
+function citiesSelect(selectedValue) {
+    let dataFilter = ArrAllCity.filter(function (ArrAllCity) {
+            return ArrAllCity.city === selectedValue;
+        }
+    );
+    console.log(dataFilter);
+}
