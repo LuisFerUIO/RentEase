@@ -3,8 +3,8 @@
  /  *****************************************************************************************/
 
 var userkeyurlParams;
+//var userkey;
 var firstNameParams;
-var userkey;
 
 //window: objeto ventana
 //pageshow: se dispara cuando la pagina se carga por primera vez o desde caché
@@ -15,7 +15,8 @@ window.addEventListener('pageshow', function (event) {
     }
 });
 
-
+//lee sessionStorage.getItem y verifica si el usuario existe
+//caso contrario elimina todos los div en pantalla
 function verificarSesion() {
     let sessionUser = JSON.parse(sessionStorage.getItem('session'));
     if (sessionUser) {
@@ -37,11 +38,24 @@ function verificarSesion() {
     }
 }
 
+//imprime en el head ID y Nombre del Usuario
 function imprimirDatosHead(sessionUser) {
     document.getElementById('userkey').innerHTML = sessionUser.userkey;
     document.getElementById('firstName').innerHTML = sessionUser.firstName;
 }
 
+/*****************************************************************************************
+ '                  CARGAR DATOS DEL USUARIO
+ *****************************************************************************************/
+function loadUser(userkey) {
+    console.log(userkey);
+    objetUser = JSON.parse(localStorage.getItem(userkey));
+    console.log(typeof objetUser);
+    console.log(objetUser);
+    document.querySelector('input[name="firstName"]').value = objetUser.firstName;
+    document.querySelector('input[name="lastName"]').value = objetUser.lastName;
+    document.querySelector('input[name="birthDate"]').value = objetUser.birthDate;
+}
 /*****************************************************************************************
  '		CERRAR DE SESSION
  / *****************************************************************************************/

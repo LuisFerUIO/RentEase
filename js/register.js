@@ -104,7 +104,6 @@ function createSession(userkey, firstName) {
     sessionStorage.setItem('session', JSON.stringify(objetoSession));
     return true;
 }
-
 /*****************************************************************************************
  '                 FUNCTION GUARDAR USUARIO
  *****************************************************************************************/
@@ -129,7 +128,7 @@ function guardarRegistro(event) {
         const userRegister = JSON.stringify(objetData);
         console.log(userRegister);
         localStorage.setItem(userkey, userRegister);
-        //grabo datos en session storage
+        //***********grabo datos en session storage
         createSession(userkey, firstName);
         console.log('graba', window.localStorage);
         //alert('Bien almacenado!!');

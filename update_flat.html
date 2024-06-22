@@ -8,86 +8,92 @@
 </head>
 <body>
 
-<div id="encabezado">
-    <div>
-        <a class="btnAtras" href="./index.html" id="btnAtras">
-            <img alt="Atrás" id="atras" src="./assets/atras-02.svg">
+<div id="encabezadohome">
+    <div id="logOut">logOut</div>
+
+    <span id="firstName"></span>
+    <span id="userkey"></span>
+
+    <div id="perfil">
+        <a class="" href="./update_register.html" id="miperfil">
+            <img alt="Mi perfil" id="MiPerfil" src="./assets/perfil.svg">
         </a>
     </div>
 </div>
 
+<div id="cuerpo">
+    <h2 id="mensaje"></h2>
+    <h2 id="nameUser"></h2>
+    <form id="formFlatRegister" name="formFlatRegister">
+        <input id="userkey" name="userkey" type="hidden"/>
+        <input id="dateRegisterKey" name="dateRegisterKey" type="hidden"/>
+        <input id="favorite" name="favorite" type="hidden" value="si">
+        <input id="picture" name="picture" type="hidden" value="images/flats/picture_0001.png">
+        <label>Provincia</label>
+        <select id="province" name="province">
+            <option value="">Selecciona una Provincia</option>
+            <option value="AZUAY">AZUAY</option>
+            <option value="BOLIVAR">BOLIVAR</option>
+            <option value="CANAR">CA&Ntilde;AR</option>
+            <option value="CARCHI">CARCHI</option>
+            <option value="CHIMBORAZO">CHIMBORAZO</option>
+            <option value="COTOPAXI">COTOPAXI</option>
+            <option value="EL_ORO">EL ORO</option>
+            <option value="ESMERALDAS">ESMERALDAS</option>
+            <option value="GALAPAGOS">GALAPAGOS</option>
+            <option value="GUAYAS">GUAYAS</option>
+            <option value="IMBABURA">IMBABURA</option>
+            <option value="LOJA">LOJA</option>
+            <option value="LOS_RIOS">LOS RIOS</option>
+            <option value="MANABI">MANABI</option>
+            <option value="MORONA_SANTIAGO">MORONA SANTIAGO</option>
+            <option value="NAPO">NAPO</option>
+            <option value="ORELLANA">ORELLANA</option>
+            <option value="PASTAZA">PASTAZA</option>
+            <option value="PICHINCHA">PICHINCHA</option>
+            <option value="SANTA_ELENA">SANTA ELENA</option>
+            <option value="SANTO_DOMINGO_DE_LOS_TSACHILAS">SANTO
+                DOMINGO DE LOS TSACHILAS
+            </option>
+            <option value="SUCUMBIOS">SUCUMBIOS</option>
+            <option value="TUNGURAHUA">TUNGURAHUA</option>
+            <option value="ZAMORA_CHINCHIPE">ZAMORA CHINCHIPE</option>
+        </select>
+        <label>Ciudad/Canton</label>
+        <select id="city" name="city"></select>
+        <label>Calle</label>
+        <input id="streetName" name="streetName" type="text"/>
+        <label>Número</label>
+        <input id="streetNumber" name="streetNumber" type="text"/>
+        <label>Area m2</label>
+        <input id="areaSize" name="areaSize" type="text"/>
+        <label>Con Aire Acondicionado</label>
+        <select name="hasAc">
+            <option value="">Selecione una Opción</option>
+            <option value="SI">SI</option>
+            <option value="NO">NO</option>
+        </select>
+        <label>Año de Construcción</label>
+        <input id="yearBuilt" name="yearBuilt" type="text"/>
+        <label>Precio Alquiler </label>
+        <input id="rentPrice" name="rentPrice" type="text"/>
+        <label>Fecha disponible</label>
+        <input id="dateAvailable" max="2025-12-31" min="2024-05-01" name="dateAvailable" type="date"
+               value="2024-05-01"/>
+        <div id="contenedor_button_form">
+            <button class="btnForm" id="btnForm">Guardar</button>
+        </div>
+    </form>
 
-<h2 id="mensaje"></h2>
-<h2 id="nameUser"></h2>
-<form id="formFlatRegister" name="formFlatRegister">
-    <input id="userkey" name="userkey" type="hidden"/>
-    <input id="dateRegisterKey" name="dateRegisterKey" type="hidden"/>
-    <input id="favorite" name="favorite" type="hidden" value="si">
-    <input id="picture" name="picture" type="hidden" value="images/flats/picture_0001.png">
-    <label>Provincia</label>
-    <select id="province" name="province">
-        <option value="">Selecciona una Provincia</option>
-        <option value="AZUAY">AZUAY</option>
-        <option value="BOLIVAR">BOLIVAR</option>
-        <option value="CANAR">CA&Ntilde;AR</option>
-        <option value="CARCHI">CARCHI</option>
-        <option value="CHIMBORAZO">CHIMBORAZO</option>
-        <option value="COTOPAXI">COTOPAXI</option>
-        <option value="EL_ORO">EL ORO</option>
-        <option value="ESMERALDAS">ESMERALDAS</option>
-        <option value="GALAPAGOS">GALAPAGOS</option>
-        <option value="GUAYAS">GUAYAS</option>
-        <option value="IMBABURA">IMBABURA</option>
-        <option value="LOJA">LOJA</option>
-        <option value="LOS_RIOS">LOS RIOS</option>
-        <option value="MANABI">MANABI</option>
-        <option value="MORONA_SANTIAGO">MORONA SANTIAGO</option>
-        <option value="NAPO">NAPO</option>
-        <option value="ORELLANA">ORELLANA</option>
-        <option value="PASTAZA">PASTAZA</option>
-        <option value="PICHINCHA">PICHINCHA</option>
-        <option value="SANTA_ELENA">SANTA ELENA</option>
-        <option value="SANTO_DOMINGO_DE_LOS_TSACHILAS">SANTO
-            DOMINGO DE LOS TSACHILAS
-        </option>
-        <option value="SUCUMBIOS">SUCUMBIOS</option>
-        <option value="TUNGURAHUA">TUNGURAHUA</option>
-        <option value="ZAMORA_CHINCHIPE">ZAMORA CHINCHIPE</option>
-    </select>
-    <label>Ciudad/Canton</label>
-    <select id="city" name="city"></select>
-    <label>Calle</label>
-    <input id="streetName" name="streetName" type="text"/>
-    <label>Número</label>
-    <input id="streetNumber" name="streetNumber" type="text"/>
-    <label>Area m2</label>
-    <input id="areaSize" name="areaSize" type="text"/>
-    <label>Con Aire Acondicionado</label>
-    <select name="hasAc">
-        <option value="">Selecione una Opción</option>
-        <option value="SI">SI</option>
-        <option value="NO">NO</option>
-    </select>
-    <label>Año de Construcción</label>
-    <input id="yearBuilt" name="yearBuilt" type="text"/>
-    <label>Precio Alquiler </label>
-    <input id="rentPrice" name="rentPrice" type="text"/>
-    <label>Fecha disponible</label>
-    <input id="dateAvailable" max="2025-12-31" min="2024-05-01" name="dateAvailable" type="date" value="2024-05-01"/>
-    <div id="contenedor_button_form">
-        <button class="btnForm" id="btnForm">Guardar</button>
-    </div>
-</form>
-
-<div id="footer">
-    <div id="footerMenu">
-        <a id="all_flats"><img height="46" src="assets/icon-home.png" width="46px"></a>
-        <a id="new_flat"><img height="46" src="assets/icon-nuevo.png" width="46px"></a>
-        <a id="Like"><img height="46" src="assets/icon-like.svg" width="46px"></a>
-        <a id="home"><img height="46" src="assets/icon-mis-flats.png" width="46px"></a>
+    <div id="footer">
+        <div id="footerMenu">
+            <a id="all_flats"><img height="46" src="assets/icon-home.png" width="46px"></a>
+            <a id="new_flat"><img height="46" src="assets/icon-nuevo.png" width="46px"></a>
+            <a id="Like"><img height="46" src="assets/icon-like.svg" width="46px"></a>
+            <a id="home"><img height="46" src="assets/icon-mis-flats.png" width="46px"></a>
+        </div>
     </div>
 </div>
-
 
 <script src="js/classValidaciones.js"></script>
 <script src="js/new_flat.js"></script>

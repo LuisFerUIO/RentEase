@@ -215,7 +215,7 @@ img.imglogotipo{
 .flatFavorito {
 	width: 20px !important;
 	height: 20px !important;
-	background-image: url('/assets/like.svg');
+	background-image: url('../assets/like.svg');
 	background-repeat: no-repeat;
 	border: none;
 }
@@ -223,10 +223,32 @@ img.imglogotipo{
 .flatNoFavorito {
 	width: 20px !important;
 	height: 20px !important;
-	background-image: url('/assets/like1.svg');
+	background-image: url('../assets/like1.svg');
 	background-repeat: no-repeat;
 	border: none;
 }
+
+/*****************************************************************************************
+ '		FLAT HIDE
+ *****************************************************************************************/
+.hide {
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.hide.hideEnd {
+    display: none;
+}
+
+.show {
+    opacity: 100;
+    transition: opacity 0.1s ease-in;
+}
+
+.show.showEnd {
+    display: block;
+}
+
 /*****************************************************************************************
  '		ENCABEZADO
  *****************************************************************************************/
@@ -317,4 +339,11 @@ margin-top: 1.5rem;
 	width: 45%;
 	height: 1.8em;
 	float: left;
+}
+
+/*****************************************************************************************
+ '		CUERPO
+ *****************************************************************************************/
+#cuerpo {
+	padding-bottom: 120px;
 }

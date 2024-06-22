@@ -197,7 +197,7 @@ function cargarDatosLocalStorage() {
             "picture": "images/flats/picture_01.png",
             "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082428",
+            "dateRegisterKey": "20240322082428",
             "province": "ESMERALDAS",
             "city": "ESMERALDAS",
             "streetName": "Garcia",
@@ -218,7 +218,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1987-04-04",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082428",
+            "dateRegisterKey": "20240122082428",
             "province": "TUNGURAHUA",
             "city": "AMBATO",
             "streetName": "Lara",
@@ -830,145 +830,3 @@ function cargarDatosLocalStorage() {
     }
 }
 
-/*****************************************************************************************
- '		DATOS DE EJEMPLO LOCAL STORE NO-RELACIONAL
- '.........................................................................................
- '  Se agrega un suario con sus dos propiedades
- '  Estos datos se cargan al entrar en la pagina index por primera vez
- '
- ' pront para 20 ejemplos
- ' usando el codigo a continuacion dame 20 objectData adicionales el pasword que sea el mismo. los emails que sean inventados con maximo 4 caracteres en nombre y dominio.
- ' FirsteName y Lasteme invetados de igual manera el resto de propiedasdes. Las provincias si deben ser de Ecuador y la ciudad que corresponda a la provinvia.
- ' Quiero que me des el texto listo para copiar no un script para generar.
- *****************************************************************************************/
-/*****************************************************************************************
- '              boton carga de datos en  local store
- '.........................................................................................
- 'Descripcion:
- '		Necesario para pruebas
- '.........................................................................................
- 'Parametros:
- '		nunguno
- *****************************************************************************************/
-document.getElementById('cargarDatosLocalStorageNoRelacional').addEventListener('click', cargarDatosLocalStorageNoRelacional);
-
-function cargarDatosLocalStorageNoRelacional() {
-
-// const firstName = objetData.firstName;
-// console.log('userkey = ' + userkey + ' firstName = ' + firstName);
-
-// elimino del objeto porque lo usare de key asi no puede haber dos iguales
-// delete objetData.userkey;
-
-// este campo es solo para la validacion se debe borrar
-//delete objetData.passwordConfirmation;
-
-//console.log(objetData);
-
-    if (localStorage.length === 0) {
-
-        console.log('localStorage está vacío procedo a grabar NoRelacional');
-
-        // Función para guardar datos en localStorage
-        function saveToLocalStorage(key, data) {
-            localStorage.setItem(key, JSON.stringify(data));
-        }
-
-        // Función para leer datos de localStorage
-        function loadFromLocalStorage(key) {
-            return JSON.parse(localStorage.getItem(key)) || {};
-        }
-
-
-        // 1. Tabla de Usuarios
-        const users = {
-            "luis@1234.com": {
-                "firstName": "Luis",
-                "lastName": "Suarez",
-                "birthDate": "1984-12-25",
-                "password": "1234"
-            },
-            "diana@1234.com": {
-                "firstName": "Diana",
-                "lastName": "Siguenza",
-                "birthDate": "2004-12-25",
-                "password": "1234"
-            }
-        };
-
-
-// 2. Tabla de Propiedades
-        const properties = {
-            "prop1": {
-                "owner": "luis@1234.com",
-                "province": "MANABI",
-                "city": "MANTA",
-                "streetName": "Nicolas",
-                "streetNumber": "195",
-                "areaSize": "100",
-                "hasAc": "SI",
-                "yearBuilt": "2024",
-                "rentPrice": "1500",
-                "dateAvailable": "2024-05-01",
-                "image": "images/flats/picture_0001.png"
-            },
-            "prop2": {
-                "owner": "luis@1234.com",
-                "province": "PICHINCHA",
-                "city": "QUITO",
-                "streetName": "Burgeus",
-                "streetNumber": "195",
-                "areaSize": "500",
-                "hasAc": "NO",
-                "yearBuilt": "1980",
-                "rentPrice": "300",
-                "dateAvailable": "2024-05-01",
-                "image": "images/flats/picture_0002.png"
-            },
-            "prop3": {
-                "owner": "diana@1234.com",
-                "province": "PICHINCHA",
-                "city": "QUITO",
-                "streetName": "Nicolas",
-                "streetNumber": "195",
-                "areaSize": "100",
-                "hasAc": "NO",
-                "yearBuilt": "2000",
-                "rentPrice": "500",
-                "dateAvailable": "2024-05-01",
-                "image": "images/flats/picture_01.png"
-            },
-            "prop4": {
-                "owner": "diana@1234.com",
-                "province": "AZUAY",
-                "city": "CUENCA",
-                "streetName": "Quito",
-                "streetNumber": "195",
-                "areaSize": "100",
-                "hasAc": "NO",
-                "yearBuilt": "1990",
-                "rentPrice": "400",
-                "dateAvailable": "2024-05-01",
-                "image": "images/flats/picture_01.png"
-            }
-        };
-
-// 3. Tabla de Favoritos
-        const favorites = [
-            {"user": "luis@1234.com", "propertyId": "prop1"},
-            {"user": "luis@1234.com", "propertyId": "prop2"},
-            {"user": "luis@1234.com", "propertyId": "prop3"},
-            {"user": "luis@1234.com", "propertyId": "prop4"},
-            {"user": "diana@1234.com", "propertyId": "prop2"}
-        ];
-
-        // Guardar las tablas en localStorage
-        saveToLocalStorage('users', users);
-        saveToLocalStorage('properties', properties);
-        saveToLocalStorage('favorites', favorites);
-
-    } else {
-        console.log('localStorage tiene elementos almacenados -- No Relacional --');
-    }
-
-}
