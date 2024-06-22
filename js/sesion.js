@@ -3,8 +3,9 @@
  /  *****************************************************************************************/
 
 var userkeyurlParams;
-//var userkey;
+var userkey;
 var firstNameParams;
+var sessionUser;
 
 //window: objeto ventana
 //pageshow: se dispara cuando la pagina se carga por primera vez o desde caché
