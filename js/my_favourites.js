@@ -53,12 +53,21 @@ function imprimirFlats(sessionUser) {
                     //flatsBox += `<label>Favorito:</label><input type="checkbox" id="" value="" checked />`;
                     //flatsBox += `<button class="seleccionFavorito" data-id="${flat.dateRegisterKey}"><img  class="flatFavorito" src="assets/like.svg" alt=""></button>`;
                     //flatsBox += `<button class="seleccionFavorito" data-id="${flat.dateRegisterKey}"><div  class="flatFavorito"></div></button>`;
+                    flatsBox += `<div class="corazonContendor">`;
                     flatsBox += `<button class="flatFavorito" data-id="${flat.dateRegisterKey}\&${key}"></button>`;
-                    flatsBox += `<li class="picture"><img src="${flat.picture}"></li>`;
-                    flatsBox += `<li><span class="userkey">Usuario:<span> ${key}</li>`;
-                    flatsBox += `<li><span class="city">Ciudad:<span>${flat.city}</li>`;
-                    flatsBox += `<li><span class="rentPrice">Precio:<span>$${flat.rentPrice}</li>`;
-                    flatsBox += `<li><span class="areaSize">Metros2:<span>${flat.areaSize}</li>`;
+                    flatsBox += `</div>`;
+
+                    flatsBox += `<div class="picture"><img src="${flat.picture}"></div>`;
+                    flatsBox += `<div class="dataFlat">`;
+                    flatsBox += `<ul>`;
+                    // flatsBox += `<li><span class="city" data-id="${flat.city}" >Ciudad:<span>${flat.city}</li>`;
+                    flatsBox += `<li><span class="city" data-id="${flat.city}" >${flat.city}</span</li>`;
+                    flatsBox += `<li><span class="rentPrice">$${flat.rentPrice}</span</li>`;
+                    flatsBox += `<li><span class="areaSize">${flat.areaSize} m<sup>2</sup></span</li>`;
+                    flatsBox += `<li><span class="userkey"> ${key}</span</li>`;
+                    flatsBox += `<ul>`;
+                    flatsBox += `</div>`;
+
                     flatsBox += `</div>`;
                     content += flatsBox;
                 }
