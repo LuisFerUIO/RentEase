@@ -14,6 +14,7 @@ Diana Siguenza
 	font-family: "Raleway", sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
+	margin: 0;
 }
 .bodyindex {
 	background: url(../assets/pexelswithe.jpg) no-repeat center scroll;
@@ -54,7 +55,7 @@ text-align: center;
 
 form {
 	display: block;
-	padding: 0px;
+	padding: 0;
 }
 
 #formLogin {
@@ -151,16 +152,23 @@ a {
 	margin: 10px;
 	background-color: whitesmoke;
 	border: 1px solid gray;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
+.flatsBox .dataFlat {
+	padding: 0 10px 10px 10px;
+}
+
+.flatsBox ul {
+	list-style: none;
+	padding: 0;
+}
 .flatsBox li {
 	list-style: none;
 }
-
 .flatsBox img {
-	margin-bottom: 10px;
+	margin-bottom: 3px;
 }
-
 .flatsBox input {
 	display: inline;
 	position: relative;
@@ -168,7 +176,47 @@ a {
 	margin: 0px;
 }
 
+.flatsBox .corazonContendor {
+	position: relative;
+}
 
+.flatsBox button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: transparent;
+	display: block;
+	margin: 7px;
+}
+
+.flatsBox .city {
+	background-color: #fad3d6;
+	padding: 5px 10px 5px 10px;
+	font-weight: normal;
+	border-radius: 15px;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+.flatsBox .rentPrice {
+	background-color: #cac0fb;
+	padding: 5px 10px 5px 10px;
+	font-weight: bold;
+	border-radius: 15px;
+	display: inline-block;
+}
+
+.flatsBox .areaSize {
+	padding: 5px 10px 5px 0;
+	border-radius: 15px;
+	display: inline-block;
+}
+
+flatsBox .userkey {
+	padding: 5px 10px 5px 0;
+	border-radius: 15px;
+	display: inline-block;
+}
 .imglogotipo{
 	height: 150px;
 	align-content: center;
@@ -178,6 +226,28 @@ img.imglogotipo{
 	/* width: 200px;*/
 }
 
+/*****************************************************************************************
+ '		PANEL DE CONTROL
+ *****************************************************************************************/
+#controlPanel {
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#controlPanel button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*****************************************************************************************
+ '		CUERPO
+ *****************************************************************************************/
+#cuerpo {
+	margin-left: 2em;
+}
 /*****************************************************************************************
  '		FOOTER Y MENU FOOTER
  *****************************************************************************************/
@@ -202,15 +272,16 @@ img.imglogotipo{
 
 #footerMenu a {
 	margin: 0 15px 0 15px;
-
+	opacity: 0.3;
 }
 
+#footerMenu a.current {
+	opacity: 1;
+}
 /*****************************************************************************************
  '		SELECCION DE FLAT FAVORITO
  *****************************************************************************************/
-.flatsBox button {
-	background-color: white;
-}
+
 
 .flatFavorito {
 	width: 20px !important;
@@ -258,27 +329,97 @@ img.imglogotipo{
 	align-content: left;
 }
 #encabezadohome{
-	background-color: aqua;
 	height: 100px;
-	align-content: right;
+	width: 100%;
+	background-color: #d1f2ee;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 50px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 50px;
+	margin-bottom: 50px;
+}
 
+#isotipo {
+	float: left;
+	width: 49%;
+	display: inline-block;
+}
+
+#isotipo img {
+	height: 50px;
+	width: 50px;
+	margin-top: 25px;
+	padding-left: 30px;
+}
+
+#perfil {
+	width: 49%;
+	float: right;
+	display: inline-block;
+	text-align: right;
+	margin-top: 15px;
+}
+
+#perfil img {
+	width: 70px;
+	height: 70px;
+	padding-right: 30px;
+}
+
+/************MENU*********************/
+ul, ol {
+	list-style: none;
+}
+
+.nav > li {
+	/*float:left;*/
+	display: inline-block;
+}
+
+.nav li a {
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 12px;
+	display: block;
+}
+
+.nav li a:hover {
+	background-color: #434343;
+}
+
+.nav li ul {
+	display: none;
+	position: absolute;
+	min-width: 100px;
+	right: 40px;
+}
+
+.nav li:hover > ul {
+	display: block;
+}
+
+.nav li ul li {
+	position: relative;
+}
+
+.nav li ul li ul {
+	right: 140px;
+	top: 0px;
+}
+
+/************	MSJ*********************/
+#msj {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 1em;
 }
 
 #nameUser{
 	font-size: 20px;
-	margin-top: 0px;
-
+	margin-top: 0;
 }
 
-#perfil{
-position:absolute;
-width: 50px;
-right: 0%;
-margin-right: 3rem;
-margin-top: 1.5rem;
-display: inline-block;
-
-}
 
 #saludo{
 display: inline-block;

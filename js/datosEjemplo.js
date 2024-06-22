@@ -55,7 +55,7 @@ function cargarDatosLocalStorage() {
                 "yearBuilt": "2024",
                 "rentPrice": "1500",
                 "dateAvailable": "2024-05-01",
-                "picture": "images/flats/picture_0002.png",
+                "picture": "images/flats/edificio3.jpeg",
                 "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}, {"favoriteUserkey": "luis@1234.com"}]
             },
                 {
@@ -69,7 +69,7 @@ function cargarDatosLocalStorage() {
                     "yearBuilt": "1980",
                     "rentPrice": "300",
                     "dateAvailable": "2024-05-01",
-                    "picture": "images/flats/picture_0001.png",
+                    "picture": "images/flats/edificio2.jpeg",
                     "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}, {"favoriteUserkey": "luis@1234.com"}]
                 }],
     };
@@ -91,7 +91,7 @@ function cargarDatosLocalStorage() {
                 "yearBuilt": "2000",
                 "rentPrice": "500",
                 "dateAvailable": "2024-05-01",
-                "picture": "images/flats/picture_01.png",
+                "picture": "images/flats/edificio2.jpeg",
                 "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
             },
                 {
@@ -105,7 +105,7 @@ function cargarDatosLocalStorage() {
                     "yearBuilt": "1990",
                     "rentPrice": "400",
                     "dateAvailable": "2024-05-01",
-                    "picture": "images/flats/picture_01.png",
+                    "picture": "images/flats/edificio1.jpeg",
                     "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
                 }],
     };

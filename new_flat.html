@@ -23,23 +23,31 @@ Date available Date
     <link href="css/alertify.css" rel="stylesheet">
 
 
-    <link href="css/basic.css" rel="stylesheet" type="text/css"/>
+    <link href="images/basic.css" rel="stylesheet" type="text/css"/>
     <title>Title</title>
 </head>
 <body>
 
 <div id="encabezadohome">
-    <div id="logOut">logOut</div>
-
-    <span id="firstName"></span>
-    <span id="userkey"></span>
-
-    <div id="perfil">
-        <a class="" href="./update_register.html" id="miperfil">
-            <img id="MiPerfil" src="./assets/perfil.svg" alt="Mi perfil">
+    <div id="isotipo">
+        <a href="all_flats.html" id="all_flats">
+            <img alt="RentEasy" src="assets/isotipo.svg">
         </a>
     </div>
+
+    <div id="perfil">
+        <ul class="nav">
+            <li><img alt="Mi perfil" id="MiPerfil" src="images/user/rostro.png">
+                <ul>
+                    <li><a href="update_register.html" id="miperfil">Mi perfil </a></li>
+                    <li><a class="" href="#" id="logOut">Salir </a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </div>
+<!--    <span id="firstName"></span>-->
+<!--    <span id="userkey"></span>-->
 
 <div id="cuerpo">
     <form id="formFlatRegister" name="formFlatRegister">
@@ -110,7 +118,8 @@ Date available Date
 <div id="footer">
     <div id="footerMenu">
         <a href="all_flats.html" id="all_flats"><img height="46" src="./assets/home.svg" width="46px"></a>
-        <a href="new_flat.html" id="new_flat"><img height="46" src="./assets/nuevo.svg" width="46px"></a>
+        <a class="current" href="new_flat.html" id="new_flat"><img height="46" src="./assets/nuevo.svg"
+                                                                   width="46px"></a>
         <a href="my_favorites.html" id="my_favorites"><img height="46" src="./assets/like.svg" width="46px"></a>
         <a href="home.html" id="home"><img height="46" src="./assets/lista.svg" width="46px"></a>
     </div>

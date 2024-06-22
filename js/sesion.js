@@ -41,8 +41,13 @@ function verificarSesion() {
 
 //imprime en el head ID y Nombre del Usuario
 function imprimirDatosHead(sessionUser) {
-    document.getElementById('userkey').innerHTML = sessionUser.userkey;
-    document.getElementById('firstName').innerHTML = sessionUser.firstName;
+    //document.getElementById('userkey').innerHTML = sessionUser.userkey;
+    try {
+        document.getElementById('firstName').innerHTML = sessionUser.firstName;
+    } catch (error) {
+        console.log(error)
+    }
+
 }
 
 /*****************************************************************************************
