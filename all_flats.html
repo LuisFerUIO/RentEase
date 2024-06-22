@@ -3,37 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="css/basic.css" rel="stylesheet" type="text/css"/>
+    <link href="images/basic.css" rel="stylesheet" type="text/css"/>
     <title>All Flats</title>
 </head>
 <body>
 
 <div id="encabezadohome">
-    <div id="logOut">logOut</div>
-
-    <span id="firstName"></span>
-    <span id="userkey"></span>
+    <div id="isotipo">
+        <a href="all_flats.html" id="all_flats">
+            <img alt="RentEasy" src="assets/isotipo.svg">
+        </a>
+    </div>
 
     <div id="perfil">
-        <a class="" href="./update_register.html" id="miperfil">
-            <img id="MiPerfil" src="./assets/perfil.svg" alt="Mi perfil">
-        </a>
+        <ul class="nav">
+            <li><img alt="Mi perfil" id="MiPerfil" src="images/user/rostro.png">
+                <ul>
+                    <li><a href="update_register.html" id="miperfil">Mi perfil </a></li>
+                    <li><a class="" href="#" id="logOut">Salir </a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>
 
-<div id="controlPanel">
+<div id="msj">
+    <h1>¡Hola <span id="firstName"></span>!</h1>
+    <!--    <span id="userkey"></span>-->
+</div>
 
+<div id="controlPanel">
     <div id="showAll">
         <form name="showAll">
             <button>Mostrar Todos</button>
         </form>
     </div>
-
     <div id="filerCities">
         <label for="filterCity">Filtrar por ciudad</label>
         <select id="filterCity" name="filterCity"></select>
     </div>
-
     <div id="filerPrice">
         <form name="filerPrice">
             <label for="filerPriceMin">Precio Min</label><input id="filerPriceMin" name="filerPriceMin" required
@@ -62,7 +70,8 @@
 
 <div id="footer">
     <div id="footerMenu">
-        <a href="all_flats.html" id="all_flats"><img height="46" src="./assets/home.svg" width="46px"></a>
+        <a class="current" href="all_flats.html" id="all_flats"><img height="46" src="./assets/home.svg"
+                                                                     width="46px"></a>
         <a href="new_flat.html" id="new_flat"><img height="46" src="./assets/nuevo.svg" width="46px"></a>
         <a href="my_favorites.html" id="my_favorites"><img height="46" src="./assets/like.svg" width="46px"></a>
         <a href="home.html" id="home"><img height="46" src="./assets/lista.svg" width="46px"></a>
