@@ -95,7 +95,7 @@ a {
 	align-items: center;
 	appearance: none;
 	background-color: #4acbbb;
-	border-radius: 6px;
+	/*border-radius: 6px;*/
 	color: #000;
 	cursor: pointer;
 	display: inline-flex;
@@ -217,6 +217,11 @@ flatsBox .userkey {
 	border-radius: 15px;
 	display: inline-block;
 }
+
+.flatsBox .btn {
+	width: 100%;
+}
+
 .imglogotipo{
 	height: 150px;
 	align-content: center;
