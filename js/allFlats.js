@@ -1,16 +1,24 @@
 // Se dispara cuando haya cargado la pagina y verificar la sesión al cargar la página
 window.onload = function () {
-    let sessionUser = verificarSesion();
+    sessionUser = verificarSesion();
     imprimirFlats(sessionUser);
     listCities();
     loadPriceRange();
     loadaAreaRange();
 }
+/*************************MOSTRAR TODOS *********************************************/
+const elementFormShowAll = document.querySelector('form[name=showAll]');
+elementFormShowAll.addEventListener('submit', showAll);
+
+function showAll(event) {
+    event.preventDefault()
+    imprimirFlats(sessionUser);
+}
 /*****************************************************************************************
  '		RECUPERAR FLATS DE TODOS LOS USUARIOS
  *****************************************************************************************/
 
-function imprimirFlats(sessionUser) {
+function imprimirFlats(sessionUser,) {
     serkeyurlParams = sessionUser.userkey;
     firstNameParams = sessionUser.firstName;
 //leer datos del usuario segun su userkay
@@ -224,6 +232,7 @@ function listCities() {
 
         }
     }
+    ArrListCity.sort();
     ArrListCity = new Set(ArrListCity);
     console.log(ArrAllCity);
     let flatsBox = '';
@@ -249,13 +258,23 @@ function listCities() {
     });
 })();
 
-/********************* FILTRA Y DEVUELVE ARRAY  CON ID CIUDADES SELECCIONADA**********************************/
+/********************* FILTRA CITY  Y DEVUELVE ARRAY  CON ID DEL FLAT y NOMBRE SELECCIONADA**********************************/
 function citiesSelect(selectedValue) {
     let dataFilter = ArrAllCity.filter(function (citiesObjet) {
         return citiesObjet.city === selectedValue;
     });
-    return dataFilter;
-    //console.log( dataFilter);
+    dataFilterOrdered = dataFilter.sort(function (a, b) {
+        if (a[city] < b[city]) {
+            return -1;
+        }
+        if (a[property] > b[property]) {
+            return 1;
+        }
+        return 0;
+    });
+    console.log(dataFilterOrdered);
+    return dataFilterOrdered;
+
 }
 /********************* OCULTA DIVS CON ID QUE NO SON PARTE DE LA SELECCION**********************************/
 function hideDiv(citiesSelect) {

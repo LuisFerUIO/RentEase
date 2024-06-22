@@ -23,6 +23,12 @@
 
 <div id="controlPanel">
 
+    <div id="showAll">
+        <form name="showAll">
+            <button>Mostrar Todos</button>
+        </form>
+    </div>
+
     <div id="filerCities">
         <label for="filterCity">Filtrar por ciudad</label>
         <select id="filterCity" name="filterCity"></select>
@@ -30,16 +36,20 @@
 
     <div id="filerPrice">
         <form name="filerPrice">
-            <label for="filerPriceMin">Precio Min</label><input id="filerPriceMin" name="filerPriceMin" type="text">
-            <label for="filerPriceMax">Precio Max</label><input id="filerPriceMax" name="filerPriceMax" type="text">
+            <label for="filerPriceMin">Precio Min</label><input id="filerPriceMin" name="filerPriceMin" required
+                                                                type="text">
+            <label for="filerPriceMax">Precio Max</label><input id="filerPriceMax" name="filerPriceMax" required
+                                                                type="text">
             <button>Filtrar Precio</button>
         </form>
     </div>
 
     <div id="filerArea">
         <form name="filerArea">
-            <label for="filterAreMin">Area Min</label> <input id="filterAreaMin" name="filterAreaMin" type="text">
-            <label for="filterAreMax">Area Max</label> <input id="filterAreaMax" name="filterAreaMax" type="text">
+            <label for="filterAreMin">Area Min</label> <input id="filterAreaMin" name="filterAreaMin" required
+                                                              type="text">
+            <label for="filterAreMax">Area Max</label> <input id="filterAreaMax" name="filterAreaMax" required
+                                                              type="text">
             <button>Filtrar Area</button>
         </form>
     </div>
