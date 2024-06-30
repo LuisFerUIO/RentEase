@@ -1,54 +1,71 @@
 <!DOCTYPE html>
-<!--
-Email
-Password
-First Name
-Last Name
-Birth Date
--->
-
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Register</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <script src="js/alertify.js"></script>
+    <link href="css/alertify.css" rel="stylesheet">
+
     <link href="css/basic.css" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
 </head>
+
 <body>
+<div id="register">
 
-<h1>Registrate</h1>
-<form id="formrRegister" method="post" name="formrRegister">
+    <div id="encabezadohome">
+        <div id="isotipo">
+            <a href="all_flats.html" id="all_flats">
+                <img alt="RentEasy" src="assets/isotipo.svg">
+            </a>
+        </div>
 
-    <label for="email">Email</label>
-    <input id="email" name="email" type="text">
-
-    <label for="firstName">First Name</label>
-    <input id="firstName" name="firstName" type="text">
-
-    <label for="lastName">Last Name</label>
-    <input id="lastName" name="lastName" type="text">
-
-    <label for="birthDate">Birth Date</label>
-    <input id="birthDate" max="2010-01-01" min="1900-01-01" name="birthDate" type="date" value=""/>
-
-    <label for="password">Password:</label>
-    <input id="password" name="password" type="password">
-
-    <label for="passwordConfirmation">passwordConfirmation:</label>
-    <input id="passwordConfirmation" name="passwordConfirmation" type="password">
-
-    <input id="flats" name="flats" type="hidden">
-
-    <div id="contenedor_button_form">
-        <button>Enviar</button>
+        <div id="perfil">
+            <ul class="nav">
+                <li><img alt="Mi perfil" id="MiPerfil" src="images/user/rostro.png">
+                    <ul>
+                        <li><a href="update_register.html" id="miperfil">Mi perfil </a></li>
+                        <li><a class="" href="#" id="logOut">Salir </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-</form>
-<a class="btn" href="new_flat.html">Registrar Propiedad/Flat</a>
+    <!--    <span id="firstName"></span>-->
+    <!--    <span id="userkey"></span>-->
 
-<a class="btn" id="limpiarFormLocalStorage">Boton borra todo el LocalStorage para pruebas </a>
+    <div id="cuerpo">
+        <div id="formIndex">
+            <div class="center">
+                <form id="formrRegister" method="post" name="formrRegister">
+                    <input id="firstName" name="firstName" placeholder="Nombre" type="text">
+                    <input id="lastName" name="lastName" placeholder="Apellido" type="text">
+                    <input id="birthDate" name="birthDate"
+                           placeholder="Fecha de nacimiento" type="date" value=""/>
+                    <!--                    <input id="password" name="password" placeholder="Contraseña" type="password">-->
+                    <!--                    <input id="passwordConfirmation" name="passwordConfirmation" placeholder="Confirma tu constraseña" type="password">-->
+                    <div class="center">
+                        <button>Actualizar información</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
-<script src="js/classValidaciones.js"></script>
-<script src="js/classGuardar.js"></script>
-<script src="js/register.js"></script>
+    <div id="footer">
+        <div id="footerMenu">
+            <a href="all_flats.html" id="all_flats"><img height="46" src="./assets/home.svg" width="46px"></a>
+            <a href="new_flat.html" id="new_flat"><img height="46" src="./assets/nuevo.svg" width="46px"></a>
+            <a href="my_favorites.html" id="my_favorites"><img height="46" src="./assets/like.svg" width="46px"></a>
+            <a href="home.html" id="home"><img height="46" src="./assets/lista.svg" width="46px"></a>
+        </div>
+    </div>
+
+    <script src="js/classValidaciones.js"></script>
+    <script src="js/update_register.js"></script>
+    <script src="js/sesion.js"></script>
+
+</div>
 </body>
 </html>

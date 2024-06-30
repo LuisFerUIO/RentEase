@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/alertify.js"></script>
+    <link href="css/alertify.css" rel="stylesheet">
+
     <link href="css/basic.css" rel="stylesheet" type="text/css"/>
     <title>Login</title>
 </head>
-<body>
-<div class="logotipo">
-    <div class="imglogotipo"></div>
-    <!--    <img height="200px" src="./css/img/logo.png">-->
-</div>
-<img alt="" height="300px" src="assets/logo.svg"/>
-<p>Ingresa los datos solicitados</p>
-<form id="formLogin" name="formLogin">
-    <div>
-        <input id="email" name="email" placeholder="Ejemplo@mail.com" type="text">
-        </br>
-        <input id="password" name="password" placeholder="Contraseña" type="text">
-    </div>
+<body class="bodylogin">
 
-    <div>
+<div id="image_index">
+    <img alt="logo" src="./images/iconos/logo.svg">
+</div>
+
+<form id="formIndex" name="formIndex">
+    <label>Ingresa los datos solicitados</label>
+    <div class="center">
+        <input id="email" name="email" type="text" placeholder="ejemplo@mail.com">
+    </div>
+    <div class="center">
+        <input id="password" name="password" type="text" placeholder="Contraseña">
+    </div>
+    <div class="center">
         <button>Iniciar sesión</button>
     </div>
-
 </form>
-
-<div id="btnPruebas">
-    <a class="btn" id="limpiarFormLocalStorage">Borrar LocalStorage</a>
-    <a class="btn" id="cargarDatosLocalStorage">Cargar LocalStorage</a>
+<div class="center">
+    <a class="btn" href="register.html" id="btnCrearCuenta" style="display:none">Crear cuenta</a>
 </div>
-
 
 <script src="js/classValidaciones.js"></script>
 <script src="js/login.js"></script>
+
 </body>
 </html>

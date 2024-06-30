@@ -1,0 +1,119 @@
+#register{
+margin: 10px;
+
+
+
+}
+
+* {
+	font-family: "verdana";
+	}
+
+#encabezado {
+  
+	height: 80px;
+	margin: 0px;
+    /*align-items: flex-end;*/
+}
+
+#image_index{
+	height: 150px;
+	align-items: center;
+
+
+}
+
+.btnAtras{
+  
+    height: 50px;
+    width: 50px;
+    align-content: left;
+}
+
+/*esta repetido*/
+/*img, atras{*/
+/*	height: 50px;*/
+/*}*/
+
+
+
+#cuerpo {
+   /* display: flex;*/
+	height: 300px;
+	margin-top: 8;
+}
+
+#formIndex{
+	
+	height: auto;
+    display: block;
+	padding: 0px;
+}
+
+label {
+	text-align: left;
+}
+
+label, input, select {
+	display: inline-block;
+	height: 30px;
+	width: 70%;
+	margin: 2px;
+}
+
+#intermedio {
+ 
+	justify-content: center;
+	height: 50px;
+	margin: 0px;
+}
+#pie {
+  
+	justify-content: center;
+	height: 100px;
+	margin: 0px;
+}
+
+h1{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-decoration: rgb(39, 39, 39);
+    text-align: left;
+}
+
+a {
+	color: rgb(0, 0, 0); /* Azul */
+	text-decoration: none; /* Quitar el subrayado */
+  }
+
+a.btn, button {
+	align-items: center;
+	appearance: none;
+	background-color: #000000;
+	border: 30px;
+	border-radius: 6px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: "verdana";
+	height: 48px;
+	width: 300px;
+	justify-content: center;
+	white-space: nowrap;
+	font-size: 16px;
+}
+
+a.btn:hover, button:hover {
+	color: rgb(142, 142, 142);
+	
+}
+
+a.btn:active, button:hover {
+	box-shadow: #666666 0 3px 7px inset;
+	transform: translateY(0px);
+}
+
+a.btnOlvidasteContraseña{
+	text-decoration: #000000;
+}

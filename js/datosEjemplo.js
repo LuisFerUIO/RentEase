@@ -22,7 +22,7 @@ document.getElementById('limpiarFormLocalStorage').addEventListener('click', fun
  'Parametros:
  '		nunguno
  *****************************************************************************************/
-document.getElementById('cargarDatosLocalStorage').addEventListener('click', cargarDatosLocalStorage());
+document.getElementById('cargarDatosLocalStorage').addEventListener('click', cargarDatosLocalStorage);
 
 
 /*****************************************************************************************
@@ -46,7 +46,6 @@ function cargarDatosLocalStorage() {
         "flats":
             [{
                 "dateRegisterKey": "20240522082020",
-                "favorite": "si",
                 "province": "MANABI",
                 "city": "MANTA",
                 "streetName": "Nicolas",
@@ -56,11 +55,11 @@ function cargarDatosLocalStorage() {
                 "yearBuilt": "2024",
                 "rentPrice": "1500",
                 "dateAvailable": "2024-05-01",
-                "picture": "../images/flats/picture_0002.png"
+                "picture": "images/flats/edificio3.jpeg",
+                "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}, {"favoriteUserkey": "luis@1234.com"}]
             },
                 {
                     "dateRegisterKey": "20240522081818",
-                    "favorite": "si",
                     "province": "PICHINCHA",
                     "city": "QUITO",
                     "streetName": "Burgeus",
@@ -70,7 +69,8 @@ function cargarDatosLocalStorage() {
                     "yearBuilt": "1980",
                     "rentPrice": "300",
                     "dateAvailable": "2024-05-01",
-                    "picture": "../images/flats/picture_0001.png"
+                    "picture": "images/flats/edificio2.jpeg",
+                    "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}, {"favoriteUserkey": "luis@1234.com"}]
                 }],
     };
     const objetData1 = {
@@ -81,8 +81,7 @@ function cargarDatosLocalStorage() {
         "password": "1234",
         "flats":
             [{
-                "dateRegisterKey": "20240522082420",
-                "favorite": "si",
+                "dateRegisterKey": "20240522082419",
                 "province": "PICHINCHA",
                 "city": "QUITO",
                 "streetName": "Nicolas",
@@ -92,11 +91,11 @@ function cargarDatosLocalStorage() {
                 "yearBuilt": "2000",
                 "rentPrice": "500",
                 "dateAvailable": "2024-05-01",
-                "picture": "../images/flats/picture_01.png"
+                "picture": "images/flats/edificio2.jpeg",
+                "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
             },
                 {
-                    "dateRegisterKey": "20240522082420",
-                    "favorite": "si",
+                    "dateRegisterKey": "20240522082422",
                     "province": "AZUAY",
                     "city": "CUENCA",
                     "streetName": "Quito",
@@ -106,7 +105,8 @@ function cargarDatosLocalStorage() {
                     "yearBuilt": "1990",
                     "rentPrice": "400",
                     "dateAvailable": "2024-05-01",
-                    "picture": "../images/flats/picture_01.png"
+                    "picture": "images/flats/edificio1.jpeg",
+                    "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
                 }],
     };
     const objetData2 = {
@@ -116,8 +116,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1990-01-01",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082423",
             "province": "GUAYAS",
             "city": "GUAYAQUIL",
             "streetName": "Lopez",
@@ -127,10 +126,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2005",
             "rentPrice": "1200",
             "dateAvailable": "2024-06-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082424",
             "province": "IMBABURA",
             "city": "IBARRA",
             "streetName": "Roca",
@@ -140,10 +139,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2010",
             "rentPrice": "800",
             "dateAvailable": "2024-07-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData3 = {
         "userkey": "mike@abcd.com",
         "firstName": "Mike",
@@ -151,8 +150,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1985-02-02",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082425",
             "province": "CARCHI",
             "city": "TULCAN",
             "streetName": "Sucre",
@@ -162,10 +160,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2008",
             "rentPrice": "700",
             "dateAvailable": "2024-08-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082426",
             "province": "LOJA",
             "city": "LOJA",
             "streetName": "Bolivar",
@@ -175,10 +173,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2015",
             "rentPrice": "900",
             "dateAvailable": "2024-09-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData4 = {
         "userkey": "jane@abcd.com",
         "firstName": "Jane",
@@ -186,8 +184,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1992-03-03",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082427",
             "province": "CHIMBORAZO",
             "city": "RIOBAMBA",
             "streetName": "Martin",
@@ -197,10 +194,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2000",
             "rentPrice": "1000",
             "dateAvailable": "2024-10-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240322082428",
             "province": "ESMERALDAS",
             "city": "ESMERALDAS",
             "streetName": "Garcia",
@@ -210,10 +207,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2012",
             "rentPrice": "600",
             "dateAvailable": "2024-11-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData5 = {
         "userkey": "paul@abcd.com",
         "firstName": "Paul",
@@ -221,8 +218,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1987-04-04",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240122082428",
             "province": "TUNGURAHUA",
             "city": "AMBATO",
             "streetName": "Lara",
@@ -232,10 +228,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2019",
             "rentPrice": "750",
             "dateAvailable": "2024-12-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082429",
             "province": "MANABI",
             "city": "PORTOVIEJO",
             "streetName": "Perez",
@@ -245,10 +241,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2018",
             "rentPrice": "650",
             "dateAvailable": "2024-01-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData6 = {
         "userkey": "emma@abcd.com",
         "firstName": "Emma",
@@ -256,8 +252,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1994-05-05",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082430",
             "province": "COTOPAXI",
             "city": "LATACUNGA",
             "streetName": "Cruz",
@@ -267,10 +262,9 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2020",
             "rentPrice": "1100",
             "dateAvailable": "2024-02-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png"
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082431",
             "province": "BOLIVAR",
             "city": "GUARANDA",
             "streetName": "Torres",
@@ -280,10 +274,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2011",
             "rentPrice": "550",
             "dateAvailable": "2024-03-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData7 = {
         "userkey": "lucy@abcd.com",
         "firstName": "Lucy",
@@ -291,8 +285,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1989-06-06",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082432",
             "province": "ORELLANA",
             "city": "COCA",
             "streetName": "Martinez",
@@ -302,10 +295,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2017",
             "rentPrice": "1150",
             "dateAvailable": "2024-04-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082433",
             "province": "EL ORO",
             "city": "MACHALA",
             "streetName": "Campos",
@@ -315,10 +308,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2021",
             "rentPrice": "850",
             "dateAvailable": "2024-05-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData8 = {
         "userkey": "max@abcd.com",
         "firstName": "Max",
@@ -326,8 +319,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1991-07-07",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082434",
             "province": "SUCUMBIOS",
             "city": "NUEVA LOJA",
             "streetName": "Ramirez",
@@ -337,10 +329,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2014",
             "rentPrice": "650",
             "dateAvailable": "2024-06-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082435",
             "province": "SANTA ELENA",
             "city": "LA LIBERTAD",
             "streetName": "Santos",
@@ -350,10 +342,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2022",
             "rentPrice": "900",
             "dateAvailable": "2024-07-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData9 = {
         "userkey": "nick@abcd.com",
         "firstName": "Nick",
@@ -361,8 +353,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1988-08-08",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082436",
             "province": "NAPO",
             "city": "TENA",
             "streetName": "Castro",
@@ -372,10 +363,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2016",
             "rentPrice": "800",
             "dateAvailable": "2024-08-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082437",
             "province": "ZAMORA CHINCHIPE",
             "city": "ZAMORA",
             "streetName": "Vargas",
@@ -385,10 +376,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2013",
             "rentPrice": "850",
             "dateAvailable": "2024-09-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData10 = {
         "userkey": "olga@abcd.com",
         "firstName": "Olga",
@@ -396,8 +387,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1993-09-09",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082438",
             "province": "PASTAZA",
             "city": "PUYO",
             "streetName": "Mejia",
@@ -407,10 +397,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2009",
             "rentPrice": "950",
             "dateAvailable": "2024-10-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082439",
             "province": "SANTO DOMINGO",
             "city": "SANTO DOMINGO",
             "streetName": "Bustos",
@@ -420,10 +410,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2018",
             "rentPrice": "1050",
             "dateAvailable": "2024-11-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData11 = {
         "userkey": "chris@abcd.com",
         "firstName": "Chris",
@@ -431,8 +421,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1986-10-10",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082440",
             "province": "MORONA SANTIAGO",
             "city": "MACAS",
             "streetName": "Espinoza",
@@ -442,10 +431,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2007",
             "rentPrice": "1250",
             "dateAvailable": "2024-12-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082441",
             "province": "GALAPAGOS",
             "city": "PUERTO AYORA",
             "streetName": "Perez",
@@ -455,10 +444,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2023",
             "rentPrice": "1350",
             "dateAvailable": "2024-01-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData12 = {
         "userkey": "sam@abcd.com",
         "firstName": "Sam",
@@ -466,8 +455,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1983-11-11",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082442",
             "province": "LOS RIOS",
             "city": "BABAHOYO",
             "streetName": "Ortiz",
@@ -477,10 +465,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2015",
             "rentPrice": "700",
             "dateAvailable": "2024-02-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082443",
             "province": "SUCUMBIOS",
             "city": "SHUSHUFINDI",
             "streetName": "Garcia",
@@ -490,10 +478,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2021",
             "rentPrice": "950",
             "dateAvailable": "2024-03-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData13 = {
         "userkey": "dave@abcd.com",
         "firstName": "Dave",
@@ -501,8 +489,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1995-12-12",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082444",
             "province": "ORELLANA",
             "city": "FRANCISCO DE ORELLANA",
             "streetName": "Guerrero",
@@ -512,10 +499,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2010",
             "rentPrice": "850",
             "dateAvailable": "2024-04-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082445",
             "province": "IMBABURA",
             "city": "COTACACHI",
             "streetName": "Montes",
@@ -525,10 +512,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2019",
             "rentPrice": "950",
             "dateAvailable": "2024-05-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData14 = {
         "userkey": "jake@abcd.com",
         "firstName": "Jake",
@@ -536,8 +523,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1996-01-13",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082446",
             "province": "PASTAZA",
             "city": "MERA",
             "streetName": "Vasquez",
@@ -547,10 +533,11 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2022",
             "rentPrice": "1100",
             "dateAvailable": "2024-06-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
+
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082447",
             "province": "NAPO",
             "city": "ARCHIDONA",
             "streetName": "Cisneros",
@@ -560,10 +547,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2021",
             "rentPrice": "1200",
             "dateAvailable": "2024-07-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData15 = {
         "userkey": "anna@abcd.com",
         "firstName": "Anna",
@@ -571,8 +558,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1997-02-14",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082448",
             "province": "GALAPAGOS",
             "city": "PUERTO BAQUERIZO MORENO",
             "streetName": "Reyes",
@@ -582,10 +568,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2020",
             "rentPrice": "1300",
             "dateAvailable": "2024-08-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082449",
             "province": "SANTO DOMINGO",
             "city": "LA CONCORDIA",
             "streetName": "Torres",
@@ -595,10 +581,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2018",
             "rentPrice": "1400",
             "dateAvailable": "2024-09-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData16 = {
         "userkey": "nina@abcd.com",
         "firstName": "Nina",
@@ -606,8 +592,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1998-03-15",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082450",
             "province": "LOS RIOS",
             "city": "VENTANAS",
             "streetName": "Ortega",
@@ -617,10 +602,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2017",
             "rentPrice": "750",
             "dateAvailable": "2024-10-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082451",
             "province": "BOLIVAR",
             "city": "CHILLANES",
             "streetName": "Salazar",
@@ -630,10 +615,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2021",
             "rentPrice": "850",
             "dateAvailable": "2024-11-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData17 = {
         "userkey": "alex@abcd.com",
         "firstName": "Alex",
@@ -641,8 +626,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "1999-04-16",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082452",
             "province": "SUCUMBIOS",
             "city": "LAGO AGRIO",
             "streetName": "Carrera",
@@ -652,10 +636,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2016",
             "rentPrice": "950",
             "dateAvailable": "2024-12-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082453",
             "province": "MORONA SANTIAGO",
             "city": "GUALAQUIZA",
             "streetName": "Lara",
@@ -665,10 +649,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2019",
             "rentPrice": "1150",
             "dateAvailable": "2024-01-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
-
     const objetData18 = {
         "userkey": "john@abcd.com",
         "firstName": "John",
@@ -676,8 +660,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "2000-05-17",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082454",
             "province": "ORELLANA",
             "city": "DAYUMA",
             "streetName": "Salinas",
@@ -687,10 +670,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2020",
             "rentPrice": "1000",
             "dateAvailable": "2024-02-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
+            "dateRegisterKey": "20240522082455",
             "province": "NAPO",
             "city": "EL CHACO",
             "streetName": "Reyes",
@@ -700,11 +683,11 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2021",
             "rentPrice": "1100",
             "dateAvailable": "2024-03-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
 
         }]
     };
-
     const objetData19 = {
         "userkey": "emma@abcd.com",
         "firstName": "Emma",
@@ -712,8 +695,7 @@ function cargarDatosLocalStorage() {
         "birthDate": "2001-06-18",
         "password": "1234",
         "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082456",
             "province": "GUAYAS",
             "city": "GUAYAQUIL",
             "streetName": "Martinez",
@@ -723,10 +705,10 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2018",
             "rentPrice": "1350",
             "dateAvailable": "2024-04-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "memma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "si",
+            "dateRegisterKey": "20240522082457",
             "province": "ESMERALDAS",
             "city": "ESMERALDAS",
             "streetName": "Leon",
@@ -736,42 +718,8 @@ function cargarDatosLocalStorage() {
             "yearBuilt": "2022",
             "rentPrice": "1450",
             "dateAvailable": "2024-05-01",
-            "picture": "../images/flats/picture_01.png"
-        }]
-    };
-
-    const objetData20 = {
-        "userkey": "mary@abcd.com",
-        "firstName": "Mary",
-        "lastName": "Johnson",
-        "birthDate": "2002-07-19",
-        "password": "1234",
-        "flats": [{
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
-            "province": "TUNGURAHUA",
-            "city": "AMBATO",
-            "streetName": "Moreno",
-            "streetNumber": "50",
-            "areaSize": "180",
-            "hasAc": "NO",
-            "yearBuilt": "2019",
-            "rentPrice": "1200",
-            "dateAvailable": "2024-06-01",
-            "picture": "../images/flats/picture_01.png"
-        }, {
-            "dateRegisterKey": "20240522082420",
-            "favorite": "no",
-            "province": "BOLIVAR",
-            "city": "GUARANDA",
-            "streetName": "Cruz",
-            "streetNumber": "78",
-            "areaSize": "190",
-            "hasAc": "SI",
-            "yearBuilt": "2021",
-            "rentPrice": "1300",
-            "dateAvailable": "2024-07-01",
-            "picture": "../images/flats/picture_01.png"
+            "picture": "images/flats/picture_01.png",
+            "favorite": [{"favoriteUserkey": "emma@abcd.com"}, {"favoriteUserkey": "alex@abcd.com"}, {"favoriteUserkey": "john@abcd.com"}]
         }]
     };
 
@@ -813,7 +761,7 @@ function cargarDatosLocalStorage() {
     const userkey17 = objetData18.userkey;
     const userkey18 = objetData18.userkey;
     const userkey19 = objetData19.userkey;
-    const userkey20 = objetData20.userkey;
+    // const userkey20 = objetData20.userkey;
 
 // const firstName = objetData.firstName;
 // console.log('userkey = ' + userkey + ' firstName = ' + firstName);
@@ -828,7 +776,7 @@ function cargarDatosLocalStorage() {
 
     if (localStorage.length === 0) {
 
-        console.log('localStorage está vacío');
+        console.log('localStorage está vacío - procedo a grabar');
 
         const userRegister = JSON.stringify(objetData);
         const userRegister1 = JSON.stringify(objetData1);
@@ -850,7 +798,7 @@ function cargarDatosLocalStorage() {
         const userRegister17 = JSON.stringify(objetData17);
         const userRegister18 = JSON.stringify(objetData18);
         const userRegister19 = JSON.stringify(objetData19);
-        const userRegister20 = JSON.stringify(objetData20);
+        // const userRegister20 = JSON.stringify(objetData20);
         //console.log('grabar estos datos' , userRegister);
 
         localStorage.setItem(userkey, userRegister);
@@ -873,114 +821,12 @@ function cargarDatosLocalStorage() {
         localStorage.setItem(userkey17, userRegister17);
         localStorage.setItem(userkey18, userRegister18);
         localStorage.setItem(userkey19, userRegister19);
-        localStorage.setItem(userkey20, userRegister20);
+        //localStorage.setItem(userkey20, userRegister20);
 
         console.log('Grabado', window.localStorage);
-
-        ////////////////////////////////////////////////////////////
-        // PRUEBA
-        ////////////////////////////////////////////////////////////
-
-        // Función para guardar datos en localStorage
-        function saveToLocalStorage(key, data) {
-            localStorage.setItem(key, JSON.stringify(data));
-        }
-
-// Función para cargar datos de localStorage
-        function loadFromLocalStorage(key) {
-            return JSON.parse(localStorage.getItem(key)) || {};
-        }
-
-
-        // 1. Tabla de Usuarios
-        const users = {
-            "luis@1234.com": {
-                "firstName": "Luis",
-                "lastName": "Suarez",
-                "birthDate": "1984-12-25",
-                "password": "1234"
-            },
-            "diana@1234.com": {
-                "firstName": "Diana",
-                "lastName": "Siguenza",
-                "birthDate": "2004-12-25",
-                "password": "1234"
-            }
-        };
-
-
-// 2. Tabla de Propiedades
-        const properties = {
-            "prop1": {
-                "owner": "luis@1234.com",
-                "province": "MANABI",
-                "city": "MANTA",
-                "streetName": "Nicolas",
-                "streetNumber": "195",
-                "areaSize": "100",
-                "hasAc": "SI",
-                "yearBuilt": "2024",
-                "rentPrice": "1500",
-                "dateAvailable": "2024-05-01",
-                "image": "../images/flats/picture_0001.png"
-            },
-            "prop2": {
-                "owner": "luis@1234.com",
-                "province": "PICHINCHA",
-                "city": "QUITO",
-                "streetName": "Burgeus",
-                "streetNumber": "195",
-                "areaSize": "500",
-                "hasAc": "NO",
-                "yearBuilt": "1980",
-                "rentPrice": "300",
-                "dateAvailable": "2024-05-01",
-                "image": "../images/flats/picture_0002.png"
-            },
-            "prop3": {
-                "owner": "diana@1234.com",
-                "province": "PICHINCHA",
-                "city": "QUITO",
-                "streetName": "Nicolas",
-                "streetNumber": "195",
-                "areaSize": "100",
-                "hasAc": "NO",
-                "yearBuilt": "2000",
-                "rentPrice": "500",
-                "dateAvailable": "2024-05-01",
-                "image": "../images/flats/picture_01.png"
-            },
-            "prop4": {
-                "owner": "diana@1234.com",
-                "province": "AZUAY",
-                "city": "CUENCA",
-                "streetName": "Quito",
-                "streetNumber": "195",
-                "areaSize": "100",
-                "hasAc": "NO",
-                "yearBuilt": "1990",
-                "rentPrice": "400",
-                "dateAvailable": "2024-05-01",
-                "image": "../images/flats/picture_01.png"
-            }
-        };
-
-// 3. Tabla de Favoritos
-        const favorites = [
-            {"user": "luis@1234.com", "propertyId": "prop1"},
-            {"user": "luis@1234.com", "propertyId": "prop2"},
-            {"user": "luis@1234.com", "propertyId": "prop3"},
-            {"user": "luis@1234.com", "propertyId": "prop4"},
-            {"user": "diana@1234.com", "propertyId": "prop2"}
-        ];
-
-// Guardar las tablas en localStorage
-        saveToLocalStorage('users', users);
-        saveToLocalStorage('properties', properties);
-        saveToLocalStorage('favorites', favorites);
 
     } else {
         console.log('localStorage tiene elementos almacenados');
     }
-
 }
+

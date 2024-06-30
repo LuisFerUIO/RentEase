@@ -1,3 +1,9 @@
+// Se dispara cuando haya cargado la página y verífica la sesión
+window.onload = function () {
+    let sessionUser = verificarSesion();
+    loadUser(sessionUser.userkey);
+}
+
 /*****************************************************************************************
  '		RECUPERO EL USERKAY POR LA URL
  *****************************************************************************************/

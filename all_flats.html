@@ -7,45 +7,78 @@
     <title>All Flats</title>
 </head>
 <body>
-<!--<p>-->
-<!--tabla de todos los departamentos-->
-<!--que el usuario ha creado-->
-<!--hasta ahora.capacidad de filtrar y ordenar-->
-<!--Botón para alternar-->
-<!--marcar/desmarcar como favorito-->
 
-<!--    Página “All Flats”-->
-<!--    La página “All flats” contiene una tabla de todos los departamentos que el usuario ha creado-->
-<!--    hasta ahora.-->
-<!--    Cada fila de la tabla tendrá:-->
-<!--    • Todas las propiedades de “flat” como se especifica en la sección Entidades.-->
-<!--    • Botón para alternar marcar/desmarcar como favorito.-->
-<!--    Adicionalmente, la tabla va a tener la capacidad de filtrar y ordenar.-->
-<!--    Campo de opciones de filtro:-->
-<!--    1. “City” (Ciudad)-->
-<!--    2. “Price Range” (rango de precio)-->
-<!--    3. “Area Size Range” (rango de tamaño del área)-->
-<!--    Ordenar por categoria:-->
-<!--    1. “City” (ciudad)-->
-<!--    2. “Price” (precio)-->
-<!--    3. “Area Size” (tamaño del area)-->
-<!--</p>-->
-<h2 id="nameUser"></h2>
-<div><span>Usuario: </span><span id="userKey"></span></div>
-<div id="menu">
-    <a class="btn" id="home">home</a>
-    <a class="btn" id="new_flat">New Flat</a>
-    <a class="btn" id="updateRegister">Actualizar Mis Datos</a>
-</div>
-<div id="flats"></div>
+<div id="encabezadohome">
+    <div id="isotipo">
+        <a href="all_flats.html" id="all_flats">
+            <img alt="RentEasy" src="assets/isotipo.svg">
+        </a>
+    </div>
 
-<div id="btnPruebas">
-    <a class="btn" id="limpiarFormLocalStorage">Borrar LocalStorage</a>
-    <a class="btn" id="cargarDatosLocalStorage">Cargar LocalStorage</a>
+    <div id="perfil">
+        <ul class="nav">
+            <li><img alt="Mi perfil" id="MiPerfil" src="images/user/rostro.png">
+                <ul>
+                    <li><a href="update_register.html" id="miperfil">Mi perfil </a></li>
+                    <li><a class="" href="#" id="logOut">Salir </a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </div>
 
-<script src="js/datosEjemplo.js"></script>
-<script src="js/menu.js"></script>
+<div id="msj">
+    <h1>¡Hola <span id="firstName"></span>!</h1>
+    <!--    <span id="userkey"></span>-->
+</div>
+
+<div id="controlPanel">
+    <div id="showAll">
+        <form name="showAll">
+            <button>Mostrar Todos</button>
+        </form>
+    </div>
+    <div id="filerCities">
+        <label for="filterCity">Filtrar por ciudad</label>
+        <select id="filterCity" name="filterCity"></select>
+    </div>
+    <div id="filerPrice">
+        <form name="filerPrice">
+            <label for="filerPriceMin">Precio Min</label><input id="filerPriceMin" name="filerPriceMin" required
+                                                                type="text">
+            <label for="filerPriceMax">Precio Max</label><input id="filerPriceMax" name="filerPriceMax" required
+                                                                type="text">
+            <button>Filtrar Precio</button>
+        </form>
+    </div>
+
+    <div id="filerArea">
+        <form name="filerArea">
+            <label for="filterAreMin">Area Min</label> <input id="filterAreaMin" name="filterAreaMin" required
+                                                              type="text">
+            <label for="filterAreMax">Area Max</label> <input id="filterAreaMax" name="filterAreaMax" required
+                                                              type="text">
+            <button>Filtrar Area</button>
+        </form>
+    </div>
+
+</div>
+
+<div id="cuerpo">
+    <div id="flats"></div>
+</div>
+
+<div id="footer">
+    <div id="footerMenu">
+        <a class="current" href="all_flats.html" id="all_flats"><img height="46" src="./assets/home.svg"
+                                                                     width="46px"></a>
+        <a href="new_flat.html" id="new_flat"><img height="46" src="./assets/nuevo.svg" width="46px"></a>
+        <a href="my_favorites.html" id="my_favorites"><img height="46" src="./assets/like.svg" width="46px"></a>
+        <a href="home.html" id="home"><img height="46" src="./assets/lista.svg" width="46px"></a>
+    </div>
+</div>
+
+<script src="js/sesion.js"></script>
 <script src="js/allFlats.js"></script>
 </body>
 </html>

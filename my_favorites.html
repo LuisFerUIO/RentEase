@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/basic.css" rel="stylesheet" type="text/css"/>
+    <title>All Flats</title>
+</head>
+<body>
+<!--<p>-->
+<!--tabla de todos los departamentos-->
+<!--que el usuario ha creado-->
+<!--hasta ahora.capacidad de filtrar y ordenar-->
+<!--Botón para alternar-->
+<!--marcar/desmarcar como favorito-->
+
+<!--    Página “All Flats”-->
+<!--    La página “All flats” contiene una tabla de todos los departamentos que el usuario ha creado-->
+<!--    hasta ahora.-->
+<!--    Cada fila de la tabla tendrá:-->
+<!--    • Todas las propiedades de “flat” como se especifica en la sección Entidades.-->
+<!--    • Botón para alternar marcar/desmarcar como favorito.-->
+<!--    Adicionalmente, la tabla va a tener la capacidad de filtrar y ordenar.-->
+<!--    Campo de opciones de filtro:-->
+<!--    1. “City” (Ciudad)-->
+<!--    2. “Price Range” (rango de precio)-->
+<!--    3. “Area Size Range” (rango de tamaño del área)-->
+<!--    Ordenar por categoria:-->
+<!--    1. “City” (ciudad)-->
+<!--    2. “Price” (precio)-->
+<!--    3. “Area Size” (tamaño del area)-->
+
+
+<div id="encabezadohome">
+    <div id="isotipo">
+        <a href="all_flats.html" id="all_flats">
+            <img alt="RentEasy" src="assets/isotipo.svg">
+        </a>
+    </div>
+
+    <div id="perfil">
+        <ul class="nav">
+            <li><img alt="Mi perfil" id="MiPerfil" src="images/user/rostro.png">
+                <ul>
+                    <li><a href="update_register.html" id="miperfil">Mi perfil </a></li>
+                    <li><a class="" href="#" id="logOut">Salir </a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--    <span id="firstName"></span>-->
+<!--    <span id="userkey"></span>-->
+<div id="cuerpo">
+<div id="flats"></div>
+</div>
+
+<div id="footer">
+    <div id="footerMenu">
+        <a href="all_flats.html" id="all_flats"><img height="46" src="./assets/home.svg" width="46px"></a>
+        <a href="new_flat.html" id="new_flat"><img height="46" src="./assets/nuevo.svg" width="46px"></a>
+        <a class="current" href="my_favorites.html" id="my_favorites"><img height="46" src="./assets/like.svg"
+                                                                           width="46px"></a>
+        <a href="home.html" id="home"><img height="46" src="./assets/lista.svg" width="46px"></a>
+    </div>
+</div>
+
+<script src="js/sesion.js"></script>
+<script src="js/my_favourites.js"></script>
+</body>
+</html>

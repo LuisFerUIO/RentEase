@@ -6,25 +6,22 @@
 RentEase 2024
 
 Luis F. Suarez
-Diana Siguenza
+Diana Sigüenza
 
 //////////////////////////////////////////////
 -->
-<!-- PRUEBA MAQUINA VIRTUAL RAMA HTML Y CSS-->
-<!-- PRUEBA HTML Y CSS Luisfer-->
 <head>
 	<meta charset="UTF-8">
 	<title>Login</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<link href="css/basic.css" rel="stylesheet" type="text/css" />
-	<script src="js/login.js"></script>
+	<link href="css/basic.css" rel="stylesheet" type="text/css"/>
+
+
 </head>
-<body>
-<div id="main">
+<body class="bodyindex">
+
 	<div id="image_index">
-		<div class="imagen">
-			<img alt="" height="300px" src="assets/logo.svg"/>
-		</div>
+		<img src="./images/iconos/logo.svg" alt="logo" >
 	</div>
 	<div id="formIndex">
 		<div class="center">
@@ -35,19 +32,20 @@ Diana Siguenza
 		<a class="btn" href="register.html" id="btnCrearCuenta">Crear cuenta</a>
 		</div>
 
-		<div class="center">
-			<a class="" href="recover_key.html" id="btnOlvidasteContraseña">Olvidaste tu contraseña</a>
+		<div class="center"> 
+		<a class="link" href="recover_key.html" id="btnOlvidasteContraseña">¿Olvidaste tu contraseña?</a>
 		</div>
-
 	</div>
-</div>
 
-<div id="btnPruebas">
-	<a class="btn" id="limpiarFormLocalStorage">Borrar LocalStorage</a>
-	<a class="btn" id="cargarDatosLocalStorage">Cargar LocalStorage</a>
-</div>
+	<!-- BOTONES PARA PROBAR LA LOGICA -->
+	<div id="btnPruebas">
+		<a class="btn" id="limpiarFormLocalStorage">Borrar LocalStorage</a>
+		<a class="btn" id="cargarDatosLocalStorage">Cargar LocalStorage</a>
+		<!--<a class="btn" id="cargarDatosLocalStorageNoRelacional">CargarLocalStorage No Relacional</a>-->
+	</div>
 
-<div id="version">0.01</div>
-<script src="js/datosEjemplo.js"></script>
+	<!-- CARGA DATOS  FICTICIOS DE USUARIOS PARA PRUEBAS -->
+	<script src="js/datosEjemplo.js"></script>
+	<script src="js/login.js"></script>
 </body>
 </html>

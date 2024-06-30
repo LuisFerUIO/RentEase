@@ -1,163 +1,169 @@
 /*
 //////////////////////////////////////////////
-
 RentEase 2024
-
-Luis F. Suarez
-Diana Siguenza
-
 //////////////////////////////////////////////
 */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 * {
-	font-family: "verdana";
+	font-family: "Raleway", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	margin: 0;
+}
+.bodyindex {
+	background: url(../assets/pexelswithe.jpg) no-repeat center scroll;
+	opacity: 1; /* Valor de opacidad (entre 0 y 1) */
+	}
+
+.bodyindex input {
+	height: 80px;
+	}
+
+.bodylogin {
+background-color: #fff;
+text-align: center;
 }
 
-/* DIV id="main" Solo esta colocado en la pagina index contiene todos los elementos de la pagina*/
 #main{
 	margin: 50px;
-	/*height: 100px;*/
-
+	height: 100px;
+	background-color: black;	
 }
 
-/* div id="image_index" actualmente vacio pero se podria colocar una imagen sobre los botones */
-#image_index {
+#image_index{	
 	display: flex;
 	justify-content: center;
 	height: 300px;
 	margin: 50px;
-
 }
+
 #image_index .imagen{
 	height: 150px;
 
 }
 
-/* div id="formIndex" contiene los botones del index.html */
 #formIndex{
 	text-align: center;
-	background-color: ;
-}
-
-/* div id="formLogin" contiene los botones del login.html */
-#formLogin {
+	height: auto;
 }
 
 form {
 	display: block;
-	padding: 0px;
+	padding: 0;
 }
 
+#formLogin {
+	height: 300px;
+}
+
+
 .center{
-	height: 50px;
+	/*height: 50px;*/
 	margin-bottom: 5px;
-	background-color: #5adaff;
-}
-
-.center{
-	height: 50px;
 	align-content: center;
-
 }
 
-/*****************************************************************************************
- '		APLICA A LOS LINKS CON class="btn"
- '		Y LOS BOTONES DE FORMULARIOS SIN NECESIDAD DE CLASS ASIGNADA <button></button>
- *****************************************************************************************/
+
+label {
+	text-align: left;
+}
+
 label, input, select {
 	display: inline-block;
+	height: 30px;
 	width: 70%;
-	margin: 10px 10px 0 10px;
+	margin: 2px;
 }
 
 #contenedor_button_form {
 	position: relative;
-	padding-top: 20px;
+	padding-top: 0px;
 }
 
-/*****************************************************************************************
- '		APLICA A LOS LINKS CON class="btn"
- '		Y LOS BOTONES DE FORMULARIOS SIN NECESIDAD DE CLASS ASIGNADA <button></button>
- *****************************************************************************************/
-a.btn, button {
+a {
+	color: rgb(0, 0, 0); /* Azul */
+	text-decoration: none; /* Quitar el subrayado */
+  }
+
+.btn, button {
 	align-items: center;
 	appearance: none;
-	background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-	border: 30px;
-	border-radius: 6px;
-	/*
-	box-sizing: border-box;
-	*/
-	color: #fff;
+	background-color: #4acbbb;
+	/*border-radius: 6px;*/
+	color: #000;
 	cursor: pointer;
 	display: inline-flex;
-	font-family: "JetBrains Mono", monospace;
 	height: 48px;
 	width: 300px;
 	justify-content: center;
-	/* line-height: 1;
-	list-style: none;
-	overflow: hidden;
-	padding-left: 16px;
-	padding-right: 16px;
-	position: relative;
-	text-align: left;
-	text-decoration: none;
-	transition: box-shadow .15s, transform .15s;
-	user-select: none;
-	-webkit-user-select: none;
-	touch-action: manipulation;
-	*/
-
 	white-space: nowrap;
 	font-size: 16px;
-	text-decoration: none;
+	font-family: "Raleway", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: bold;
+	font-style: normal;
 }
-a.btn:focus, button:focus {
-	box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -0px 0 inset;
+.btn:hover, button:hover {
+	color: #000;
+	
 }
-a.btn:hover, button:hover {
 
-	color: black;
-	/*
-	box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-	transform: translateY(-0px);
-	*/
-}
-a.btn:active, button:hover {
-	box-shadow: #3c4fe0 0 3px 7px inset;
+.btn:active, button:hover {
+	box-shadow: #000 0 3px 7px inset;
 	transform: translateY(0px);
 }
+
+.btnOlvidasteContraseña {
+	text-decoration: #000000;
+}
+
+#btnPruebas a {
+	background-color: transparent;
+	color: darkgray;
+}
+
+
 /*****************************************************************************************
- '	 DIV id="flats" que contiene todos las div pequeños de cada flat
+ '	 Contenedor para que se muestre en columas
  *****************************************************************************************/
 #flats {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 10px;
-	padding: 10px;
+	gap: 1rem;
+	grid-auto-columns: 22rem;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+#flats .flatsBox img {
+	width: 100%;
+	height: auto;
 }
 /*****************************************************************************************
- '	div class="flatsBox" con la foto e informacion de cada flat
+ '		HOME DONDE SALE LA TABLA CON LAS PROPIEDADES
  *****************************************************************************************/
 .flatsBox {
-	display: block;
+	/*display: block;*/
 	width: 80%;
 	margin: 10px;
 	background-color: whitesmoke;
 	border: 1px solid gray;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* cada dato que se muestra del flat esta contenido en un <li> </li>*/
+.flatsBox .dataFlat {
+	padding: 0 10px 10px 10px;
+}
+
+.flatsBox ul {
+	list-style: none;
+	padding: 0;
+}
 .flatsBox li {
 	list-style: none;
 }
-
-/* apunta a la imagen/png del flat*/
 .flatsBox img {
-	margin-bottom: 10px;
+	margin-bottom: 3px;
 }
-
-/* Para quitar la margenes de la cajita check */
 .flatsBox input {
 	display: inline;
 	position: relative;
@@ -165,14 +171,320 @@ a.btn:active, button:hover {
 	margin: 0px;
 }
 
-/*BOTES PARA CARGAR Y BORRAR EL LOCALSTORE*/
-#btnPruebas {
+.flatsBox .corazonContendor {
 	position: relative;
+}
+
+.flatsBox button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: transparent;
+	display: block;
+	margin: 7px;
+}
+
+.flatsBox .city {
+	background-color: #fad3d6;
+	padding: 5px 10px 5px 10px;
+	font-weight: normal;
+	border-radius: 15px;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+.flatsBox .rentPrice {
+	background-color: #cac0fb;
+	padding: 5px 10px 5px 10px;
+	font-weight: bold;
+	border-radius: 15px;
+	display: inline-block;
+}
+
+.flatsBox .areaSize {
+	padding: 5px 10px 5px 0;
+	border-radius: 15px;
+	display: inline-block;
+}
+
+flatsBox .userkey {
+	padding: 5px 10px 5px 0;
+	border-radius: 15px;
+	display: inline-block;
+}
+
+.flatsBox .btn {
+	width: 100%;
+}
+
+.imglogotipo{
+	height: 150px;
+	align-content: center;
+}
+img.imglogotipo{
+	margin: auto;
+	/* width: 200px;*/
+}
+
+/*****************************************************************************************
+ '		PANEL DE CONTROL
+ *****************************************************************************************/
+#controlPanel {
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#controlPanel button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*****************************************************************************************
+ '		CUERPO
+ *****************************************************************************************/
+#cuerpo {
+	margin-left: 2em;
+}
+/*****************************************************************************************
+ '		FOOTER Y MENU FOOTER
+ *****************************************************************************************/
+#footer {
+	position: fixed;
+	bottom: 0;
+	background-color: white;
+	width: 100%;
+	align-content: center;
+	margin-top: 1.5em;
+}
+
+#footerMenu {
+	
+	width: fit-content;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	align-content: center;
+}
+
+#footerMenu a {
+	margin: 0 15px 0 15px;
+	opacity: 0.3;
+}
+
+#footerMenu a.current {
+	opacity: 1;
+}
+/*****************************************************************************************
+ '		SELECCION DE FLAT FAVORITO
+ *****************************************************************************************/
+
+
+.flatFavorito {
+	width: 20px !important;
+	height: 20px !important;
+	background-image: url('../assets/like.svg');
+	background-repeat: no-repeat;
+	border: none;
+}
+
+.flatNoFavorito {
+	width: 20px !important;
+	height: 20px !important;
+	background-image: url('../assets/like1.svg');
+	background-repeat: no-repeat;
+	border: none;
+}
+
+/*****************************************************************************************
+ '		FLAT HIDE
+ *****************************************************************************************/
+.hide {
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.hide.hideEnd {
+    display: none;
+}
+
+.show {
+    opacity: 100;
+    transition: opacity 0.1s ease-in;
+}
+
+.show.showEnd {
+    display: block;
+}
+
+/*****************************************************************************************
+ '		ENCABEZADO
+ *****************************************************************************************/
+.btnAtras img {
+	height: 50px;
+	width: 50px;
+	align-content: left;
+}
+#encabezadohome{
+	height: 100px;
+	width: 100%;
+	background-color: #d1f2ee;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 50px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 50px;
+	margin-bottom: 50px;
+}
+
+#isotipo {
+	float: left;
+	width: 49%;
+	display: inline-block;
+}
+
+#isotipo img {
+	height: 50px;
+	width: 50px;
+	margin-top: 25px;
+	padding-left: 30px;
+}
+
+#perfil {
+	width: 49%;
+	float: right;
+	display: inline-block;
+	text-align: right;
+	margin-top: 15px;
+}
+
+#perfil img {
+	width: 70px;
+	height: 70px;
+	padding-right: 30px;
+}
+
+/************MENU*********************/
+ul, ol {
+	list-style: none;
+}
+
+.nav > li {
+	/*float:left;*/
+	display: inline-block;
+}
+
+.nav li a {
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 12px;
 	display: block;
 }
 
-#btnPruebas #limpiarFormLocalStorage, #btnPruebas #cargarDatosLocalStorage {
-	background-color: whitesmoke !important;
-	background-image: none;
-	color: gray;
+.nav li a:hover {
+	background-color: #434343;
+}
+
+.nav li ul {
+	display: none;
+	position: absolute;
+	min-width: 100px;
+	right: 40px;
+}
+
+.nav li:hover > ul {
+	display: block;
+}
+
+.nav li ul li {
+	position: relative;
+}
+
+.nav li ul li ul {
+	right: 140px;
+	top: 0px;
+}
+
+/************	MSJ*********************/
+#msj {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+#nameUser{
+	font-size: 20px;
+	margin-top: 0;
+}
+
+
+#saludo{
+display: inline-block;
+margin-left: 1.5rem;
+margin-top: 1.5rem;
+}
+
+#cajaflat{
+	margin-top: 0.5em;
+	width: 100%;
+	height: 15em;
+	border-color: #ed0000;
+	border-width: ancho;
+	border-style: estilo;
+	
+}
+
+#fotoflat{
+	background-color: #666666;
+	margin-top: 1em;
+	width: 100%;
+	height: 15em;
+
+}
+
+#descripciónflat{
+	width: 40%;
+	height: 3.5em;
+
+}
+
+#ciudadflat{
+	width: 45%;
+	height: 1.8em;
+	float: left;
+}
+
+#likeflat{
+	width: 45%;
+	height: 1.8em;
+	float: right;
+}
+#detalleflat{
+	width: 45%;
+	height: 1.8em;
+	float: left;
+	
+}
+
+#precioflat{
+	width: 45%;
+	height: 1.8em;
+	float: right;
+}
+
+
+#estadoflat{
+	width: 45%;
+	height: 1.8em;
+	float: left;
+}
+
+/*****************************************************************************************
+ '		CUERPO
+ *****************************************************************************************/
+#cuerpo {
+	padding-bottom: 120px;
 }

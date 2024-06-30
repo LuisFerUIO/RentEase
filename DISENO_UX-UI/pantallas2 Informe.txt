@@ -1,0 +1,540 @@
+Informe del paquete
+
+-----------------------------------------------------------------------------
+Documento:
+Nombre: pantallas2.ai
+Modo de color: Color RGB
+Perfil de color: sRGB IEC61966-2.1
+Unidades de regla: p’xeles
+Dimensiones de la mesa de trabajo: 1440 px x 850 px
+Mostrar im‡genes en modo contorno: Desactivado
+Resaltar fuentes sustituidas: Desactivado
+Resaltar glifos sustituidos: Desactivado
+Conservar capacidad de edici—n de texto
+Simular papel de color: Desactivado
+
+-----------------------------------------------------------------------------
+Objetos de tintas planas:
+
+-----------------------------------------------------------------------------
+Fuentes no disponibles:Ninguno
+
+-----------------------------------------------------------------------------
+Fuentes protegidas no empaquetadas:
+Montserrat Regular (Adobe Fonts)
+Montserrat Bold (Adobe Fonts)
+Raleway (Adobe Fonts)
+Raleway Bold (Adobe Fonts)
+
+-----------------------------------------------------------------------------
+Fuentes:
+Verdana Bold (OTF)
+Raleway Regular (TrueType)
+Raleway Medium (TrueType)
+Raleway Bold (TrueType)
+Raleway ExtraBold (TrueType)
+
+-----------------------------------------------------------------------------
+Fuentes incrustadas:
+Ninguno
+
+-----------------------------------------------------------------------------
+Enlaces no disponibles:
+Ninguno
+
+-----------------------------------------------------------------------------
+Im‡genes enlazadas:
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 19.51.23
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 6290K, 1266 por 1272 p’xeles
+Dimensiones: 171,8 por 172,614 puntos 
+Resoluci—n: 530,571 por 530,571 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 19.51.23
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 6290K, 1266 por 1272 p’xeles
+Dimensiones: 171,8 por 172,614 puntos 
+Resoluci—n: 530,571 por 530,571 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/edificio3.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 981 por 653,591 puntos 
+Resoluci—n: 58,716 por 58,716 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 18.55.25
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 8278K, 2026 por 1046 p’xeles
+Dimensiones: 4735,727 por 2445 puntos 
+Resoluci—n: 30,802 por 30,802 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 1031 por 664,995 puntos 
+Resoluci—n: 55,868 por 55,868 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 1031 por 664,995 puntos 
+Resoluci—n: 55,868 por 55,868 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 981 por 653,591 puntos 
+Resoluci—n: 58,716 por 58,716 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 19.51.23
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 6290K, 1266 por 1272 p’xeles
+Dimensiones: 171,8 por 172,614 puntos 
+Resoluci—n: 530,571 por 530,571 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 19.51.23
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 6290K, 1266 por 1272 p’xeles
+Dimensiones: 171,8 por 172,614 puntos 
+Resoluci—n: 530,571 por 530,571 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 19.51.23
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 6290K, 1266 por 1272 p’xeles
+Dimensiones: 171,8 por 172,614 puntos 
+Resoluci—n: 530,571 por 530,571 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 19.51.23
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 6290K, 1266 por 1272 p’xeles
+Dimensiones: 171,8 por 172,614 puntos 
+Resoluci—n: 530,571 por 530,571 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 981 por 653,591 puntos 
+Resoluci—n: 58,716 por 58,716 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 18.55.25
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 8278K, 2026 por 1046 p’xeles
+Dimensiones: 1652,45 por 853,14 puntos 
+Resoluci—n: 88,276 por 88,276 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 18.55.25
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 8278K, 2026 por 1046 p’xeles
+Dimensiones: 1652,45 por 853,14 puntos 
+Resoluci—n: 88,276 por 88,276 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 18.55.25
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 8278K, 2026 por 1046 p’xeles
+Dimensiones: 1652,45 por 853,14 puntos 
+Resoluci—n: 88,276 por 88,276 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 18.55.25
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 8278K, 2026 por 1046 p’xeles
+Dimensiones: 1652,45 por 853,14 puntos 
+Resoluci—n: 88,276 por 88,276 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 19.51.23
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 6290K, 1266 por 1272 p’xeles
+Dimensiones: 60,85 por 61,139 puntos 
+Resoluci—n: 1497,971 por 1497,971 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 19.51.23
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 6290K, 1266 por 1272 p’xeles
+Dimensiones: 60,85 por 61,139 puntos 
+Resoluci—n: 1497,971 por 1497,971 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 19.51.23
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 6290K, 1266 por 1272 p’xeles
+Dimensiones: 60,85 por 61,139 puntos 
+Resoluci—n: 1497,971 por 1497,971 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 19.51.23
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 6290K, 1266 por 1272 p’xeles
+Dimensiones: 60,85 por 61,139 puntos 
+Resoluci—n: 1497,971 por 1497,971 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 19.51.23
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 6290K, 1266 por 1272 p’xeles
+Dimensiones: 60,85 por 61,139 puntos 
+Resoluci—n: 1497,971 por 1497,971 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 19.51.23
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 6290K, 1266 por 1272 p’xeles
+Dimensiones: 60,85 por 61,139 puntos 
+Resoluci—n: 1497,971 por 1497,971 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Escritorio/Captura de pantalla 2024-06-14 a la(s) 19.51.23
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 6290K, 1266 por 1272 p’xeles
+Dimensiones: 60,85 por 61,139 puntos 
+Resoluci—n: 1497,971 por 1497,971 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa2.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1249K, 800 por 533 p’xeles
+Dimensiones: 313,844 por 209,099 puntos 
+Resoluci—n: 183,531 por 183,531 p’xeles por pulgada
+
+
+/Usuarios/dianasiguenza/Documentos/Full stack JavaScript/Proyecto grupal/RentEase/assets/casa1.webp
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 1209K, 800 por 516 p’xeles
+Dimensiones: 329,84 por 212,747 puntos 
+Resoluci—n: 174,63 por 174,63 p’xeles por pulgada
