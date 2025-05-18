@@ -4,8 +4,6 @@ This project was crafted with dedication and passion by:
 - **Luis F. Suárez** – Full‑stack architecture and business‑logic development  
 - **Diana Sigüenza** – Frontend design and user experience (UI/UX)
 
----
-
 ## 🛠 Technologies Used
 
 - HTML5  
