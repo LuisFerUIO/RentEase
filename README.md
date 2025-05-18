@@ -5,24 +5,7 @@ Este proyecto ha sido desarrollado con dedicación y compromiso por:
 - **Luis F. Suárez** 
 - **Diana Sigüenza**
 
-/ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - /
-
-Proyecto creado como parte del Bootcamp de Desarrollo Full Stack en Kruger School X, en el año 2024.
-Tecnologías utilizadas:
-
-HTML
-
-CSS
-
-JavaScript
-
-Además, se llevó a cabo el diseño de la interfaz con un enfoque en la experiencia del usuario (UI/UX), asegurando una navegación intuitiva y una presentación visual adecuada.
-
-/ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - /
-
-Project developed as part of the Full Stack Bootcamp at Kruger School X in 2024.
-
-Technologies used:
+##Technologies used:
 
 HTML
 
