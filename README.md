@@ -1,3 +1,11 @@
+## 👨‍💻 Desarrolladores
+
+Este proyecto ha sido desarrollado con dedicación y compromiso por:
+
+- **Luis F. Suárez** 
+- **Diana Sigüenza**
+
+/ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - /
 
 Proyecto creado como parte del Bootcamp de Desarrollo Full Stack en Kruger School X, en el año 2024.
 Tecnologías utilizadas:
