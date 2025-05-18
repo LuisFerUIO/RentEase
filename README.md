@@ -5,7 +5,7 @@ Este proyecto ha sido desarrollado con dedicación y compromiso por:
 - **Luis F. Suárez** 
 - **Diana Sigüenza**
 
-##Technologies used:
+##Technologies used
 
 HTML
 
