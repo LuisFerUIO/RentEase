@@ -10,16 +10,17 @@ Ability to mark properties as favorites using a "like" system.
 
 Data is stored temporarily in the browser’s localStorage, so any added information will be lost once the browser is closed.
 
-How to test the project:
-Download the repository files.
+##How to test the project:
 
-Open the index.html file in your browser.
+- Download the repository files.
 
-Register (a complex password is required).
+- Open the index.html file in your browser.
 
-Add properties and see them appear on the homepage.
+- Register (a complex password is required).
 
-Click the heart icon to mark favorites.
+- Add properties and see them appear on the homepage.
+
+- Click the heart icon to mark favorites.
 
 Note: all data will be lost when the browser is closed.
 
@@ -35,12 +36,10 @@ This project was crafted with dedication and passion by:
 - CSS3  
 - JavaScript Vanilla (ES6+)
 
----
-
 The interface was conceived with a focus on delivering a smooth and intuitive user interface (UI) and user experience (UX), featuring clear navigation and a clean visual layout. Iterative usability tests and accessibility checks ensured every element meets high standards of ease of use and inclusivity.  
 
 
-------------------------------------------------------------------------------------
+---
 
 Este proyecto académico fue desarrollado utilizando JavaScript puro, sin el uso de frameworks. Consiste en un marketplace de propiedades (casas, terrenos y departamentos) que permite a los usuarios realizar un CRUD completo: crear, leer, actualizar y eliminar propiedades.
 
@@ -54,16 +53,17 @@ Marcado de propiedades como favoritas mediante un sistema de "me gusta".
 
 Los datos se almacenan temporalmente en el localStorage del navegador, por lo que al cerrar el navegador, toda la información ingresada se pierde.
 
-¿Cómo probar el proyecto?
+##¿Cómo probar el proyecto?
+
 Descarga los archivos del repositorio.
 
-Abre el archivo index.html en tu navegador.
+- Abre el archivo index.html en tu navegador.
 
-Regístrate (se requiere una contraseña compleja).
+- Regístrate (se requiere una contraseña compleja).
 
-Agrega propiedades y observa cómo se muestran en el inicio.
+- Agrega propiedades y observa cómo se muestran en el inicio.
 
-Marca tus favoritas haciendo clic en el ícono de corazón.
+- Marca tus favoritas haciendo clic en el ícono de corazón.
 
 Nota: toda la información se borra al cerrar el navegador.
 
@@ -78,8 +78,6 @@ Este proyecto fue creado con dedicación y pasión por:
 - HTML5
 - CSS3
 - JavaScript Puro (ES6+)
-
----
 
 La interfaz se concibió con el objetivo de ofrecer una interfaz de usuario (UI) y una experiencia de usuario (UX) fluidas e intuitivas, con una navegación clara y un diseño visual limpio. Las pruebas iterativas de usabilidad y las comprobaciones de accesibilidad garantizaron que cada elemento cumpliera con altos estándares de facilidad de uso e inclusión.
 
