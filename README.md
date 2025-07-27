@@ -12,6 +12,8 @@ Data is stored temporarily in the browser’s localStorage, so any added informa
 
 ## How to test the project:
 
+- [Deployment](https://luisferuio.github.io/RentEase/)
+
 - Download the repository files.
 
 - Open the index.html file in your browser.
@@ -55,6 +57,8 @@ Los datos se almacenan temporalmente en el localStorage del navegador, por lo qu
 
 ## ¿Cómo probar el proyecto?
 
+- [Deployment](https://luisferuio.github.io/RentEase/)
+  
 - Descarga los archivos del repositorio.
 
 - Abre el archivo index.html en tu navegador.
