@@ -1,4 +1,4 @@
-This academic project was developed using pure JavaScript, without any frameworks. It is a real estate marketplace for properties such as houses, lots, and apartments, featuring full CRUD functionality: create, read, update, and delete.
+This experimental project was developed using pure JavaScript, without any frameworks. It is a real estate marketplace for properties such as houses, lots, and apartments, featuring full CRUD functionality: create, read, update, and delete.
 
 Key features include:
 
@@ -43,7 +43,7 @@ The interface was conceived with a focus on delivering a smooth and intuitive us
 
 ---
 
-Este proyecto académico fue desarrollado utilizando JavaScript puro, sin el uso de frameworks. Consiste en un marketplace de propiedades (casas, terrenos y departamentos) que permite a los usuarios realizar un CRUD completo: crear, leer, actualizar y eliminar propiedades.
+Este proyecto experimental fue desarrollado utilizando JavaScript puro, sin el uso de frameworks. Consiste en un marketplace de propiedades (casas, terrenos y departamentos) que permite a los usuarios realizar un CRUD completo: crear, leer, actualizar y eliminar propiedades.
 
 Entre sus funcionalidades principales se encuentran:
 
