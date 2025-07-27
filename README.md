@@ -29,3 +29,5 @@ Este proyecto fue creado con dedicación y pasión por:
 ---
 
 La interfaz se concibió con el objetivo de ofrecer una interfaz de usuario (UI) y una experiencia de usuario (UX) fluidas e intuitivas, con una navegación clara y un diseño visual limpio. Las pruebas iterativas de usabilidad y las comprobaciones de accesibilidad garantizaron que cada elemento cumpliera con altos estándares de facilidad de uso e inclusión.
+
+<img width="1918" height="1078" alt="Captura de pantalla 2025-07-21 192411" src="https://github.com/user-attachments/assets/2978feee-4837-4c34-8f0d-1331c925fcb7" />
